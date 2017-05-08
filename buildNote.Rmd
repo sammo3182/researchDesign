@@ -67,3 +67,10 @@ dates$holiday[dates$Mon == ymd("2017-11-20")] <- "Thanks Giving Week"
 dates
 ```
 
+# Text book 
+* Babbie, Earl. 2010. The Practice of Social Research (12th Edition). Belmont, CA:
+Wadsworth-Cengage Learning.
+* Kenneth Hoover; Todd Donovan. 1995. The Elements of Social Science Thinking, St. Martin's Press
+* Shively, W. Phillips (2013). The Craft of Political Research. Boston: Pearson.
+
+# Prelimiary courses
