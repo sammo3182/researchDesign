@@ -1,0 +1,69 @@
+---
+title: "Building POLI 2000"
+author: Yue Hu
+output: html_notebook
+---
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+
+library(pacman)
+p_load(dotwhisker, ggplot2, interplot,# Visualization
+       lubridate,# Applied
+       # dependency
+       readxl, haven, descr, stringi, stringr, arm, car, stargazer,
+       broom, tibble, tidyr, purrr, dplyr) # data wrangling
+
+set.seed(313)
+```
+
+
+This notebook records schedules and relevant information of building POLI 2000. 
+
+# Important Dates 
+
+* Opening Date: 2017-08-21
+* Final Exam Report: 2017-11-28
+* Final Week: 2017-12-11
+* Final Grade Approved: 2017-12-20
+
+```{r}
+# Opening Date: 2017-08-21 ####
+start <- ymd("2017-08-21")
+# Final Week: 2017-12-11 ####
+end <- ymd("2017-12-17")
+```
+
+# Class Weeks
+```{r}
+over <- interval(start, end)
+numWeek <- week(end) - week(start)
+```
+
+This semester includes `r numWeek` weeks. 
+Ignoring the thanksgiving week, there are `r numWeek - 1` instructing weeks.
+
+```{r}
+dates <- data.frame(day = seq(from = start, to = end, by = "days")) %>%
+  mutate(day = ymd(day), weekDay = wday(day), weekNum = week(day),
+         weekNum = weekNum - (min(weekNum) - 1)) %>% # get the relative week number
+    filter(weekDay %in% c(2,1)) %>% # only keep Monday and Friday
+      spread(key = weekDay, value = day) %>% # long to wide
+        rename(Sun = `1`, Mon = `2`) %>%
+          mutate(Sun = lead(Sun)) # get the Sundays to the correct rows
+      
+dates <- dates[c("weekNum", "Mon", "Sun")] %>% # reorder colums
+  na.omit
+dates
+```
+
+# Holidays 
+* 2017-09-04: University Holiday
+* 2017-11-19/2017-11-26: Thanksgiving
+```{r}
+dates$holiday <- NA
+dates$holiday[dates$Mon == ymd("2017-09-04")] <- "Labor Day"
+dates$holiday[dates$Mon == ymd("2017-11-20")] <- "Thanks Giving Week"
+
+dates
+```
+
