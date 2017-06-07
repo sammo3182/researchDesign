@@ -2,6 +2,8 @@
 title: "Building POLI 2000"
 author: Yue Hu
 output: html_notebook
+editor_options: 
+  chunk_output_type: inline
 ---
 ```{r setup, include = FALSE}
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
@@ -40,7 +42,7 @@ numWeek <- week(end) - week(start)
 ```
 
 This semester includes `r numWeek` weeks. 
-Ignoring the thanksgiving week, there are `r numWeek - 1` instructing weeks.
+Ignoring the thanksgiving week and final week, there are `r numWeek - 2` instructing weeks.
 
 ```{r}
 dates <- data.frame(day = seq(from = start, to = end, by = "days")) %>%
@@ -63,6 +65,8 @@ dates
 dates$holiday <- NA
 dates$holiday[dates$Mon == ymd("2017-09-04")] <- "Labor Day"
 dates$holiday[dates$Mon == ymd("2017-11-20")] <- "Thanks Giving Week"
+dates$holiday[dates$Mon == ymd("2017-12-11")] <- "Final Week"
+
 
 dates
 ```
@@ -73,4 +77,10 @@ Wadsworth-Cengage Learning.
 * Kenneth Hoover; Todd Donovan. 1995. The Elements of Social Science Thinking, St. Martin's Press
 * Shively, W. Phillips (2013). The Craft of Political Research. Boston: Pearson.
 
-# Prelimiary courses
+# Prelimiary schedule
+```{r}
+dates$content[is.na(dates$holiday)] <- c("Intro", "Scientific Research", "Concept", "Theory", "Measurement", "Validity", "Design: Experiment", "Case Description", "Case Comparison", "Case Selection", "Large-N", "Profession", "Ethnicity", "Presentation")
+
+dates
+```
+
