@@ -17,6 +17,8 @@ office: "313 Shaeffer Hall"
 classroom: "105 EPB"
 classhours: "15:30 -- 16:45 MW"
 fontsize: 11pt
+biblio-style: ajps
+bibliography: readings.bib
 header-includes:
    - \linespread{1.05}
 ---
@@ -26,12 +28,117 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 
 library(pacman)
 p_load(dotwhisker, ggplot2, interplot,# Visualization
-       lubridate,# Applied
+       lubridate, RefManageR,# Applied
        # dependency
        readxl, haven, descr, stringi, stringr, arm, car, stargazer,
        broom, tidyverse) # data wrangling
 
 set.seed(313)
+
+# Bib setting
+ajps_mimic <- RefManageR:::MakeBibLaTeX()
+with(ajps_mimic,{
+  ajps_mimic$fmtJournal <- function(s){
+                                if (length(s$journaltitle)) {
+                                    res <- emph(cleanupLatex(s$journaltitle))
+                                    if (length(s$journalsubtitle))
+                                        res <- paste(addPeriod(res), emph(cleanupLatex(s$journalsubtitle)))
+                                    return(res)
+                                }
+                                else if (!is.null(s$journal)) {
+                                    emph(cleanupLatex(s$journal))
+                                }
+     }
+     
+     ajps_mimic$fmtURL <- function (paper) {
+        if (length(paper[["url"]])) {
+            res <- paper$url
+            res <- switch(docstyle, html = paste0("\\url{", 
+                res, "}"), markdown = paste0("[", res, "](", 
+                res, ")"), paste0("\\url{", res, "}"))
+            if (length(paper$urldate)) {
+                fDate <- try(ProcessDate(paper$urldate, NULL), TRUE)
+                if (!is.null(fDate) && !inherits(fDate, "try-error")) 
+                    res <- paste0(res, " (visited on ", DateFormatter(fDate, 
+                      TRUE), ")")
+            }
+            addPeriod(res)
+        }
+        else if (length(paper$urldate)) {
+            fDate <- try(ProcessDate(paper$urldate, NULL), TRUE)
+            if (!is.null(fDate) && !inherits(fDate, "try-error")) 
+                paste0("(Visited on ", DateFormatter(fDate, TRUE), 
+                    ").")
+        }
+     }
+     
+     ajps_mimic$fmtLanguage <- function(lang) {
+    if (length(lang) && tolower(lang) != "english") 
+        paste0("[", sub("\\b(\\w)", "\\U\\1", lang, perl = TRUE, 
+            useBytes = TRUE),"]")
+       }
+     
+     ajps_mimic$formatArticle <- function (paper) {
+    collapse(c(fmtPrefix(paper), fmtBAuthor(paper), fmtJTitle(paper$title), fmtLanguage(paper$language), 
+        fmtAddOn(paper$titleaddon),
+        fmtTranslator(paper), fmtCommentator(paper$commentator), 
+        fmtAnnotator(paper$annotator), fmtVersion(paper$version), 
+        sentenceP(paste0(c(paste0(c(fmtJournal(paper), fmtSeries(paper$series)), 
+            collapse = ""), fmtVolume(paper$volume, paper$number), 
+            fmtJournDate(paper)), collapse = " "), fmtBTitle(paper$issuetitle, 
+            paper$issuesubtitle), fmtEditor(paper, suffix = NULL, 
+            prefix = ". "), fmtNote(paper$note, prefix = ". ", 
+            suffix = NULL), pgs = fmtPages(paper$pages, paper$pagination), 
+            sep = ""),fmtURL(paper), fmtAddendum(paper$addendum), 
+        fmtPubstate(paper$pubstate)))
+     }
+     
+     ajps_mimic$formatArticle <- function (paper) {
+    collapse(c(fmtPrefix(paper), fmtBAuthor(paper), fmtJTitle(paper$title), fmtLanguage(paper$language), 
+        fmtAddOn(paper$titleaddon),
+        fmtTranslator(paper), fmtCommentator(paper$commentator), 
+        fmtAnnotator(paper$annotator), fmtVersion(paper$version), 
+        sentenceP(paste0(c(paste0(c(fmtJournal(paper), fmtSeries(paper$series)), 
+            collapse = ""), fmtVolume(paper$volume, paper$number), 
+            fmtJournDate(paper)), collapse = " "), fmtBTitle(paper$issuetitle, 
+            paper$issuesubtitle), fmtEditor(paper, suffix = NULL, 
+            prefix = ". "), fmtNote(paper$note, prefix = ". ", 
+            suffix = NULL), pgs = fmtPages(paper$pages, paper$pagination), 
+            sep = ""),fmtURL(paper), fmtAddendum(paper$addendum), 
+        fmtPubstate(paper$pubstate)))
+     }
+     
+     ajps_mimic$formatUnpublished <- function (paper) {
+        collapse(c(fmtPrefix(paper), fmtBAuthor(paper), fmtIBTitle(paper$title, 
+            paper$subtitle, FALSE), fmtAddOn(paper$titleaddon), fmtLanguage(paper$language), 
+            fmtHowPublished(paper$howpublished), fmtNote(paper$note), 
+            sentence(fmtPublisher(NULL, paper$location, paper$address), sep = ""), fmtDOI(paper$doi), 
+            fmtURL(paper), fmtAddendum(paper$addendum), fmtPubstate(paper$pubstate)))
+     }
+     
+     ajps_mimic$formatMisc <- function (paper) {
+    collapse(c(fmtPrefix(paper), fmtBAuthor(paper), fmtIBTitle(paper$title, 
+            paper$subtitle, FALSE), fmtAddOn(paper$titleaddon), fmtLanguage(paper$language), 
+        fmtEditor(paper, !length(paper$author)), fmtHowPublished(paper$howpublished), 
+        addPeriod(fmtType(paper$type)), fmtVersion(paper$version), 
+        fmtNote(paper$note), sentence(fmtPublisher(paper$organization, 
+            paper$location, paper$address), fmtDate(attr(paper, 
+            "dateobj")), sep = ""), fmtDOI(paper$doi), fmtEprint(paper), 
+        fmtURL(paper), fmtAddendum(paper$addendum), fmtPubstate(paper$pubstate)))
+}
+})
+
+
+tools::bibstyle("ajps_mimic", ajps_mimic)
+
+bib <- ReadBib("readings.bib", check = FALSE)
+BibOptions(check.entries = FALSE, 
+           first.inits = FALSE,
+           bib.style = "ajps_mimic",
+           style = "latex",
+           max.names = 4,
+           dashed = FALSE,
+           sorting = "ydnt")
 ```
 
 ```{r calendar, include=FALSE}
@@ -57,7 +164,7 @@ dates$content[dates$Mon == ymd("2017-09-04")] <- "Labor Day"
 dates$content[dates$Mon == ymd("2017-11-20")] <- "Thanks Giving Week"
 dates$content[dates$Mon == ymd("2017-12-11")] <- "Final Week"
 
-dates$content[is.na(dates$content)] <- c("Intro", "Scientific Research", "Concept", "Theory", "Measurement", "Validity", "Design: Experiment", "Case Description", "Case Comparison", "Case Selection", "Large-N", "Profession", "Ethnicity", "Presentation")
+dates$content[is.na(dates$content)] <- c("Being a Political Scientist", "Being Scientific", "Research Question", "Concepts", "Theory", "Measurement", "Design: Experiment", "Design: Singal Case Study", "Design: Small-N", "Design: Large-N", "Content Analysis", "Profession", "Presentation", "Presentation")
 
 weekList <- paste0("Week ", dates$weekNum, " (", dates$Mon, "~", dates$Sun, "): ", dates$content)
 ```
@@ -79,24 +186,14 @@ Each student will
 
 1. Final examination (26%)
 
-
-
-
-1) Class attendance and performance--worth 30% of the course grade. I am looking for you to show that you have read and critically evaluated the assigned readings and are engaged with our in-class discussions.
-2) Three 2-page critical reviews, one of the Dahl book, one of Teorell and one of Schedler. [together worth 15%]. Each one is due to me by 8:00 am of the day of the class session. (The night before would be even better.) Each review should be 1,000 – 1,300 words in length. I pre-fer that you send them to me via e-mail as attachments in Word format. The reviews should be critical reviews, that is, they should assess the pros and cons of each book. You should not waste your limited space recounting what the book is about, since I’ve also just read it. Rather, I want to know whether you found the author’s arguments clear, the evidence persuasive, the conclu-sions logically drawn and so forth. Criticism can be positive--you can praise a book as well as complain about it. In either case, your criticism should be concrete not vague, with references to--though rarely quotations from--relevant passages. I have put in ICON’s Content section an example by a UI doctoral student from a past semester: “Critical review: student example.”
-3) Research paper [40%]. This paper should be appropriate for presenting at a Political Science (or other professional) conference. You may select a topic related to democracy, authoritarian-ism, hybrid regimes or transitions between them. I want you to select a topic that matches your interests or ongoing research while also genuinely connecting to the material we cover in this class. If you have written previously on the same or closely similar topic—for a different class, an M.A. thesis, etc.—your paper for this class must be substantially distinct, which generally means that the question you attempt to answer is different; modifying the methods or data employed may not suffice. I will have each of you discuss your topic and the related research question with me prior to you beginning your work. As a research paper, it will contain your explanation of why the question is worth answering (the literature review), one or more possible answers to the question that flow from theory and the results of empirical testing of the possible answers, using appropriate quantitative or qualitative methods. I assume you have completed courses equiva-lent to the first-year courses on analysis and methods in the Political Science doctoral program. I have set five deadlines for you to meet in connection with this assignment:
-a. By February 12, you must gain my agreement to the topic and research question.
-b. By March 9, you must submit an explanation of the methods you will employ in order to answer your research question empirically. This must include a careful discussion of how you will define and measure key terms such as democracy and authoritarianism. A revised version of this prose will go into your paper.
-Democratization and Authoritarianism - 3
-c. By April 6, you must submit a complete first version of the paper by uploading it to the ICON Dropbox. I will read and comment on it so that you can make improvements. Although I will not grade this first version, I will lower the grade for the final version if the first version is substantially incomplete, unsatisfactory or submitted late.
-d. We will use the final class session, May 8, to present the research findings from each stu-dent’s paper. I will provide more details about the format.
-e. The revised, final version of your research paper is due by 3:00 p.m. on Wednesday, May 13. Submit it by uploading it to the ICON Dropbox. This is the final time when I can receive the paper if I am to turn in grades by the deadline. I encourage you to look at your other commitments at the end of the semester and decide whether you will need to com-plete the paper prior to that day. I will be happy to receive them earlier. You will have received detailed comments about the first version of your paper by April 27, from me and from another student in the class. Those, together with your own re-reading, will allow you to make the second version substantially stronger.
-4) A report, along the lines of a journal referee, of the first version of another student’s review essay [15%]. You will receive a copy of the other student’s essay by April 8. You must upload your referee’s report to ICON’s Dropbox by the end of the day on April 27. I will provide you with a set of referee guidelines along with the paper you are to read. The Content section of ICON contains several brief articles discussing how to write helpful referee reports.
-For all the written assignments above, I prefer you observe these formatting rules: Your file should be in one of the standard Windows formats; I use Microsoft Word. Margins should be no smaller than .7 inches. The fonts should be a common one (Times New Roman, Arial, Verdana, Century Schoolbook, etc.) The font size should be 12. Citations should be in-text as per APSR or a similar (APA, e.g.) style, with a list of references at the end.
-I will give a grade of Incomplete for the course only when extreme and unavoidable circum-stances prevent you from turning in the final version of your research paper on time.
-I would like to hear from anyone who has a disability which may require seating modifica-tions or accommodations of class requirements so that appropriate arrangements may be made. Please make an appointment to meet with me outside of class to discuss this.
+# Readings
+## Required textbook:
+```{r, results = "asis"}
+bib
+```
 
 ## `r weekList[1]`
+
 
 ## `r weekList[2]`
 
