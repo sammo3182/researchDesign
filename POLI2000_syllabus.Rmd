@@ -148,8 +148,8 @@ start <- ymd("2017-08-21")
 end <- ymd("2017-12-17")
 
 dates <- data.frame(day = seq(from = start, to = end, by = "days")) %>%
-  mutate(day = ymd(day), weekDay = wday(day), weekNum = week(day),
-         weekNum = weekNum - (min(weekNum) - 1)) %>% # get the relative week number
+  mutate(day = ymd(day), weekDay = wday(day), weekNum = week(day)) %>% # get the relative week number
+  mutate(weekNum = weekNum - (min(weekNum) - 1)) %>%
     filter(weekDay %in% c(2,1)) %>% # only keep Monday and Friday
       spread(key = weekDay, value = day) %>% # long to wide
         rename(Sun = `1`, Mon = `2`) %>%
@@ -160,11 +160,11 @@ dates <- dates[c("weekNum", "Mon", "Sun")] %>% # reorder colums
 
 dates$content <- NA
 ## Holidays
-dates$content[dates$Mon == ymd("2017-09-04")] <- "Labor Day"
+dates$content[dates$Mon == ymd("2017-09-04")] <- "What's A Good Question (Labor Day)"
 dates$content[dates$Mon == ymd("2017-11-20")] <- "Thanks Giving Week"
 dates$content[dates$Mon == ymd("2017-12-11")] <- "Final Week"
 
-dates$content[is.na(dates$content)] <- c("Being a Political Scientist", "Being Scientific", "Research Question", "Concepts", "Theory", "Measurement", "Design: Experiment", "Design: Singal Case Study", "Design: Small-N", "Design: Large-N", "Content Analysis", "Profession", "Presentation", "Presentation")
+dates$content[is.na(dates$content)] <- c("Being a Political Scientist", "Being Scientific", "How to Find Research Question", "Concepts", "Measurement", "Theory", "Experimental Logic and Design", "Principles of Case Study", "Case Study in Practice", "Content Analysis", "Large-N Analysis", "Profession", "Presentation", "Presentation")
 
 weekList <- paste0("Week ", dates$weekNum, " (", dates$Mon, "~", dates$Sun, "): ", dates$content)
 ```
@@ -189,27 +189,80 @@ Each student will
 # Readings
 ## Required textbook:
 ```{r, results = "asis"}
-bib
+bib[c("Babbie2012", "VanEvera1997")]
 ```
 
 ## `r weekList[1]`
+```{r, results = "asis"}
+bib[c("Dryzek2006", "Keohane2009")]
+```
 
+*Recommanded:*
+
+```{r, results = "asis"}
+bib[c("Weber1968", "Weber1946")]
+```
 
 ## `r weekList[2]`
+@Babbie2012, pp.1-27, 112-120.
+
+*Recommanded:*
+
+```{r, results = "asis"}
+bib[c("Lakatos1970")]
+```
 
 ## `r weekList[3]`
+```{r, results = "asis"}
+bib["Geddes2010"]
+```
+
+@VanEvera1997, pp.97-99.
 
 ## `r weekList[4]`
+@Babbie2012, pp.91-112.
+
+```{r, results = "asis"}
+bib[c("Ragin2010")]
+```
+(Chapter 1, 2)
 
 ## `r weekList[5]`
+@Babbie2012, pp.165-177.
+
+```{r, results = "asis"}
+bib[c("Sartori1970", "Collier1993", "Collier1997")]
+```
+
+*Recommanded:*
+
+```{r, results = "asis"}
+bib[c("Bachrach1962", "Barnett2005")]
+```
 
 ## `r weekList[6]`
+@Babbie2012, pp.177-194, 197-223.
+
 
 ## `r weekList[7]`
+@VanEvera1997, pp.7-50.
+
+Midterm Review
 
 ## `r weekList[8]`
+Midterm.
+
+@Babbie2012, pp.271-291.
+
+*Recommonded:*
+
+```{r, results = "asis"}
+bib[c("Mintz2004", "Mintz2006")]
+```
 
 ## `r weekList[9]`
+@VanEvera1997, pp.49-88.
+
 
 ## `r weekList[10]`
 

@@ -1,35 +1,172 @@
 % Encoding: UTF-8
 
 @Book{VanEvera1997,
-  title         = {Guide to Methods for Students of Political Science},
-  publisher     = {Cornell University Press},
-  year          = {1997},
-  author        = {Van Evera, S.},
-  series        = {Cornell paperbacks},
-  isbn          = {9780801484575},
-  __markedentry = {[Yue Hu:6]},
-  date          = {2017-06-08},
-  groups        = {research design},
-  lccn          = {lc97017808},
-  timestamp     = {2017-06-08},
-  url           = {https://books.google.com/books?id=V3pSlccSRDAC},
-  urldate       = {2017-06-08},
-}
-
-@Book{Babbie2010,
-  title          = {The Practice of Social Research},
-  publisher      = {Wadsworth Cangage Learning},
-  year           = {2010},
-  author         = {Babbie, Earl R.},
-  address        = {Australia},
-  edition        = {12},
-  isbn           = {9780495598428 0495598429},
-  date           = {2017-06-08},
+  title          = {Guide to Methods for Students of Political Science},
+  publisher      = {Cornell University Press},
+  year           = {1997},
+  author         = {Van Evera, S.},
+  series         = {Cornell paperbacks},
+  isbn           = {9780801484575},
   endnotereftype = {Book},
   groups         = {research design},
-  shorttitle     = {The practice of social research},
-  timestamp      = {2017-06-08},
-  urldate        = {2017-06-08},
+  lccn           = {lc97017808},
+  timestamp      = {2017-06-13},
+}
+
+@Book{Babbie2012,
+  title          = {The Practice of Social Research},
+  publisher      = {Wadsworth Cengage Learning},
+  year           = {2012},
+  author         = {Babbie, Earl R.},
+  address        = {Australia},
+  edition        = {13},
+  isbn           = {9781133049791 1133049796},
+  endnotereftype = {Book},
+  groups         = {research design},
+  timestamp      = {2017-06-13},
+}
+
+@Article{Dryzek2006,
+  author    = {Dryzek, John S},
+  title     = {Revolutions without Enemies: Key Transformations in Political Science},
+  journal   = {American Political Science Review},
+  year      = {2006},
+  volume    = {100},
+  number    = {04},
+  pages     = {487--92},
+  groups    = {week1},
+  publisher = {Cambridge Univ Press},
+  timestamp = {2014.06.19},
+}
+
+@Article{Keohane2009,
+  author    = {Keohane, Robert O},
+  title     = {Political Science as a Vocation},
+  journal   = {PS: Political Science and Politics},
+  year      = {2009},
+  volume    = {42},
+  number    = {02},
+  pages     = {359--363},
+  publisher = {Cambridge Univ Press},
+  timestamp = {2017-06-13},
+}
+
+@Article{Lakatos1970,
+  author  = {Lakatos,Imre and Musgrave Alan},
+  title   = {Falsification and the Methodology of Scientific Research Programmes},
+  journal = {Criticism and the Growth of Knowledge},
+  year    = {1970},
+  pages   = {91--180},
+}
+
+@Book{Ragin2010,
+  title     = {Constructing Social Research: The Unity and Diversity of Method},
+  publisher = {Pine Forge Press},
+  year      = {2010},
+  author    = {Ragin, Charles C and Amoroso, Lisa M},
+  timestamp = {2017-06-13},
+}
+
+@InBook{Geddes2010,
+  chapter   = {2},
+  pages     = {27--88},
+  title     = {Big Questions, Little Answers: How the Questions You Choose Affect the Answer You Get},
+  publisher = {University of Michigan Press},
+  year      = {2010},
+  author    = {Geddes, Barbara},
+  address   = {Ann Arbor},
+  booktitle = {Paradigms and Sand Castles: Theory Building and Research Design in Comparative Politics},
+  timestamp = {2017-06-13},
+}
+
+@Article{Sartori1970,
+  author    = {Sartori, Giovanni},
+  title     = {Concept misformation in comparative politics},
+  journal   = {American political science review},
+  year      = {1970},
+  volume    = {64},
+  number    = {04},
+  pages     = {1033--1053},
+  publisher = {Cambridge Univ Press},
+}
+
+@Article{Collier1993,
+  author    = {Collier, David and Mahon, James E},
+  title     = {Conceptual "Stretching" Revisited: Adapting Categories in Comparative Analysis},
+  journal   = {American Political Science Review},
+  year      = {1993},
+  volume    = {87},
+  number    = {04},
+  pages     = {845--855},
+  publisher = {Cambridge Univ Press},
+}
+
+@Article{Collier1997,
+  author    = {Collier, David and Levitsky, Steven},
+  title     = {Democracy with Adjectives: Conceptual Innovation in Comparative Research},
+  journal   = {World politics},
+  year      = {1997},
+  volume    = {49},
+  number    = {03},
+  pages     = {430--451},
+  publisher = {Cambridge Univ Press},
+  timestamp = {2017-06-13},
+}
+
+@Article{Mintz2004,
+  author  = {Alex Mintz},
+  title   = {Foreign Policy Decision Making in Familiar and Unfamiliar Settings},
+  journal = {Journal of Conflict Resolution},
+  year    = {2004},
+  volume  = {48},
+  number  = {1},
+  pages   = {91--104},
+}
+
+@Article{Bachrach1962,
+  author    = {Bachrach, Peter and Baratz, Morton S},
+  title     = {Two Faces of Power},
+  journal   = {American Political Science Review},
+  year      = {1962},
+  volume    = {56},
+  number    = {04},
+  pages     = {947--952},
+  publisher = {Cambridge Univ Press},
+}
+
+@Article{Barnett2005,
+  author    = {Barnett, Michael and Duvall, Raymond},
+  title     = {Power in International Politics},
+  journal   = {International Organization},
+  year      = {2005},
+  volume    = {59},
+  number    = {01},
+  pages     = {39--75},
+  publisher = {Cambridge Univ Press},
+}
+
+@Misc{Weber1968,
+  author    = {Weber, Max},
+  title     = {Politics as a Vocation},
+  year      = {1968},
+  publisher = {Fortress Press Philadelphia},
+}
+
+@InCollection{Weber1946,
+  author    = {Weber, Max},
+  title     = {Science as a Vocation},
+  booktitle = {Science and the Quest for Reality},
+  publisher = {Springer},
+  year      = {1946},
+  pages     = {382--394},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
+
+@Comment{jabref-meta: fileDirectory:D:\\MEGAsync\\Dropbox\\01_Instruction\\Employment\\researchDesign;}
+
+@Comment{jabref-meta: saveActions:enabled;
+date[normalize_date]
+pages[normalize_page_numbers]
+month[normalize_month]
+;}
