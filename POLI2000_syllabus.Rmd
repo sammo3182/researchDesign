@@ -164,7 +164,7 @@ dates$content[dates$Mon == ymd("2017-09-04")] <- "What's A Good Question (Labor 
 dates$content[dates$Mon == ymd("2017-11-20")] <- "Thanks Giving Week"
 dates$content[dates$Mon == ymd("2017-12-11")] <- "Final Week"
 
-dates$content[is.na(dates$content)] <- c("Being a Political Scientist", "Being Scientific", "How to Find Research Question", "Concepts", "Measurement", "Theory", "Experimental Logic and Design", "Principles of Case Study", "Case Study in Practice", "Content Analysis", "Large-N Analysis", "Profession", "Presentation", "Presentation")
+dates$content[is.na(dates$content)] <- c("Being a Political Scientist", "Being Scientific", "How to Find Research Question", "Concepts", "Measurement", "Theory", "Experimental Logic and Design", "Principles of Case Study", "Case Study in Practice", "A Glance of Other Small-N Methods", "Understanding Large-N Analyses", "Professionalization", "Presentation", "Presentation")
 
 weekList <- paste0("Week ", dates$weekNum, " (", dates$Mon, "~", dates$Sun, "): ", dates$content)
 ```
@@ -174,13 +174,13 @@ Why do candidates win elections? Why do states get involved in international cri
 This class will help students understand how social scientists study political phenomena. You will learn how to develop causal explanations about politics and society, develop testable research hypotheses, and design different approaches to empirically studying these theories. Emphasis will be on an active hands-on learning environment (TILE classroom). You will also be able to more fully understand research that is produced in Political Science.
 
 # Requirements
-I will base your grade for the course on your performance in the four areas below. For each component of the course grade, I assign a numerical score. I then calculate the course grade with the weighted average of the component scores. Scores of 90-100 correspond to A, 80-89 to B, etc., with plusses and minuses for the top and bottom third of each decile.
+I will base your grade for the course on your performance in the four areas below. For each component of the course grade, I assign a numerical score. I then calculate the course grade with the weighted average of the component scores. Scores of 90-100 correspond to A, 80-89 to B, etc., with pluses and minuses for the top and bottom third of each decile.
 
 1. Class attendance and performance (30%: 10% participation + 10% leading discussion + 10% attendance). 
 Regarding participation, I am looking for you to show that you have read and critically evaluated the assigned readings and are engaged with our in-class discussions.
 Each student will 
 
-1. In-class quizes (24%)
+1. In-class quizzes (24%)
 
 1. Midterm examination (20%)
 
@@ -197,7 +197,7 @@ bib[c("Babbie2012", "VanEvera1997")]
 bib[c("Dryzek2006", "Keohane2009")]
 ```
 
-*Recommanded:*
+*Recommended:*
 
 ```{r, results = "asis"}
 bib[c("Weber1968", "Weber1946")]
@@ -206,7 +206,7 @@ bib[c("Weber1968", "Weber1946")]
 ## `r weekList[2]`
 @Babbie2012, pp.1-27, 112-120.
 
-*Recommanded:*
+*Recommended:*
 
 ```{r, results = "asis"}
 bib[c("Lakatos1970")]
@@ -234,7 +234,7 @@ bib[c("Ragin2010")]
 bib[c("Sartori1970", "Collier1993", "Collier1997")]
 ```
 
-*Recommanded:*
+*Recommended:*
 
 ```{r, results = "asis"}
 bib[c("Bachrach1962", "Barnett2005")]
@@ -243,6 +243,11 @@ bib[c("Bachrach1962", "Barnett2005")]
 ## `r weekList[6]`
 @Babbie2012, pp.177-194, 197-223.
 
+*Recommended:*
+
+```{r, results = "asis"}
+bib[c("Seawright2014")]
+```
 
 ## `r weekList[7]`
 @VanEvera1997, pp.7-50.
@@ -261,16 +266,56 @@ bib[c("Mintz2004", "Mintz2006")]
 ```
 
 ## `r weekList[9]`
-@VanEvera1997, pp.49-88.
 
+```{r, results = "asis"}
+bib[c("Gerring2004","Przeworski1970", "Levy2008")]
+```
+
+*Recommended:*
+  
+```{r, results = "asis"}
+bib[c("Most1990")]
+```
 
 ## `r weekList[10]`
 
+@VanEvera1997, pp.49-88.
+
+```{r, results = "asis"}
+bib[c("Geddes1990")]
+```
+
+*Recommended:*
+  
+```{r, results = "asis"}
+bib[c("DeJuan2016")]
+```
+
 ## `r weekList[11]`
+
+@Babbie2012, pp.295-321.
+
+```{r, results = "asis"}
+bib[c("Geertz1994", "Capoccia2007", "Bennett2008")]
+```
 
 ## `r weekList[12]`
 
+@Babbie2012, pp.415-438.
+
+```{r, results = "asis"}
+bib[c("Tang2016", "Hafner-Burton2006", "Mahoney2006")]
+```
+
 ## `r weekList[13]`
+
+@Babbie2012, pp.498-519.
+
+@VanEvera1997, pp.99-111.
+
+Apple talk
+
+Ted talk
 
 ## `r weekList[14]`
 
