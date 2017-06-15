@@ -194,17 +194,16 @@ bib[c("Babbie2012", "VanEvera1997")]
 
 ## `r weekList[1]`
 ```{r, results = "asis"}
-bib[c("Dryzek2006", "Keohane2009")]
-```
-
-*Recommended:*
-
-```{r, results = "asis"}
-bib[c("Weber1968", "Weber1946")]
+bib[c("Dryzek2006", "Keohane2009", "King2006")]
 ```
 
 ## `r weekList[2]`
 @Babbie2012, pp.1-27, 112-120.
+
+```{r, results = "asis"}
+bib[c("Almond1988", "King1995")]
+```
+
 
 *Recommended:*
 
@@ -223,6 +222,10 @@ bib["Geddes2010"]
 @Babbie2012, pp.91-112.
 
 ```{r, results = "asis"}
+bib[c("McKeown1999", "Perez2017")]
+```
+
+```{r, results = "asis"}
 bib[c("Ragin2010")]
 ```
 (Chapter 1, 2)
@@ -231,23 +234,22 @@ bib[c("Ragin2010")]
 @Babbie2012, pp.165-177.
 
 ```{r, results = "asis"}
-bib[c("Sartori1970", "Collier1993", "Collier1997")]
+bib[c("Sartori1970", "Collier1993", "Collier1997", "Barnett2005")]
 ```
 
 *Recommended:*
 
 ```{r, results = "asis"}
-bib[c("Bachrach1962", "Barnett2005")]
+bib[c("Bachrach1962")]
 ```
 
 ## `r weekList[6]`
-@Babbie2012, pp.177-194, 197-223.
-
-*Recommended:*
+@Babbie2012, pp.177-194, 197-223; 57-83.
 
 ```{r, results = "asis"}
-bib[c("Seawright2014")]
+bib[c("Adcock2001","Seawright2014", "Gerring2010")]
 ```
+
 
 ## `r weekList[7]`
 @VanEvera1997, pp.7-50.
@@ -259,37 +261,29 @@ Midterm.
 
 @Babbie2012, pp.271-291.
 
-*Recommonded:*
-
 ```{r, results = "asis"}
-bib[c("Mintz2004", "Mintz2006")]
+bib[c("Mintz2004", "Gerber2011")]
 ```
 
 ## `r weekList[9]`
 
 ```{r, results = "asis"}
-bib[c("Gerring2004","Przeworski1970", "Levy2008")]
+bib[c("Gerring2004", "Levy2008", "McKeown2004")]
 ```
 
-*Recommended:*
-  
 ```{r, results = "asis"}
-bib[c("Most1990")]
+bib[c("Przeworski1970")]
 ```
+31-39, 74-87.
 
 ## `r weekList[10]`
 
 @VanEvera1997, pp.49-88.
 
 ```{r, results = "asis"}
-bib[c("Geddes1990")]
+bib[c("Geddes1990", "Most1982", "Munck2004")]
 ```
 
-*Recommended:*
-  
-```{r, results = "asis"}
-bib[c("DeJuan2016")]
-```
 
 ## `r weekList[11]`
 
@@ -313,9 +307,10 @@ bib[c("Tang2016", "Hafner-Burton2006", "Mahoney2006")]
 
 @VanEvera1997, pp.99-111.
 
-Apple talk
 
-Ted talk
+[APSA 2014: Policy Bargaining and International Conflict](https://www.youtube.com/watch?v=bwNBXuz2eRg)
+
+[MPSA 2017: Trump Scenes](https://www.youtube.com/watch?v=Z4ISkF2H4tk)
 
 ## `r weekList[14]`
 
