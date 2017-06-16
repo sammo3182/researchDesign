@@ -164,7 +164,7 @@ dates$content[dates$Mon == ymd("2017-09-04")] <- "What's A Good Question (Labor 
 dates$content[dates$Mon == ymd("2017-11-20")] <- "Thanks Giving Week"
 dates$content[dates$Mon == ymd("2017-12-11")] <- "Final Week"
 
-dates$content[is.na(dates$content)] <- c("Being a Political Scientist", "Being Scientific", "How to Find Research Question", "Concepts", "Measurement", "Theory", "Experimental Logic and Design", "Principles of Case Study", "Case Study in Practice", "A Glance of Other Small-N Methods", "Understanding Large-N Analyses", "Professionalization", "Presentation", "Presentation")
+dates$content[is.na(dates$content)] <- c("Being a Political Scientist", "Being Scientific", "How to Find Research Question", "Concepts", "Measurement", "Measurement in Practice", "What's Theory?", "Theory and Causal Inference", "Experimental Logic and Design", "Principles of Case Study", "Case Study in Practice", "A Glance of Other Small-N Methods", "Understanding Large-N Analyses", "Professionalization")
 
 weekList <- paste0("Week ", dates$weekNum, " (", dates$Mon, "~", dates$Sun, "): ", dates$content)
 ```
@@ -183,24 +183,96 @@ Emphasis will be on an active hands-on learning environment and fully interactio
 Students can expect to understand the research produced in Political Science and even other social scientific disciplines more comprehensively.
 
 # Requirements
-I will base your grade for the course on your performance in the four areas below. For each component of the course grade, I assign a numerical score. I then calculate the course grade with the weighted average of the component scores. Scores of 90-100 correspond to A, 80-89 to B, etc., with pluses and minuses for the top and bottom third of each decile.
+I will base your grade for the course on your performance in the four areas below. 
+You will get a score for each component, and your total grade will be the sum of these scores. 
+The grade points will be translated to letter grades in the following way:
+93-100 A, 90-92.9 A-, 87-89.9 B+, 83-86.9 B, 80-82.9 B-, 77-79.9 C+, 73-76.9 C, 70-72.9 C-,
+67-69.9 D+, 63-66.9 D, 60-62.3 D-, 59.9 or less F.
 
-1. Class attendance and performance (30%: 10% participation + 10% leading discussion + 10% attendance). 
+## Class attendance and performance (25%: 5% attendance + 10% participation + 10% opening presentation). 
+
 Regarding participation, I am looking for you to show that you have read and critically evaluated the assigned readings and are engaged with our in-class discussions.
-Each student will 
+Before each week's class you will receive a one-page reading guideline.
+The guideline will provide a recommanded reading order and several questions to help you comprehend the materials.
 
-1. In-class quizzes (24%)
+In the first two week, you decide which week you are interested to present and report to the instructor. 
+Be aware: there is a limited number of student to present in each week.
+So, if your favoriate week is full, you have to choose some other week instead.
+Starting from Week 3, the first 20 minutes of each class will be students' show time.
+You will be required to work as a team with the ones who also sign in this week.
+You and your partners will need to prepare a 10-min presentation about one of the *Recommanded* readings of the given week.
+You will introduce us what the mateiral talks about and, more importantly, why it appears in this week and how it relates to the required readings.
+I will evaluate your performance according to the rubric attached at the end of this syllabus.
+The socre will be identical for every member of the team.
 
-1. Midterm examination (20%)
+## In-class quizzes (10%)
+You will get ten pop quizzes throughout the semester. 
+Each quiz includes 2-3 questions---all about the required readings of the given week.
+(Hint: some questions may come from the reading guide of the week.)
+At the end of the semester, the eight highest scores of the ten quizzes will be recorded to contribute to your final grade.
+Quizzes will be administered and completed either at the beginning or the end of class. 
+You cannot make up any missed or failed quizzes for any reason.
+Feel free to discuss the readings with your classmates prior to class. 
+*However, you cannot share your answers to the reading questions with your classmates.*
 
-1. Final examination (26%)
+## Critical Response paper (12%)
 
-# Readings
-## Required textbook:
+You are expected to submit response papers for the readings of three *weeks*. 
+You are free to pick any week you like before we start discussing the materials.
+(You are free to write a paper for the week your group lead the opening presentation. However, each group member need to write his/her response paper independently.)
+That is, the response paper about a given week's reading is due by the BEGINNING of the Monday class (i.e., 15:30) in that week (submit to ICON by this time). 
+Papers will be evaluate in a 1--100 scale following the rubric attached at the end.
+Late paper will be penalized 10 points for each day of being late. 
+Each paper should be 2-4 pages, double-spaced, 1 inch margins, and in 12 font size.
+
+In the paper, You needs to cover at three two reading materials of the week.
+Moreover, I would like to see 
+
+1. One and ONLY one paragraphs to summarize each material.
+1. Some discussion about what do you learn from these materials about the week topic.
+1. Your perspective about the argument in the materials---do you agree with the author? If yes, why are his/her arguments convincing for you? If not, what's your opinion of the topic?
+1. Cite other sources if appropriate (but not required).
+
+
+## Examination (20%)
+There is only one exam (viz. midterm) for this course.
+The exam is comprised of identification and short essay questions.
+The exam will be held on 2017-10-09 in the same class of the lecture.
+
+
+## Research Proposal (23%)
+You are expected to submit a research proposal at the end of the semester.
+It could be a proposal for your graduation thesis or for a funding application.
+The proposal should include at least six parts:
+
+1. A overview table (see template on ICON).
+1. An introduction of your research question and why it is important.
+1. A brief literature review about what scholars have done on this topic. You need to cite at least three articles published in academic journals of political science. Your citation should be in the style used by the American Political Science Association (see the guideline [here](http://www.apsanet.org/portals/54/Files/Publications/APSAStyleManual2006.pdf)).
+1. A section discussing your theory and hypotheses.
+1. A section discussing the data and method you plan to use to test your theory and why they are the best choice for your project.
+1. A section discussing the operational feasibility of your research design.
+
+The proposal is expected at least 10 pages (excluding the title and reference pages), double-spaced, 1 inch margins, and in 12 font size.
+The proposal will be evaluated according to the rubric attached.
+
+Here are some important dates relating to the research proposal:
+
+* You must get your research question approved by the instructor by 2017-10-01.
+* You must submit a brief about your theory by 2017-11-12.
+* The proposal is due by 2017-12-15. Late paper will be penalized 30 points for each day of being late. 
+
+### Extra credit
+You will get 5 extra credits if you use bibliography management softwares (Endnote, Jabref, Zotero, etc. see more information about these softwares [here](https://en.wikipedia.org/wiki/Comparison_of_reference_management_software).) and submit relevant bibliography files with your proposal.
+
+You can get another 5 credits by attending an academic workshop held by the Department of Political Science and send me a one-paragraph discussion about what the workshop is, how you feel about it, and a selfie at the workshop location.
+
+# Required textbook:
 ```{r, results = "asis"}
 bib[c("Babbie2012", "VanEvera1997")]
 ```
 
+
+# Schedule
 ## `r weekList[1]`
 ```{r, results = "asis"}
 bib[c("Dryzek2006", "Keohane2009", "King2006")]
@@ -268,13 +340,17 @@ Midterm Review
 ## `r weekList[8]`
 Midterm.
 
+## `r weekList[9]`
+
+## `r weekList[10]`
+
 @Babbie2012, pp.271-291.
 
 ```{r, results = "asis"}
 bib[c("Mintz2004", "Gerber2011")]
 ```
 
-## `r weekList[9]`
+## `r weekList[11]`
 
 ```{r, results = "asis"}
 bib[c("Gerring2004", "Levy2008", "McKeown2004")]
@@ -285,7 +361,8 @@ bib[c("Przeworski1970")]
 ```
 31-39, 74-87.
 
-## `r weekList[10]`
+
+## `r weekList[12]`
 
 @VanEvera1997, pp.49-88.
 
@@ -293,8 +370,7 @@ bib[c("Przeworski1970")]
 bib[c("Geddes1990", "Most1982", "Munck2004")]
 ```
 
-
-## `r weekList[11]`
+## `r weekList[13]`
 
 @Babbie2012, pp.295-321.
 
@@ -302,7 +378,9 @@ bib[c("Geddes1990", "Most1982", "Munck2004")]
 bib[c("Geertz1994", "Capoccia2007", "Bennett2008")]
 ```
 
-## `r weekList[12]`
+## `r weekList[14]`
+
+## `r weekList[15]`
 
 @Babbie2012, pp.415-438.
 
@@ -310,7 +388,7 @@ bib[c("Geertz1994", "Capoccia2007", "Bennett2008")]
 bib[c("Tang2016", "Hafner-Burton2006", "Mahoney2006")]
 ```
 
-## `r weekList[13]`
+## `r weekList[16]`
 
 @Babbie2012, pp.498-519.
 
@@ -321,11 +399,39 @@ bib[c("Tang2016", "Hafner-Burton2006", "Mahoney2006")]
 
 [MPSA 2017: Trump Scenes](https://www.youtube.com/watch?v=Z4ISkF2H4tk)
 
-## `r weekList[14]`
-
-## `r weekList[15]`
-
-## `r weekList[16]`
-
 ## `r weekList[17]`
 
+\clearpage
+
+# CLAS Teaching Policies & Resources — Syllabus Insert
+## Administrative Home
+The College of Liberal Arts and Sciences is the administrative home of this course and governs matters such as the add/drop deadlines, the second-grade-only option, and other related issues. Different colleges may have different policies. Questions may be addressed to 120 Schaeffer Hall, or see the CLAS Academic Policies Handbook at https://clas.uiowa.edu/students/handbook.
+
+## Electronic Communication
+University policy specifies that students are responsible for all official correspondences sent to their University of Iowa e-mail address (@uiowa.edu). Faculty and students should use this account for correspondences ([Operations Manual, III.15.2](https://opsmanual.uiowa.edu/human-resources/professional-ethics-and-academic-responsibility#15.2), k.11).
+
+## Accommodations for Disabilities
+The University of Iowa is committed to providing an educational experience that is accessible to all students. A student may request academic accommodations for a disability (which includes but is not limited to mental health, attention, learning, vision, and physical or health-related conditions). A student seeking academic accommodations should first register with Student Disability Services and then meet with the course instructor privately in the instructor's office to make particular arrangements. Reasonable accommodations are established through an interactive process between the student, instructor, and SDS. See https://sds.studentlife.uiowa.edu/ for information. 
+
+## Nondiscrimination in the Classroom
+The University of Iowa is committed to making the classroom a respectful and inclusive space for all people irrespective of their gender, sexual, racial, religious or other identities. Toward this goal, students are invited to optionally share their preferred names and pronouns with their instructors and classmates. The University of Iowa prohibits discrimination and harassment against individuals on the basis of race, class, gender, sexual orientation, national origin, and other identity categories set forth in the University’s Human Rights policy. For more information, contact the Office of Equal Opportunity and Diversity, diversity@uiowa.edu, or visit [diversity.uiowa.edu](https://diversity.uiowa.edu/office/equal-opportunity-and-diversity).
+
+## Academic Honesty
+All CLAS students or students taking classes offered by CLAS have, in essence, agreed to the [College's Code of Academic Honesty](https://clas.uiowa.edu/students/handbook/academic-fraud-honor-code): "I pledge to do my own academic work and to excel to the best of my abilities, upholding the [IOWA Challenge](https://newstudents.uiowa.edu/iowa-challenge). I promise not to lie about my academic work, to cheat, or to steal the words or ideas of others; nor will I help fellow students to violate the Code of Academic Honesty." Any student committing academic misconduct is reported to the College and placed on disciplinary probation or may be suspended or expelled ([CLAS Academic Policies Handbook](https://clas.uiowa.edu/students/handbook)).
+
+## CLAS Final Examination Policies
+The final examination schedule for each class is announced by the Registrar generally by the fifth week of classes. Final exams are offered only during the official final examination period. No exams of any kind are allowed during the last week of classes. All students should plan on being at the UI through the final examination period. Once the Registrar has announced the date, time, and location of each final exam, the complete schedule will be published on the Registrar's web site and will be shared with instructors and students. It is the student's responsibility to know the date, time, and place of a final exam.
+
+## Making a Suggestion or a Complaint
+Students with a suggestion or complaint should first visit with the instructor (and the course supervisor), and then with the departmental DEO. Complaints must be made within six months of the incident ([CLAS Academic Policies Handbook](https://clas.uiowa.edu/students/handbook)).
+
+## Understanding Sexual Harassment
+Sexual harassment subverts the mission of the University and threatens the well-being of students, faculty, and staff. All members of the UI community have a responsibility to uphold this mission and to contribute to a safe environment that enhances learning. Incidents of sexual harassment should be reported immediately. See the UI [Office of the Sexual Misconduct Response Coordinator](https://osmrc.uiowa.edu/) for assistance, definitions, and the full University policy.
+
+## Reacting Safely to Severe Weather
+In severe weather, class members should seek appropriate shelter immediately, leaving the classroom if necessary. The class will continue if possible when the event is over. For more information on Hawk Alert and the siren warning system, visit the [Department of Public Safety website](https://police.uiowa.edu/emergency-communications).
+
+
+\clearpage
+
+# Reference
