@@ -12,10 +12,10 @@ author: Yue Hu
 date: "Fall 2017"
 email: "yue-hu-1@uiowa.edu"
 #web: "svmiller.com/teaching"
-officehours: "12:30 -- 15:30 M"
+officehours: "12:30 -- 15:30 M & by Appointment"
 office: "313 Shaeffer Hall"
 classroom: "105 EPB"
-classhours: "15:30 -- 16:45 MW"
+classhours: "15:30 -- 16:45 M/W"
 fontsize: 11pt
 biblio-style: ajps
 bibliography: readings.bib
@@ -169,9 +169,18 @@ dates$content[is.na(dates$content)] <- c("Being a Political Scientist", "Being S
 weekList <- paste0("Week ", dates$weekNum, " (", dates$Mon, "~", dates$Sun, "): ", dates$content)
 ```
 # Overview
-Why do candidates win elections? Why do states get involved in international crises and wars? Why do states cooperate on transnational problems like climate change? What explains differences in how countries treat their citizens? What explains the choices of violent non-state actors like terrorists? There are just some of the questions that political scientists study. The goal of this course is for you to understand how political scientists study these questions. This course will introduce students to political science research and the many different ways that research is undertaken.
+How do candidates win elections? 
+Why do countries get involved in international crises and wars? 
+What makes a country more powerful than the others?
+What explains the choices of violent non-state actors like terrorists? 
+There are just some of the questions that political scientists study. 
+The goal of this course is show you how to research these questions as a scholar in political science.
+This course will introduce students to political science research and various ways that social scientific research is undertaken.
 
-This class will help students understand how social scientists study political phenomena. You will learn how to develop causal explanations about politics and society, develop testable research hypotheses, and design different approaches to empirically studying these theories. Emphasis will be on an active hands-on learning environment (TILE classroom). You will also be able to more fully understand research that is produced in Political Science.
+This class will help students comprehend the core elements to build a political science research, such as concept, theory, hypothesis, and evidence. 
+You will also learn how to build new theories, develop testable causal inferences, and design different approaches to examine your theories empirically. 
+Emphasis will be on an active hands-on learning environment and fully interaction between the instructor and students. 
+Students can expect to understand the research produced in Political Science and even other social scientific disciplines more comprehensively.
 
 # Requirements
 I will base your grade for the course on your performance in the four areas below. For each component of the course grade, I assign a numerical score. I then calculate the course grade with the weighted average of the component scores. Scores of 90-100 correspond to A, 80-89 to B, etc., with pluses and minuses for the top and bottom third of each decile.
