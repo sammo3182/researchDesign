@@ -81,13 +81,14 @@
 
 @Article{Sartori1970,
   author    = {Sartori, Giovanni},
-  title     = {Concept misformation in comparative politics},
-  journal   = {American political science review},
+  title     = {Concept Misformation in Comparative Politics},
+  journal   = {American Political Science Review},
   year      = {1970},
   volume    = {64},
   number    = {04},
   pages     = {1033--1053},
   publisher = {Cambridge Univ Press},
+  timestamp = {2017-06-17},
 }
 
 @Article{Collier1993,
@@ -264,10 +265,8 @@
   volume    = {59},
   number    = {03},
   pages     = {341--369},
-  date      = {2017-06-14},
   publisher = {Cambridge Univ Press},
   timestamp = {2014.06.19},
-  urldate   = {2017-06-14},
 }
 
 @InCollection{Bennett2008,
@@ -441,6 +440,92 @@
   editor    = {David Collier and Henry E. Brady},
   pages     = {105--121},
   timestamp = {2017-06-15},
+}
+
+@Article{Schedler2012,
+  author    = {Schedler, Andreas},
+  title     = {Judgment and Measurement in Political Science},
+  journal   = {Perspectives on Politics},
+  year      = {2012},
+  volume    = {10},
+  number    = {1},
+  pages     = {21--36},
+  owner     = {Yue Hu},
+  timestamp = {2014.06.19},
+}
+
+@Article{Treier2008,
+  author    = {Treier, Shawn and Jackman, Simon},
+  title     = {Democracy as a Latent Variable},
+  journal   = {American Journal of Political Science},
+  year      = {2008},
+  volume    = {52},
+  number    = {1},
+  pages     = {201--217},
+  groups    = {Method problem in IR},
+  owner     = {Sammo},
+  publisher = {Wiley Online Library},
+  timestamp = {2015.04.10},
+}
+
+@Article{Gerring2005,
+  author    = {Gerring, John},
+  title     = {Causation: A Unified Framework for the Social Sciences},
+  journal   = {Journal of Theoretical Politics},
+  year      = {2005},
+  volume    = {17},
+  number    = {2},
+  pages     = {163--198},
+  publisher = {Sage Publications Sage CA: Thousand Oaks, CA},
+}
+
+@Article{Fearon1991,
+  author    = {Fearon, James D.},
+  title     = {Counterfactuals and Hypothesis Testing In Political Science},
+  journal   = {World Politics},
+  year      = {1991},
+  volume    = {43},
+  number    = {2},
+  pages     = {169--195},
+  timestamp = {2014.06.08},
+}
+
+@Article{Bernstein2000,
+  author    = {Bernstein, Steven and Lebow, Richard Ned and Stein, Janice Gross and Weber, Steven},
+  title     = {God Gave Physics the Easy Problems: Adapting Social Science to an Unpredictable World},
+  journal   = {European Journal of International Relations},
+  year      = {2000},
+  volume    = {6},
+  number    = {1},
+  pages     = {43--76},
+  publisher = {Sage Publications},
+  timestamp = {2014.06.19},
+}
+
+@Article{Johnson2002,
+  author    = {Johnson, James},
+  title     = {How Conceptual Problems Migrate: Rational Choice, Interpretation, and the Hazards of Pluralism},
+  journal   = {Annual Review of Political Science},
+  year      = {2002},
+  volume    = {5},
+  number    = {1},
+  pages     = {223--48},
+  date      = {2017-06-17},
+  publisher = {Annual Reviews 4139 El Camino Way, PO Box 10139, Palo Alto, CA 94303-0139, USA},
+  timestamp = {2014.06.19},
+  urldate   = {2017-06-17},
+}
+
+@Article{bennett2007case,
+  author    = {Bennett, Andrew and Elman, Colin},
+  title     = {Case Study Methods in the International Relations Subfield},
+  journal   = {Comparative Political Studies},
+  year      = {2007},
+  volume    = {40},
+  number    = {2},
+  pages     = {170--195},
+  publisher = {Sage Publications Sage CA: Thousand Oaks, CA},
+  timestamp = {2017-06-17},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

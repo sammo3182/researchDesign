@@ -141,33 +141,7 @@ BibOptions(check.entries = FALSE,
            sorting = "ydnt")
 ```
 
-```{r calendar, include=FALSE}
-# Opening Date: 2017-08-21 ####
-start <- ymd("2017-08-21")
-# Final Week: 2017-12-11 ####
-end <- ymd("2017-12-17")
 
-dates <- data.frame(day = seq(from = start, to = end, by = "days")) %>%
-  mutate(day = ymd(day), weekDay = wday(day), weekNum = week(day)) %>% # get the relative week number
-  mutate(weekNum = weekNum - (min(weekNum) - 1)) %>%
-    filter(weekDay %in% c(2,1)) %>% # only keep Monday and Friday
-      spread(key = weekDay, value = day) %>% # long to wide
-        rename(Sun = `1`, Mon = `2`) %>%
-          mutate(Sun = lead(Sun)) # get the Sundays to the correct rows
-      
-dates <- dates[c("weekNum", "Mon", "Sun")] %>% # reorder colums
-  na.omit
-
-dates$content <- NA
-## Holidays
-dates$content[dates$Mon == ymd("2017-09-04")] <- "What's A Good Question (Labor Day)"
-dates$content[dates$Mon == ymd("2017-11-20")] <- "Thanks Giving Week"
-dates$content[dates$Mon == ymd("2017-12-11")] <- "Final Week"
-
-dates$content[is.na(dates$content)] <- c("Being a Political Scientist", "Being Scientific", "How to Find Research Question", "Concepts", "Measurement", "Measurement in Practice", "What's Theory?", "Theory and Causal Inference", "Experimental Logic and Design", "Principles of Case Study", "Case Study in Practice", "A Glance of Other Small-N Methods", "Understanding Large-N Analyses", "Professionalization")
-
-weekList <- paste0("Week ", dates$weekNum, " (", dates$Mon, "~", dates$Sun, "): ", dates$content)
-```
 # Overview
 How do candidates win elections? 
 Why do countries get involved in international crises and wars? 
@@ -191,7 +165,7 @@ The grade points will be translated to letter grades in the following way:
 
 ## Class attendance and performance (25%: 5% attendance + 10% participation + 10% opening presentation). 
 
-Regarding participation, I am looking for you to show that you have read and critically evaluated the assigned readings and are engaged with our in-class discussions.
+Regarding participation, I am looking for you to show that you have read and critically evaluated the assigned readings (all available in ICON) and are engaged with our in-class discussions.
 Before each week's class you will receive a one-page reading guideline.
 The guideline will provide a recommanded reading order and several questions to help you comprehend the materials.
 
@@ -266,6 +240,35 @@ You will get 5 extra credits if you use bibliography management softwares (Endno
 
 You can get another 5 credits by attending an academic workshop held by the Department of Political Science and send me a one-paragraph discussion about what the workshop is, how you feel about it, and a selfie at the workshop location.
 
+```{r calendar, include=FALSE}
+# Opening Date: 2017-08-21 ####
+start <- ymd("2017-08-21")
+# Final Week: 2017-12-11 ####
+end <- ymd("2017-12-17")
+
+dates <- data.frame(day = seq(from = start, to = end, by = "days")) %>%
+  mutate(day = ymd(day), weekDay = wday(day), weekNum = week(day)) %>% # get the relative week number
+  mutate(weekNum = weekNum - (min(weekNum) - 1)) %>%
+    filter(weekDay %in% c(2,1)) %>% # only keep Monday and Friday
+      spread(key = weekDay, value = day) %>% # long to wide
+        rename(Sun = `1`, Mon = `2`) %>%
+          mutate(Sun = lead(Sun)) # get the Sundays to the correct rows
+      
+dates <- dates[c("weekNum", "Mon", "Sun")] %>% # reorder colums
+  na.omit
+
+dates$content <- NA
+## Holidays
+dates$content[dates$Mon == ymd("2017-09-04")] <- "What's A Good Question (Labor Day)"
+dates$content[dates$Mon == ymd("2017-11-20")] <- "Thanks Giving Week"
+dates$content[dates$Mon == ymd("2017-12-11")] <- "Final Week"
+
+dates$content[is.na(dates$content)] <- c("Being a Political Scientist", "Being Scientific", "How to Find Research Question", "Concepts", "Principles of Measurement", "Measurement in Practice", "What's Theory?", "Theory and Causal Inference", "Experimental Logic and Design", "Principles of Case Study", "Case Study in Practice", "A Glance of Other Small-N Methods", "Understanding Large-N Analyses", "Professionalization")
+
+weekList <- paste0("Week ", dates$weekNum, " (", dates$Mon, "~", dates$Sun, "): ", dates$content)
+```
+
+
 # Required textbook:
 ```{r, results = "asis"}
 bib[c("Babbie2012", "VanEvera1997")]
@@ -282,14 +285,7 @@ bib[c("Dryzek2006", "Keohane2009", "King2006")]
 @Babbie2012, pp.1-27, 112-120.
 
 ```{r, results = "asis"}
-bib[c("Almond1988", "King1995")]
-```
-
-
-*Recommended:*
-
-```{r, results = "asis"}
-bib[c("Lakatos1970")]
+bib[c("Almond1988", "King1995"， "Lakatos1970")]
 ```
 
 ## `r weekList[3]`
@@ -318,17 +314,11 @@ bib[c("Ragin2010")]
 bib[c("Sartori1970", "Collier1993", "Collier1997", "Barnett2005")]
 ```
 
-*Recommended:*
-
-```{r, results = "asis"}
-bib[c("Bachrach1962")]
-```
-
 ## `r weekList[6]`
-@Babbie2012, pp.177-194, 197-223; 57-83.
+@Babbie2012, pp.177-194, 197-223.
 
 ```{r, results = "asis"}
-bib[c("Adcock2001","Seawright2014", "Gerring2010")]
+bib[c("Adcock2001","Seawright2014", "Schedler2012", "Treier2008")]
 ```
 
 
@@ -338,16 +328,28 @@ bib[c("Adcock2001","Seawright2014", "Gerring2010")]
 Midterm Review
 
 ## `r weekList[8]`
+
 Midterm.
 
+@Babbie2012, pp.57-83.
+
+```{r, results = "asis"}
+bib[c("Gerring2005", "Przeworski1970")]
+```
+Chapter 1.
+
 ## `r weekList[9]`
+
+```{r, results = "asis"}
+bib[c("Gerring2010", "Fearon1991", "Bernstein2000", "Johnson2002")]
+```
 
 ## `r weekList[10]`
 
 @Babbie2012, pp.271-291.
 
 ```{r, results = "asis"}
-bib[c("Mintz2004", "Gerber2011")]
+bib[c("Mintz2004", "Gerber2011", "Mintz2006")]
 ```
 
 ## `r weekList[11]`
@@ -367,7 +369,7 @@ bib[c("Przeworski1970")]
 @VanEvera1997, pp.49-88.
 
 ```{r, results = "asis"}
-bib[c("Geddes1990", "Most1982", "Munck2004")]
+bib[c("Geddes1990", "Bennett2007", "Munck2004")]
 ```
 
 ## `r weekList[13]`
@@ -395,9 +397,9 @@ bib[c("Tang2016", "Hafner-Burton2006", "Mahoney2006")]
 @VanEvera1997, pp.99-111.
 
 
-[APSA 2014: Policy Bargaining and International Conflict](https://www.youtube.com/watch?v=bwNBXuz2eRg)
+[Presentation at APSA 2014: Policy Bargaining and International Conflict](https://www.youtube.com/watch?v=bwNBXuz2eRg)
 
-[MPSA 2017: Trump Scenes](https://www.youtube.com/watch?v=Z4ISkF2H4tk)
+[Presentation at MPSA 2017: Trump Scenes](https://www.youtube.com/watch?v=Z4ISkF2H4tk)
 
 ## `r weekList[17]`
 
