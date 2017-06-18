@@ -147,23 +147,6 @@
   publisher = {Cambridge Univ Press},
 }
 
-@Misc{Weber1968,
-  author    = {Weber, Max},
-  title     = {Politics as a Vocation},
-  year      = {1968},
-  publisher = {Fortress Press Philadelphia},
-  timestamp = {2017-06-15},
-}
-
-@InCollection{Weber1946,
-  author    = {Weber, Max},
-  title     = {Science as a Vocation},
-  booktitle = {Science and the Quest for Reality},
-  publisher = {Springer},
-  year      = {1946},
-  pages     = {382--394},
-}
-
 @Article{Mintz2006,
   author    = {Mintz, Alex and Redd, Steven B and Vedlitz, Arnold},
   title     = {Can We Generalize from Student Experiments to the Real World in Political Science, Military Affairs, and International Relations?},
@@ -367,7 +350,7 @@
 @Article{McKeown1999,
   author    = {McKeown, Timothy J},
   title     = {Case Studies and the Statistical Worldview Review of King, Keohane, and Verba's Designing Social Inquiry Scientific Inference in Qualitative Research},
-  journal   = {International organization},
+  journal   = {International Organization},
   year      = {1999},
   volume    = {53},
   number    = {01},
