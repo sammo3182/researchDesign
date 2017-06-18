@@ -151,38 +151,37 @@ There are just some of the questions that political scientists study.
 The goal of this course is show you how to research these questions as a scholar in political science.
 This course will introduce students to political science research and various ways that social scientific research is undertaken.
 
-This class will help students comprehend the core elements to build a political science research, such as concept, theory, hypothesis, and evidence. 
-You will also learn how to build new theories, develop testable causal inferences, and design different approaches to examine your theories empirically. 
-Emphasis will be on an active hands-on learning environment and fully interaction between the instructor and students. 
-Students can expect to understand the research produced in Political Science and even other social scientific disciplines more comprehensively.
+This class will introduce the core elements of a political science research, such as concept, theory, hypothesis, and evidence. 
+You will also learn how to build a new theory, develop testable causal inferences, and design different approaches to test your theories empirically. 
+Emphasis will be on an active hands-on learning environment and fully interactions between the instructor and students. 
+Students can expect to comprehend the research produced in Political Science and learn to conduct their own..
 
 # Requirements
 I will base your grade for the course on your performance in the four areas below. 
-You will get a score for each component, and your total grade will be the sum of these scores. 
+You will get a score for each component, and your total grade will be the sum of them. 
 The grade points will be translated to letter grades in the following way:
 93-100 A, 90-92.9 A-, 87-89.9 B+, 83-86.9 B, 80-82.9 B-, 77-79.9 C+, 73-76.9 C, 70-72.9 C-,
 67-69.9 D+, 63-66.9 D, 60-62.3 D-, 59.9 or less F.
 
-## Class attendance and performance (25%: 5% attendance + 10% participation + 10% opening presentation). 
+## Class Performance (10% attendance + 10% participation + 5% presentation). 
 
-Regarding participation, I am looking for you to show that you have read and critically evaluated the assigned readings (all available in ICON) and are engaged with our in-class discussions.
+Regarding participation, I am looking for you to show that you have fully read and critically evaluated the assigned readings (all available in ICON) and are actively engaged with our in-class discussions.
 Before each week's class you will receive a one-page reading guideline.
-The guideline will provide a recommanded reading order and several questions to help you comprehend the materials.
+It will give you a hint how to read the week's readings and which part you should pay special attention to. 
+The guideline will always include a recommanded reading order and several questions to help you comprehend the materials.
 
-In the first two week, you decide which week you are interested to present and report to the instructor. 
-Be aware: there is a limited number of student to present in each week.
-So, if your favoriate week is full, you have to choose some other week instead.
-Starting from Week 3, the first 20 minutes of each class will be students' show time.
-You will be required to work as a team with the ones who also sign in this week.
-You and your partners will need to prepare a 10-min presentation about one of the *Recommanded* readings of the given week.
-You will introduce us what the mateiral talks about and, more importantly, why it appears in this week and how it relates to the required readings.
-I will evaluate your performance according to the rubric attached at the end of this syllabus.
-The socre will be identical for every member of the team.
+By the second week, we will decide a presentatoin schedule together. 
+You will sign in a schedule sheet by picking the topic and articles you are interested.
+Starting from the third Monday, every first 20 minutes will be your show time.
+The student who signed for that day will make a 10-min presentation about the reading.
+The presentation should include three parts: a brief summary about what the article is about and its relations with other materials, which point in the article impresses you the most and why, and at least one question you really want to know but the article does not spell it out. 
+I will evaluate your performance in each---especially the latter two---aspects (see more details in the attached rubric).
+Please cherish this chance to practice your presentation capability, and there is no chance for make-up presentation if you miss it. 
 
 ## In-class quizzes (10%)
 You will get ten pop quizzes throughout the semester. 
-Each quiz includes 2-3 questions---all about the required readings of the given week.
-(Hint: some questions may come from the reading guide of the week.)
+Each quiz includes 2-3 questions about the required readings we are going to discuss in the class.
+(Hint: some questions may come from the reading guide.)
 At the end of the semester, the eight highest scores of the ten quizzes will be recorded to contribute to your final grade.
 Quizzes will be administered and completed either at the beginning or the end of class. 
 You cannot make up any missed or failed quizzes for any reason.
@@ -402,6 +401,16 @@ bib[c("Tang2016", "Hafner-Burton2006", "Mahoney2006")]
 [Presentation at MPSA 2017: Trump Scenes](https://www.youtube.com/watch?v=Z4ISkF2H4tk)
 
 ## `r weekList[17]`
+
+# Rubric for In-Class Presentation
+
+| Item                          | Criteron                                                                                                                                         | Grade |
+|-------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|-------|
+| Duration                      | > 8 mins 1; 5-8 mins .5; < 5 min 0.                                                                                                               | X     |
+| Summary of the material       | clearly described the logic and main arguments 1; covered the main arguments 0.5; failed to capture the main arguments 0.                         | X     |
+| Relation with other materials | clearly explained the relation with the week topic and other materials 1; mention another material 0.5; only talked about the assigned reading 0. | X     |
+| Impressive point              | clearly described the impressive point and explained why 1; mentioned the impressive point 0.5; not discuss the point at all 0.                   | X     |
+| Critical reading              | clearly described the question and why it's important 1; posted a question 0.5; not raise any question 0.                                         | X     |                                                   |       |
 
 \clearpage
 
