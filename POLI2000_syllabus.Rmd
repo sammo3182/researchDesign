@@ -190,21 +190,23 @@ Feel free to discuss the readings with your classmates prior to class.
 
 ## Critical Response paper (12%)
 
-You are expected to submit response papers for the readings of three *weeks*. 
-You are free to pick any week you like before we start discussing the materials.
-(You are free to write a paper for the week your group lead the opening presentation. However, each group member need to write his/her response paper independently.)
-That is, the response paper about a given week's reading is due by the BEGINNING of the Monday class (i.e., 15:30) in that week (submit to ICON by this time). 
-Papers will be evaluate in a 1--100 scale following the rubric attached at the end.
-Late paper will be penalized 10 points for each day of being late. 
-Each paper should be 2-4 pages, double-spaced, 1 inch margins, and in 12 font size.
-
-In the paper, You needs to cover at three two reading materials of the week.
+You are expected to submit two response papers for weekly readings. 
+You are free to pick any week's readings you like as long as we haven't discussed them yet.
+(You are free to write one response paper for your presentation week.)
+In the paper, You need to review at least three reading materials of the week.
 Moreover, I would like to see 
 
 1. One and ONLY one paragraphs to summarize each material.
-1. Some discussion about what do you learn from these materials about the week topic.
-1. Your perspective about the argument in the materials---do you agree with the author? If yes, why are his/her arguments convincing for you? If not, what's your opinion of the topic?
+1. Some discussion about what do you learn from these materials relating to the week topic.
+1. Your perspective about the argument in the materials---do you agree with the author? If yes, why are his/her arguments convincing for you? If not, why?
 1. Cite other sources if appropriate (but not required).
+
+
+The paper is due by the BEGINNING of the Monday class (i.e., 15:30) of the week the materils are going to discussed (submit to ICON). 
+Late paper will be penalized 10 points for each day of being late. 
+Each paper should be 2-6 pages, double-spaced, 1 inch margins, and in 12 font size.
+Papers will be evaluate based on the above points (see more details in the attached rubric).
+
 
 
 ## Examination (20%)
@@ -215,29 +217,33 @@ The exam will be held on 2017-10-09 in the same class of the lecture.
 
 ## Research Proposal (23%)
 You are expected to submit a research proposal at the end of the semester.
-It could be a proposal for your graduation thesis or for a funding application.
+It could be a proposal for your degree thesis or for a funding application.
 The proposal should include at least six parts:
 
-1. A overview table (see template on ICON).
+1. A cover table (see template on ICON).
 1. An introduction of your research question and why it is important.
-1. A brief literature review about what scholars have done on this topic. You need to cite at least three articles published in academic journals of political science. Your citation should be in the style used by the American Political Science Association (see the guideline [here](http://www.apsanet.org/portals/54/Files/Publications/APSAStyleManual2006.pdf)).
+1. A brief literature review about what scholars have done on this topic. You need to cite at least three articles published in academic journals of political science in this part and discuss how they relates to your topic. Your citation should be in the style used by the American Political Science Association (see the guideline [here](http://www.apsanet.org/portals/54/Files/Publications/APSAStyleManual2006.pdf)).
 1. A section discussing your theory and hypotheses.
 1. A section discussing the data and method you plan to use to test your theory and why they are the best choice for your project.
 1. A section discussing the operational feasibility of your research design.
 
-The proposal is expected at least 10 pages (excluding the title and reference pages), double-spaced, 1 inch margins, and in 12 font size.
-The proposal will be evaluated according to the rubric attached.
+The proposal is expected  5-10 pages (excluding the title and reference pages) in double-spaced, 1 inch margins, and 12 font size.
+The proposal will be evaluated based on each of the above parts and the overall writing  (see more details in the attached rubric).
 
 Here are some important dates relating to the research proposal:
 
-* You must get your research question approved by the instructor by 2017-10-01.
-* You must submit a brief about your theory by 2017-11-12.
-* The proposal is due by 2017-12-15. Late paper will be penalized 30 points for each day of being late. 
+* You must get your research question approved by the instructor by 2017-10-09 (submitted in ICON).
+* You must submit a brief about your theory by 2017-11-12 (submitted in ICON).
+* The proposal is due by 2017-12-11. Late paper will be penalized 30 points for each day of being late (submitted in ICON). 
 
 ### Extra credit
-You will get 5 extra credits if you use bibliography management softwares (Endnote, Jabref, Zotero, etc. see more information about these softwares [here](https://en.wikipedia.org/wiki/Comparison_of_reference_management_software).) and submit relevant bibliography files with your proposal.
+You can get 2 extra credits if you use bibliography management softwares (Endnote, Jabref, Zotero, etc. see more information about these softwares [here](https://en.wikipedia.org/wiki/Comparison_of_reference_management_software).) and submit relevant bibliography files with your proposal.
 
-You can get another 5 credits by attending an academic workshop held by the Department of Political Science and send me a one-paragraph discussion about what the workshop is, how you feel about it, and a selfie at the workshop location.
+You can get another 2 credits if you can gain the Certifications in Human Subjects Protections (CITI) in "Group 2 - Social & Behavioral - IRB-02". See more information about it [here](https://hso.research.uiowa.edu/certifications-human-subjects-protections-citi).
+
+You can get a third extra credits by attending an academic workshop held by the Department of Political Science and send me a selfie at the workshop scence.
+
+
 
 ```{r calendar, include=FALSE}
 # Opening Date: 2017-08-21 ####
@@ -248,13 +254,9 @@ end <- ymd("2017-12-17")
 dates <- data.frame(day = seq(from = start, to = end, by = "days")) %>%
   mutate(day = ymd(day), weekDay = wday(day), weekNum = week(day)) %>% # get the relative week number
   mutate(weekNum = weekNum - (min(weekNum) - 1)) %>%
-    filter(weekDay %in% c(2,1)) %>% # only keep Monday and Friday
+    filter(weekDay %in% c(2,4)) %>% # only keep Monday and Wednesday
       spread(key = weekDay, value = day) %>% # long to wide
-        rename(Sun = `1`, Mon = `2`) %>%
-          mutate(Sun = lead(Sun)) # get the Sundays to the correct rows
-      
-dates <- dates[c("weekNum", "Mon", "Sun")] %>% # reorder colums
-  na.omit
+        rename(Mon = `2`, Wed = `4`)
 
 dates$content <- NA
 ## Holidays
@@ -264,7 +266,7 @@ dates$content[dates$Mon == ymd("2017-12-11")] <- "Final Week"
 
 dates$content[is.na(dates$content)] <- c("Being a Political Scientist", "Being Scientific", "How to Find Research Question", "Concepts", "Principles of Measurement", "Measurement in Practice", "What's Theory?", "Theory and Causal Inference", "Experimental Logic and Design", "Principles of Case Study", "Case Study in Practice", "A Glance of Other Small-N Methods", "Understanding Large-N Analyses", "Professionalization")
 
-weekList <- paste0("Week ", dates$weekNum, " (", dates$Mon, "~", dates$Sun, "): ", dates$content)
+weekList <- paste0("Week ", dates$weekNum, " (", dates$Mon, "/", dates$Wed, "): ", dates$content)
 ```
 
 
@@ -327,6 +329,7 @@ bib[c("Adcock2001","Seawright2014", "Schedler2012", "Treier2008")]
 Midterm Review
 
 ## `r weekList[8]`
+Due for the research 
 
 Midterm.
 
@@ -402,6 +405,8 @@ bib[c("Tang2016", "Hafner-Burton2006", "Mahoney2006")]
 
 ## `r weekList[17]`
 
+\clearpage
+
 # Rubric for In-Class Presentation
 
 | Item                          | Criteron                                                                                                                                         | Grade |
@@ -411,6 +416,34 @@ bib[c("Tang2016", "Hafner-Burton2006", "Mahoney2006")]
 | Relation with other materials | clearly explained the relation with the week topic and other materials 1; mention another material 0.5; only talked about the assigned reading 0. | X     |
 | Impressive point              | clearly described the impressive point and explained why 1; mentioned the impressive point 0.5; not discuss the point at all 0.                   | X     |
 | Critical reading              | clearly described the question and why it's important 1; posted a question 0.5; not raise any question 0.                                         | X     |                                                   |       |
+
+# Rubric for Response Paper
+
+| Item                    | Criteron                                                                                                                      | Grade |
+|-------------------------|-------------------------------------------------------------------------------------------------------------------------------|-------|
+| Summary of the material | clearly described the logic and main arguments 2; covered the main arguments 1; failed to capture the main arguments 0        | X     |
+| Learnt Point            | clearly explained the learnt points and their importance 2; clearly describe the points learnt 1; no learnt point mentioned 0 | X     |
+| Critical thinking       | clearly opinions and why 2; have a perspective of the reading 1; no perspective at all 0                                      | X     |
+
+
+\clearpage
+
+# Rubric for the Research Proposal
+
+| Item                            | Criteron                                                                                                                                                                                                            | Grade |
+|---------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------|
+| Cover table (5%)                | Is the table fully filled? Is every element defined?                                                                                                                                                                | X     |
+| Research Question Approval (5%) | Was the research proposal approved by 2017-10-09?                                                                                                                                                                   | X     |
+| Brief of Theory (5%)            | Was the brief of the theory submitted by 2017-11-12?                                                                                                                                                                | X     |
+| Introduction (10%)              | Is the research question well stated? Does the intro clearly explain the importance of the study? Does the intro clearly explain the potential contribution of this project?                                        | X     |
+| Literature Review (10%)         | Does the LR address more than three existing studies? Does the LR clearly review the findings of the existing literature? Does the LR clearly state how the existing literature serve as the basis of this study?   | X     |
+| Theory (15%)                    | Is the causal logic clearly stated? Are the concepts in the theory well defined? Is the causal chain complete and consistent? Are the causal inferences (hypotheses) clearly stated and consistent with the theory? | X     |
+| Research Design (20%)           | Does the author clearly describe the strategy to test the hypotheses? Does the author well defend his/her method choice?                                                                                            | X     |
+| Data (10%)                      | Is there a complete plan of data collection? How do the data fit the research design? Validities?                                                                                                                   | X     |
+| Feasibility (5%)                | Is the research design a feaible one for a college student? What's the potential difficulties the researcher may encounter?                                                                                         | X     |
+| Citation (5%)                   | Are the citations well presented? Is there a full bibliography attached? Are the citation and bibliography styles consistent with the APSR requirement?                                                             | X     |
+| Overall writing (10%)           | Does the language well edited? Do the paragraphs well framed and organized? Does the layout match the requirement?                                                                                                  | X     |
+
 
 \clearpage
 
