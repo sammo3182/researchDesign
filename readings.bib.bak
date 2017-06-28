@@ -512,6 +512,20 @@
   timestamp = {2017-06-17},
 }
 
+@Article{King2013,
+  author    = {King, Gary and Pan, Jennifer and Roberts, Margaret E},
+  title     = {How Censorship in China Allows Government Criticism but Silences Collective Expression},
+  journal   = {American Political Science Review},
+  year      = {2013},
+  volume    = {107},
+  number    = {02},
+  pages     = {326--343},
+  groups    = {Democracy and Authoritarianism, Democracy and Authoritarianism; text analysis},
+  owner     = {Yue Hu},
+  publisher = {Cambridge Univ Press},
+  timestamp = {2014.06.19},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: fileDirectory:D:\\MEGAsync\\Dropbox\\01_Instruction\\Employment\\researchDesign;}

@@ -203,8 +203,39 @@ It will give you a hint how to read the week's readings and which part you shoul
 The guideline will always include a recommended reading order and several questions to help you comprehend the materials.
 I will provide a “tentative” participation grade prior to the Fall Break so you have an idea of whether you need to improve your level of participation before final grades are given.
 
+```{r signUp, eval = FALSE}
+sheet <- data.frame(day = seq(from = start, to = end, by = "days")) %>%
+  mutate(day = ymd(day), weekDay = wday(day)) %>% # get the relative week number
+    filter(weekDay %in% c(2,4)) 
+
+sheet <- sheet[-c(1, 2, 3, 4, 5, 27, 28, 33, 34),]
+
+sheet <- select(sheet, -weekDay) %>%
+  mutate(content = c("Van Evera 1997; Geddes 2010", 
+  "Babbie 2012; Ragin&Amoroso 2010", "McKeown 1999; Perez&Tavits 2017",
+  "Babbie 2012; Collier&Mahon 1993", "Collier&Levitsky 1997; Barnett&Duvall 2005",
+  "Babbie 2012; Schedler 2012", "Adcock&Collier2001; Seawright&Collier 2014",
+  "Van Evera 1997", "MIDTERM REVIEW", 
+  "MIDTERM EXAM", "Przeworski&Teune 1970; Babbie 2012",
+  "Bernstein et al. 2000; Gerring 2005", "Fearon 1991; Gerring 2010",
+  "Babbie 2012; Mintz 2004", "Mintz et. al. 2006; Gerber&Green 2011",
+  "Gerring 2004; McKeown 2004", "Przeworski&Teune 1970; Levy 2008",
+  "Geddes 2010; Bennett&Elman 2007", "Van Evera 1997",
+  "Babbie 2012; Munck 2004", "Capoccia&Kelemen 2007;Bennett 2008",
+  "Babbie 2012; Tang et al. 2016", "Hafner-Burton&Montgomery 2006; King et al. 2013",
+  "Babbie 2012; Van Evera 1997", "Presentation Videos"), 
+  pre1 = NA, pre2 = NA)
+
+sheet[9, ]$pre1 <- sheet[9, ]$pre2 <- sheet[10, ]$pre1 <- sheet[10, ]$pre2 <- "N/A"
+
+names(sheet) <- c("Date", "Material", "Presentation 1", "Presentation 2")
+
+data.table::fwrite(sheet, file = "signUp.csv")
+```
+
+
 By the second week, we will decide a presentation schedule together. 
-You will sign in a schedule sheet by picking the topic and articles you are interested.
+You will sign in a [schedule sheet](https://docs.google.com/spreadsheets/d/1s7WX9B5ePwlLhyOlqV_XBHU6lFmbHsyClbAOLV5Jaek/edit?usp=sharing) by picking the topic and articles you are interested.
 Starting from the third Monday, every first 20 minutes will be your show time.
 The student who signed for that day will make a 10-min presentation about the reading.
 The presentation should include three parts: a brief summarising what the article is about and its relations with other materials, which point in the article impresses you the most and why, and at least one question you really want to know but the article does not spell it out. 
@@ -260,7 +291,7 @@ The proposal should include at least six parts:
 1. A section discussing the data and method you plan to use to test your theory and why they are the best choice for your project.
 1. A section discussing the operational feasibility of your research design.
 
-The proposal is expected  5-10 pages (excluding the title and reference pages) in double-spaced, 1-inch margins, and 12 font size.
+The proposal is expected  1500 - 2500 words (excluding the title and reference pages) in double-spaced, 1-inch margins, and 12 font size.
 The proposal will be evaluated based on each of the above parts and the overall writing  (see more details in the attached rubric).
 
 Here are some important dates relating to the research proposal:
@@ -296,7 +327,7 @@ bib[c("Dryzek2006", "Keohane2009", "King2006")]
 @Babbie2012, pp.1-27, 112-120.
 
 ```{r, results = "asis"}
-bib[c("Almond1988", "King1995"， "Lakatos1970")]
+bib[c("Almond1988", "King1995")]
 ```
 
 ## `r weekList[3]`
