@@ -322,14 +322,14 @@ bib[c("Ragin2010")]
 @Babbie2012, pp.165-177.
 
 ```{r, results = "asis"}
-bib[c("Sartori1970", "Collier1993", "Collier1997", "Barnett2005")]
+bib[c("Collier1993", "Collier1997", "Barnett2005")]
 ```
 
 ## `r weekList[6]`
 @Babbie2012, pp.177-194, 197-223.
 
 ```{r, results = "asis"}
-bib[c("Adcock2001","Seawright2014", "Schedler2012", "Treier2008")]
+bib[c("Adcock2001","Seawright2014", "Schedler2012")]
 ```
 
 
@@ -337,6 +337,7 @@ bib[c("Adcock2001","Seawright2014", "Schedler2012", "Treier2008")]
 *Due for the research question approval: `r dates$Wed[7]`.*
 
 @VanEvera1997, pp.7-50.
+
 Midterm Review
 
 ## `r weekList[8]`
@@ -345,14 +346,14 @@ Midterm.
 @Babbie2012, pp.57-83.
 
 ```{r, results = "asis"}
-bib[c("Gerring2005", "Przeworski1970")]
+bib[c("Przeworski1970")]
 ```
 Chapter 1.
 
 ## `r weekList[9]`
 
 ```{r, results = "asis"}
-bib[c("Gerring2010", "Fearon1991", "Bernstein2000", "Johnson2002")]
+bib[c("Gerring2005", "Gerring2010", "Fearon1991", "Bernstein2000")]
 ```
 
 ## `r weekList[10]`
@@ -380,7 +381,7 @@ bib[c("Przeworski1970")]
 @VanEvera1997, pp.49-88.
 
 ```{r, results = "asis"}
-bib[c("Geddes1990", "Bennett2007", "Munck2004")]
+bib[c("Geddes1990", "Bennett2007")]
 ```
 
 ## `r weekList[13]`
@@ -390,7 +391,7 @@ bib[c("Geddes1990", "Bennett2007", "Munck2004")]
 @Babbie2012, pp.295-321.
 
 ```{r, results = "asis"}
-bib[c("Geertz1994", "Capoccia2007", "Bennett2008")]
+bib[c("Capoccia2007", "Bennett2008", "Munck2004")]
 ```
 
 ## `r weekList[14]`
@@ -400,7 +401,7 @@ bib[c("Geertz1994", "Capoccia2007", "Bennett2008")]
 @Babbie2012, pp.415-438.
 
 ```{r, results = "asis"}
-bib[c("Tang2016", "Hafner-Burton2006", "Mahoney2006")]
+bib[c("Tang2016", "Hafner-Burton2006", "King2013")]
 ```
 
 ## `r weekList[16]`

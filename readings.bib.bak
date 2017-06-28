@@ -42,7 +42,7 @@
 @Article{Keohane2009,
   author    = {Keohane, Robert O},
   title     = {Political Science as a Vocation},
-  journal   = {PS: Political Science \& Politics},
+  journal   = {PS: Political Science and Politics},
   year      = {2009},
   volume    = {42},
   number    = {02},
@@ -366,7 +366,7 @@
   year      = {2010},
   volume    = {43},
   number    = {11},
-  pages     = {1499--526},
+  pages     = {1499--1526},
   owner     = {Yue Hu},
   publisher = {SAGE Publications},
   timestamp = {2014.06.19},
@@ -460,6 +460,7 @@
   number    = {2},
   pages     = {163--198},
   publisher = {Sage Publications Sage CA: Thousand Oaks, CA},
+  timestamp = {2017-06-28},
 }
 
 @Article{Fearon1991,
