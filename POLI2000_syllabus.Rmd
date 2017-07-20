@@ -146,7 +146,7 @@ BibOptions(check.entries = FALSE,
 How do candidates win elections? 
 Why do countries get involved in international crises and wars? 
 What makes a country more powerful than the others?
-What explains the choices of violent non-state actors like terrorists? 
+What explains the choices of violent non-state actors like terrorists?
 There are just some of the questions that political scientists study. 
 The goal of this course is to show you how to research these questions as a scholar in political science.
 This course will introduce students to political science research and various ways that social scientific research is undertaken.
@@ -246,39 +246,36 @@ You will sign in a [schedule sheet](https://docs.google.com/spreadsheets/d/1s7WX
 Starting from the third Monday, every first 20 minutes will be your showtime.
 The student who signed for that day will make a 10-min presentation about the reading.
 The presentation should include three parts: a summary of the article and its relations with other materials, which point in the article impresses you the most and why, and at least one question you really want to know but the article does not spell it out. 
-I will evaluate your performance in each---especially the latter two---aspects (see more details in the attached rubric).
+I will evaluate your performance in each---especially the latter two---aspects (see more details in [Rubric for In-Class Presentation]).
 Please cherish this chance to practice your presentation capability.
 *There is no chance for makeup presentation if you miss it.* 
 
-## In-Class Quizzes (10%)
-You will get ten pop quizzes throughout the semester. 
-Each quiz includes 2-3 questions about the required readings we are going to discuss in the class.
+## In-Class Quizzes (12%)
+You will get eight pop quizzes throughout the semester. 
+Each quiz includes 1-2 questions about the required readings we are going to discuss in the class.
 (Hint: some questions may come from the reading guide.)
-At the end of the semester, the eight highest scores of the ten quizzes will be recorded to contribute to your final grade.
-Quizzes will be administered and completed either at the beginning or the end of class. 
+At the end of the semester, the six highest scores of the eight quizzes will be recorded to contribute to your final grade.
+Quizzes will be administered and completed either at the beginning of class. 
 *You cannot make up any missed or failed quizzes for any reason.*
 Feel free to discuss the readings with your classmates before class. 
 *However, you cannot share your answers to the reading questions with your classmates.*
 
-## Critical Response Paper (12%)
+## Critical Response Paper (10%)
 
-You are expected to submit two response papers over the course of the semester. 
-These must be from two different weeks and must be submitted before the week begins.
-(You are free to write one response paper for your presentation week.)
+You are expected to submit one response paper over the course of the semester. 
 In the paper, You need to review at least three reading materials of the week.
+(You are free to write one response paper for your presentation week.)
 Moreover, I would like to see
 
 1. One and ONLY one paragraph to summarize each material (article or assigned chapter).
 1. Some discussion about what you learn from these materials relating to the weekly topic.
-1. Your perspective on the argument in the materials---do you agree with the author? If yes, why are his/her arguments convincing for you? If not, why?
-1. Cite other sources if appropriate (but not required).
+1. Your perspective on the argument in the materials---do you agree with the authors? If yes, why are their arguments convincing for you? If not, why?
+1. Citing other sources if appropriate (but not required).
 
-
+The paper should be 2-4 pages, double-spaced, 1-inch margins, and in 12 font size.
+Papers will be graded in a 100 scale and evaluated based on the above points (see more details in [Rubric for Critical Response Paper]).
 The paper is due at the BEGINNING of the Monday class (i.e., 15:30) of the week the materials are going to discussed (submit to ICON). 
-Late paper will be penalized 10 points for each day it is  late. 
-Each paper should be 2-4 pages, double-spaced, 1-inch margins, and in 12 font size.
-Papers will be evaluated based on the above points (see more details in the attached rubric).
-
+Late paper will be penalized 10 points for each day it is late.
 
 
 ## Examination (20%)
@@ -299,18 +296,22 @@ The proposal should include at least six parts:
 1. A section discussing the data and method you plan to use to test your theory and why they are the best choice for your project.
 1. A section discussing the operational feasibility of your research design.
 
+Each part is worth a proportion of total grade.
+(See the grade distribution in [Rubric for Research Proposal]).
+You are expected to finish the project throughout the semester and with my help. 
+Here is the general plan and some important dates:
+
+* You have half of the semester prior to the Midterm to figure out what **question** you want to study. Once you find it, submit it to ICON, and I will assess whether it is a good question for the proposal. You must get my approval by `r dates$Wed[7]`.
+* In the next step, you are expected to review the existing literature and construct the **theoretical arguments** about your research question. You must submit a brief about the theory for my approval by `r dates$Mon[13]` (submitted in ICON).
+* The **final proposal** is due by `r dates$Mon[17]` (submitted in ICON). Late paper will be penalized 10 points for each day of being late. 
+
+
 The proposal is expected to be 1500 - 2500 words (excluding the title and reference pages) in double-spaced, 1-inch margins, and 12 font size.
-The proposal will be evaluated based on each of the above parts and the overall writing  (see more details in the attached rubric).
-
-Here are some important dates relating to the research proposal (see the grade weight of each assignment in the attached rubric):
-
-* You must get your research question approved by the instructor by `r dates$Wed[7]` (submitted in ICON).
-* You must submit a brief about your theory by `r dates$Mon[13]` (submitted in ICON).
-* The proposal is due by `r dates$Mon[17]`. Late paper will be penalized 10 points for each day of being late (submitted in ICON). 
+The proposal will be evaluated based on each of the above parts and the overall writing quality (see more details in [Rubric for Research Proposal]).
 
 ## Extra credit
 I offer five extra credits that can be directly contributed to your final grade (1 extra credit = 1 score of the grade).
-There are three ways to get extra credits. 
+There are two ways to get extra credits. 
 
 1. You can earn three extra credits by using bibliography management software (EndNote, Jabref, Zotero, etc. See more information about this type of software [here](https://en.wikipedia.org/wiki/Comparison_of_reference_management_software).) and submitting relevant bibliography files with your proposal.
 
@@ -458,7 +459,7 @@ bib[c("Tang2016", "Hafner-Burton2006", "King2013")]
 
 \clearpage
 
-# Rubric for In-Class Presentation
+# Rubric for In-Class Presentation {#id}
 
 | Item                          | Criterion                                                                                                                                         | Grade |
 |-------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|-------|
@@ -468,7 +469,7 @@ bib[c("Tang2016", "Hafner-Burton2006", "King2013")]
 | Impressive point              | clearly described impressive point(s) and explained why 1; mentioned the impressive point 0.5; not discuss the point at all 0.                   | X     |
 | Critical reading              | clearly described the question and why it's important 1; posted a question 0.5; not raise any question 0.                                         | X     |                                                   |       |
 
-# Rubric for Response Paper
+# Rubric for Critical Response Paper {#id}
 
 | Item                    | Criterion                                                                                                                      | Grade |
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------------|-------|
@@ -479,7 +480,7 @@ bib[c("Tang2016", "Hafner-Burton2006", "King2013")]
 
 \clearpage
 
-# Rubric for the Research Proposal
+# Rubric for Research Proposal {#id}
 
 | Item                            | Criterion                                                                                                                                                                                                            | Grade |
 |---------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------|
