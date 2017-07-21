@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.7.18)  21 JUL 2017 15:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.7.18)  21 JUL 2017 15:34
 entering extended mode
 **./POLI2000_syllabus.tex
 (POLI2000_syllabus.tex
@@ -748,12 +748,7 @@ LaTeX Font Info:    Try loading font information for T1+lmtt on input line 125.
 
 ("D:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-Overfull \hbox (10.60037pt too wide) in alignment at lines 122--130
-[] []
- []
-
-[1
+) [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
 LaTeX Font Info:    Try loading font information for OMS+lmr on input line 309.
@@ -839,9 +834,9 @@ am Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><D:/Program Files/MiKTeX 2.
 ic/lm/lmr9.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><D
 :/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><D:/Program Files/M
 iKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb>
-Output written on POLI2000_syllabus.pdf (13 pages, 285924 bytes).
+Output written on POLI2000_syllabus.pdf (13 pages, 283895 bytes).
 PDF statistics:
- 334 PDF objects out of 1000 (max. 8388607)
+ 333 PDF objects out of 1000 (max. 8388607)
  74 named destinations out of 1000 (max. 500000)
  337 words of extra memory for PDF output out of 10000 (max. 10000000)
 

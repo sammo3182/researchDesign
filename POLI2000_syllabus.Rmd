@@ -11,7 +11,7 @@ title: "POLI 2000: Designing Political Research"
 author: Yue Hu
 date: "Fall 2017"
 email: "yue-hu-1@uiowa.edu"
-web: "uiowa.instructure.com/courses/65855"
+#web: "uiowa.instructure.com/courses/65855"
 officehours: "12:30 -- 15:30 M & by Appointment"
 office: "313 Shaeffer Hall"
 classroom: "105 EPB"
