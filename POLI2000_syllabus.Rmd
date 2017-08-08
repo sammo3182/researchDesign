@@ -185,10 +185,10 @@ dates <- data.frame(day = seq(from = start, to = end, by = "days")) %>%
 dates$content <- NA
 ## Holidays
 dates$content[dates$Mon == ymd("2017-09-04")] <- "What's A Good Question (Labor Day)"
-dates$content[dates$Mon == ymd("2017-11-20")] <- "Thanks Giving Week"
+dates$content[dates$Mon == ymd("2017-11-20")] <- "Thanks Giving Break"
 dates$content[dates$Mon == ymd("2017-12-11")] <- "Final Week"
 
-dates$content[is.na(dates$content)] <- c("Being a Political Scientist", "Being Scientific", "How to Find Research Question", "Concepts", "Principles of Measurement", "Measurement in Practice", "What's Theory?", "Theory and Causal Inference", "Experimental Logic and Design", "Principles of Case Study", "Case Study in Practice", "A Glance of Other Small-N Methods", "Understanding Large-N Analyses", "Professionalization")
+dates$content[is.na(dates$content)] <- c("Being a Political Scientist", "I'm A Scientist", "Where Does the Questions Come From", "What's A Concept", "Let's Measure Politics", "Measurement in Practice", "What's A Theory?", "Theory and Causal Inference", "Experimenting on Politics", "Principles of Case Study", "Case Study in Practice", "A Glance of Other Small-N Methods", "Understanding Large-N Analyses", "Professionalization")
 
 weekList <- paste0("Week ", dates$weekNum, " (", dates$Mon, "/", dates$Wed, "): ", dates$content)
 ```
@@ -205,8 +205,8 @@ The ratio of the times of your attendance to the total number of the classes min
 If the ratio is equal or above one, you will get full 10% attendance grade.
 Confused? Come see me sooner rather than later if you need clarification of this policy.   
 
-Regarding participation, I am looking for you to show that you have fully read and critically evaluated the assigned readings (all available in ICON) and are actively engaged in our in-class discussions.
-Before each week's class, you will receive a one-page reading guideline.
+Regarding participation, I am looking for you to show that you have fully read and critically evaluated the assigned readings (all selected articles and chapters outside the textbooks will be available in ICON) and are actively engaged in our in-class discussions.
+Before each week's class, you will receive a one-page reading guideline in ICON.
 It will give you a hint how to read the week's readings and to which part you should pay special attention. 
 The guideline will always include a recommended reading order and several questions to help you comprehend the materials.
 
@@ -216,21 +216,22 @@ sheet <- data.frame(day = seq(from = start, to = end, by = "days")) %>%
     filter(weekDay %in% c(2,4)) 
 
 sheet <- sheet[-c(1, 2, 3, 4, 5, 27, 28, 33, 34),]
+sheet <- sheet[-c(24,25),] # omit the last week
 
 sheet <- select(sheet, -weekDay) %>%
-  mutate(content = c("Van Evera 1997; Geddes 2010", 
-  "Babbie 2012; Ragin&Amoroso 2010", "McKeown 1999; Perez&Tavits 2017",
-  "Babbie 2012; Collier&Mahon 1993", "Collier&Levitsky 1997; Barnett&Duvall 2005",
-  "Babbie 2012; Schedler 2012", "Adcock&Collier2001; Seawright&Collier 2014",
-  "Van Evera 1997", "MIDTERM REVIEW", 
-  "MIDTERM EXAM", "Przeworski&Teune 1970; Babbie 2012",
-  "Bernstein et al. 2000; Gerring 2005", "Fearon 1991; Gerring 2010",
-  "Babbie 2012; Mintz 2004", "Mintz et. al. 2006; Gerber&Green 2011",
-  "Gerring 2004; McKeown 2004", "Przeworski&Teune 1970; Levy 2008",
-  "Geddes 2010; Bennett&Elman 2007", "Van Evera 1997",
-  "Babbie 2012; Munck 2004", "Capoccia&Kelemen 2007;Bennett 2008",
-  "Babbie 2012; Tang et al. 2016", "Hafner-Burton&Montgomery 2006; King et al. 2013",
-  "Babbie 2012; Van Evera 1997", "Presentation Videos"), 
+  mutate(content = c("Geddes 2010", 
+  "Babbie 2012", "Ragin&Amoroso 2010",
+  "Babbie 2012", "Collier&Levitsky 1997",
+  "Babbie 2012", "Adcock&Collier2001",
+  "Seawright 2014", 
+  "MIDTERM REVIEW", "MIDTERM EXAM", 
+  "Babbie 2012", 
+  "Gerring 2005", "Fearon 1991",
+  "Babbie 2012", "Gerber&Green 2011",
+  "Gerring 2004", "Przeworski&Teune 1970",
+  "Geddes 2010", "Bennett&Elman 2007",
+  "Babbie 2012", "Munck 2004",
+  "Babbie 2012", "Tang et al. 2016"), 
   pre1 = NA, pre2 = NA)
 
 sheet[9, ]$pre1 <- sheet[9, ]$pre2 <- sheet[10, ]$pre1 <- sheet[10, ]$pre2 <- "N/A"
@@ -241,29 +242,28 @@ data.table::fwrite(sheet, file = "signUp.csv")
 ```
 
 
-By the second week, we will decide a presentation schedule together. 
+By the second week, we will decide a presentation schedule. 
 You will sign in a [schedule sheet](https://docs.google.com/spreadsheets/d/1s7WX9B5ePwlLhyOlqV_XBHU6lFmbHsyClbAOLV5Jaek/edit?usp=sharing) by picking the topic and articles you are interested.
-Starting from the third Monday, every first 20 minutes will be your showtime.
-The student who signed for that day will make a 10-min presentation about the reading.
-The presentation should include three parts: a summary of the article and its relations with other materials, which point in the article impresses you the most and why, and at least one question you really want to know but the article does not spell it out. 
+Starting from the third Wednesday, every first 10-20 minutes will be your showtime.
+The student who signed for that day will make an oral presentation about one reading material of the given week.
+The presentation is expected to include three parts: (1) a summary of the article and its relations with other materials, (2) which point in the article impresses you the most and why, and (3) at least one question you really want to know but the article does not spell it out. 
 I will evaluate your performance in each---especially the latter two---aspects (see more details in [Rubric for In-Class Presentation]).
-Please cherish this chance to practice your presentation capability.
 *There is no chance for makeup presentation if you miss it.* 
 
 ## In-Class Quizzes (12%)
 You will get eight pop quizzes throughout the semester. 
-Each quiz includes 1-2 questions about the required readings we are going to discuss in the class.
-(Hint: some questions may come from the reading guide.)
-At the end of the semester, the six highest scores of the eight quizzes will be recorded to contribute to your final grade.
-Quizzes will be administered and completed either at the beginning of class. 
+Each quiz includes 1-2 questions about the readings of the given week.
+(Hint: some questions may come from the reading guideline.)
+The six highest scores of them will contribute to your final grade.
+Quizzes will be administered and completed at the beginning of class. 
 *You cannot make up any missed or failed quizzes for any reason.*
 Feel free to discuss the readings with your classmates before class. 
-*However, you cannot share your answers to the reading questions with your classmates.*
+However, you cannot share your answers to the reading questions with your classmates.
 
 ## Critical Response Paper (10%)
 
 You are expected to submit one response paper over the course of the semester. 
-In the paper, You need to review at least three reading materials of the week.
+In the paper, You need to review at least two reading materials of a given week.
 (You are free to write one response paper for your presentation week.)
 Moreover, I would like to see
 
@@ -272,38 +272,38 @@ Moreover, I would like to see
 1. Your perspective on the argument in the materials---do you agree with the authors? If yes, why are their arguments convincing for you? If not, why?
 1. Citing other sources if appropriate (but not required).
 
-The paper should be 2-4 pages, double-spaced, 1-inch margins, and in 12 font size.
-Papers will be graded in a 100 scale and evaluated based on the above points (see more details in [Rubric for Critical Response Paper]).
-The paper is due at the BEGINNING of the Monday class (i.e., 15:30) of the week the materials are going to discussed (submit to ICON). 
-Late paper will be penalized 10 points for each day it is late.
+The paper should be 500-1000 words.
+It will be graded in a 100 scale and evaluated based on the above points (see more details in [Rubric for Critical Response Paper]).
+The paper is due by the BEGINNING of the Monday class (i.e., 15:30) of the week the materials are going to discussed (submit to ICON). 
+Late paper will be penalized 10/100 for each day it is late.
 
 
 ## Examination (20%)
 There is only one exam (viz. midterm) for this course.
 The exam is comprised of identification and short essay questions.
-The exam will be held on 2017-10-09 in the same class as the lecture.
+The exam will be held on 2017-10-09 at the same time in the same class as the regular lectures.
 
 
 ## Research Proposal (23%)
-You are expected to submit a research proposal at the end of the semester.
-It could be a proposal for your degree thesis or a funding application.
-The proposal should include at least six parts:
+You are required to submit a research proposal by the end of the semester.
+You could write it for your degree thesis or a funding application.
+The proposal is expected to include at least six parts:
 
 1. A cover table (see the template on ICON).
 1. An introduction to your research question and why it is important.
-1. A brief literature review about what scholars have done on this topic. You need to cite at least three articles published in academic journals in political science in this part and discuss how they relate to your topic. Your citation should be in the style used by the American Political Science Association (see the guideline [here](http://www.apsanet.org/portals/54/Files/Publications/APSAStyleManual2006.pdf)).
+1. A brief literature review about what scholars have done on this topic. You need to cite at least three articles published in academic journals in political science and discuss how they relate to your topic. Your citation should be in the style used by the American Political Science Association (see the guideline [here](http://www.apsanet.org/portals/54/Files/Publications/APSAStyleManual2006.pdf)).
 1. A section discussing your theory and hypotheses.
-1. A section discussing the data and method you plan to use to test your theory and why they are the best choice for your project.
+1. A section discussing the data and method you plan to use for testing your theory and why they are the best choice for your project.
 1. A section discussing the operational feasibility of your research design.
 
 Each part is worth a proportion of total grade.
 (See the grade distribution in [Rubric for Research Proposal]).
-You are expected to finish the project throughout the semester and with my help. 
+You will finish the project throughout the semester with my help. 
 Here is the general plan and some important dates:
 
-* You have half of the semester prior to the Midterm to figure out what **question** you want to study. Once you find it, submit it to ICON, and I will assess whether it is a good question for the proposal. You must get my approval by `r dates$Wed[7]`.
-* In the next step, you are expected to review the existing literature and construct the **theoretical arguments** about your research question. You must submit a brief about the theory for my approval by `r dates$Mon[13]` (submitted in ICON).
-* The **final proposal** is due by `r dates$Mon[17]` (submitted in ICON). Late paper will be penalized 10 points for each day of being late. 
+* You have half of the semester prior to the Midterm to figure out what **question** you want to study. Once you find it, submit it to ICON, and I will assess whether it is a good question for the proposal. You must get the research question approved by `r dates$Wed[7]`.
+* After (or even before) your research question selection, you should start reviewing the existing literature and construct the **theoretical arguments** about it. You must submit a brief (a couple of paragraphs) about the theory for my approval by `r dates$Mon[13]` (submitted in ICON).
+* The **final proposal** is due by `r dates$Mon[17]` (submitted in ICON). Late paper will be penalized 10/100 for each day of being late. 
 
 
 The proposal is expected to be 1500 - 2500 words (excluding the title and reference pages) in double-spaced, 1-inch margins, and 12 font size.
@@ -320,21 +320,21 @@ There are two ways to get extra credits.
 
 # Required Textbook:
 ```{r, results = "asis"}
-bib[c("Babbie2012", "VanEvera1997")]
+bib[c("Babbie2012")]
 ```
 
 
 # Schedule
 ## `r weekList[1]`
 ```{r, results = "asis"}
-bib[c("Dryzek2006", "Keohane2009", "King2006")]
+bib[c("Keohane2009", "King2006")]
 ```
 
 ## `r weekList[2]`
 @Babbie2012, pp.1-27, 112-120.
 
 ```{r, results = "asis"}
-bib[c("Almond1988", "King1995")]
+bib[c("King1995")]
 ```
 
 ## `r weekList[3]`
@@ -342,39 +342,35 @@ bib[c("Almond1988", "King1995")]
 bib["Geddes2010"]
 ```
 
-@VanEvera1997, pp.97-99.
-
 ## `r weekList[4]`
 @Babbie2012, pp.91-112.
 
 ```{r, results = "asis"}
-bib[c("McKeown1999", "Perez2017")]
-```
-
-```{r, results = "asis"}
 bib[c("Ragin2010")]
 ```
-(Chapter 1, 2)
+(Chapter 2)
 
 ## `r weekList[5]`
 @Babbie2012, pp.165-177.
 
 ```{r, results = "asis"}
-bib[c("Collier1993", "Collier1997", "Barnett2005")]
+bib[c("Collier1997")]
 ```
 
 ## `r weekList[6]`
 @Babbie2012, pp.177-194, 197-223.
 
 ```{r, results = "asis"}
-bib[c("Adcock2001","Seawright2014", "Schedler2012")]
+bib[c("Adcock2001")]
 ```
 
 
 ## `r weekList[7]`
 *Due for the research question approval: `r dates$Wed[7]`.*
 
-@VanEvera1997, pp.7-50.
+```{r, results = "asis"}
+bib[c("Seawright2014")]
+```
 
 Midterm Review
 
@@ -383,15 +379,10 @@ Midterm.
 
 @Babbie2012, pp.57-83.
 
-```{r, results = "asis"}
-bib[c("Przeworski1970")]
-```
-Chapter 1.
-
 ## `r weekList[9]`
 
 ```{r, results = "asis"}
-bib[c("Gerring2005", "Gerring2010", "Fearon1991", "Bernstein2000")]
+bib[c("Gerring2005", "Fearon1991")]
 ```
 
 ## `r weekList[10]`
@@ -399,13 +390,13 @@ bib[c("Gerring2005", "Gerring2010", "Fearon1991", "Bernstein2000")]
 @Babbie2012, pp.271-291.
 
 ```{r, results = "asis"}
-bib[c("Mintz2004", "Gerber2011", "Mintz2006")]
+bib[c("Gerber2011")]
 ```
 
 ## `r weekList[11]`
 
 ```{r, results = "asis"}
-bib[c("Gerring2004", "Levy2008", "McKeown2004")]
+bib[c("Gerring2004")]
 ```
 
 ```{r, results = "asis"}
@@ -416,10 +407,8 @@ bib[c("Przeworski1970")]
 
 ## `r weekList[12]`
 
-@VanEvera1997, pp.49-88.
-
 ```{r, results = "asis"}
-bib[c("Geddes1990", "Bennett2007")]
+bib[c("Bennett2007", "Geddes2010")]
 ```
 
 ## `r weekList[13]`
@@ -429,7 +418,7 @@ bib[c("Geddes1990", "Bennett2007")]
 @Babbie2012, pp.295-321.
 
 ```{r, results = "asis"}
-bib[c("Capoccia2007", "Bennett2008", "Munck2004")]
+bib[c("Munck2004")]
 ```
 
 ## `r weekList[14]`
@@ -439,15 +428,12 @@ bib[c("Capoccia2007", "Bennett2008", "Munck2004")]
 @Babbie2012, pp.415-438.
 
 ```{r, results = "asis"}
-bib[c("Tang2016", "Hafner-Burton2006", "King2013")]
+bib[c("Tang2016")]
 ```
 
 ## `r weekList[16]`
 
 @Babbie2012, pp.498-519.
-
-@VanEvera1997, pp.99-111.
-
 
 [Presentation at APSA 2014: Policy Bargaining and International Conflict](https://www.youtube.com/watch?v=bwNBXuz2eRg)
 
@@ -463,19 +449,20 @@ bib[c("Tang2016", "Hafner-Burton2006", "King2013")]
 
 | Item                          | Criterion                                                                                                                                         | Grade |
 |-------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|-------|
-| Duration                      | > 8 mins 1; 5-8 mins .5; < 5 min 0.                                                                                                               | X     |
-| Summary about the material       | clearly described the logic and main arguments 1; covered the main arguments 0.5; failed to capture the main arguments 0.                         | X     |
-| Relation with other materials | clearly explained the relation with the topic of the week and other materials 1; mention another material 0.5; only talked about the assigned reading 0. | X     |
-| Impressive point              | clearly described impressive point(s) and explained why 1; mentioned the impressive point 0.5; not discuss the point at all 0.                   | X     |
-| Critical reading              | clearly described the question and why it's important 1; posted a question 0.5; not raise any question 0.                                         | X     |                                                   |       |
+| Duration                      | > 5 mins 1; 3-5 mins .5; < 3 min 0.                                                                                                               | X     |
+| Summary       | Clearly described the logic and main arguments 1; covered the main arguments 0.5; failed to capture the main arguments 0.                         | X     |
+| Relation with other materials | Clearly explained the relation with the topic of the week and other materials 1; mention another material 0.5; only talked about the assigned reading 0. | X     |
+| Impressive point              | Clearly described impressive point(s) and explained why 1; mentioned the impressive point 0.5; not discuss the point at all 0.                   | X     |
+| Critical reading              | Clearly described the question and why it's important 1; posted a question 0.5; not raise any question 0.                                         | X     |                                                   |       |
 
 # Rubric for Critical Response Paper {#id}
 
 | Item                    | Criterion                                                                                                                      | Grade |
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------------|-------|
-| Summary of the material | clearly described the logic and main arguments 2; covered the main arguments 1; failed to capture the main arguments 0        | X     |
-| learned Point            | clearly explained the learned points and their importance 2; clearly describe the points learned 1; no learned point mentioned 0 | X     |
-| Critical thinking       | clear opinions and why 2; have a perspective of the reading 1; no perspective at all 0                                      | X     |
+| Word Counts | > 500 4; 300--500 2; <300 0        | X     |
+| Summary of the material | Clearly described the logic and main arguments 2; covered the main arguments 1; failed to capture the main arguments 0        | X     |
+| Learned point            | Clearly explained the learned points and their importance 2; clearly describe the points learned 1; no learned point mentioned 0 | X     |
+| Critical thinking       | Clear opinions and why 2; have a perspective of the reading 1; no perspective at all 0                                      | X     |
 
 
 \clearpage
@@ -494,7 +481,7 @@ bib[c("Tang2016", "Hafner-Burton2006", "King2013")]
 | Data (10%)                      | Is there a complete plan of data collection? How do the data fit the research design? Validations?                                                                                                                   | X     |
 | Feasibility (5%)                | Is the research design a feasible one for a college student? What are the potential difficulties the researcher may encounter?                                                                                         | X     |
 | Citation (5%)                   | Are the citations well presented? Is there a full bibliography attached? Are the citation and bibliography styles consistent with the APSR requirement?                                                             | X     |
-| Overall writing (10%)           | Was the proposal proofread and edited? Are the paragraphs well framed and organized? Does the layout match the requirement?                                                                                                  | X     |
+| Overall writing (10%)           | Was the proposal proofread and edited? Are the paragraphs well framed and organized? Do the word count and layout match the requirement?                                                                                                  | X     |
 
 
 \clearpage
