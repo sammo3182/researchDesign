@@ -250,7 +250,7 @@ The presentation is expected to include three parts: (1) a summary of the articl
 I will evaluate your performance in each---especially the latter two---aspects (see more details in [Rubric for In-Class Presentation]).
 *There is no chance for makeup presentation if you miss it.* 
 
-## In-Class Quizzes (12%)
+## In-Class Quizzes (15%)
 You will get eight pop quizzes throughout the semester. 
 Each quiz includes 1-2 questions about the readings of the given week.
 (Hint: some questions may come from the reading guideline.)
@@ -273,18 +273,18 @@ Moreover, I would like to see
 1. Citing other sources if appropriate (but not required).
 
 The paper should be 500-1000 words.
-It will be graded in a 100 scale and evaluated based on the above points (see more details in [Rubric for Critical Response Paper]).
-The paper is due by the BEGINNING of the Monday class (i.e., 15:30) of the week the materials are going to discussed (submit to ICON). 
-Late paper will be penalized 10/100 for each day it is late.
+It will be graded on a 10 scale and evaluated based on the above points (see more details in [Rubric for Critical Response Paper]).
+The paper is due at the BEGINNING of the Monday class (i.e., 15:30) of the week the materials are going to discussed (submit to ICON). 
+Late paper will be penalized 1/10 for each day it is late.
 
 
 ## Examination (20%)
 There is only one exam (viz. midterm) for this course.
 The exam is comprised of identification and short essay questions.
-The exam will be held on 2017-10-09 at the same time in the same class as the regular lectures.
+The exam will be held on 2017-10-09 at the same time as the regular lecture.
 
 
-## Research Proposal (23%)
+## Research Proposal (25%)
 You are required to submit a research proposal by the end of the semester.
 You could write it for your degree thesis or a funding application.
 The proposal is expected to include at least six parts:
@@ -301,9 +301,9 @@ Each part is worth a proportion of total grade.
 You will finish the project throughout the semester with my help. 
 Here is the general plan and some important dates:
 
-* You have half of the semester prior to the Midterm to figure out what **question** you want to study. Once you find it, submit it to ICON, and I will assess whether it is a good question for the proposal. You must get the research question approved by `r dates$Wed[7]`.
-* After (or even before) your research question selection, you should start reviewing the existing literature and construct the **theoretical arguments** about it. You must submit a brief (a couple of paragraphs) about the theory for my approval by `r dates$Mon[13]` (submitted in ICON).
-* The **final proposal** is due by `r dates$Mon[17]` (submitted in ICON). Late paper will be penalized 10/100 for each day of being late. 
+* You have half of the semester prior to the Midterm to figure out what **question** you want to study. Once you find it, submit it to ICON, and I will assess whether it is a good question for the proposal. You must get the research question approved by `r dates$Wed[7]`. Late submission will be penalized 1/5 of the section for each day of being late. 
+* After (or even before) your research question selection, you should start reviewing the existing literature and construct the **theoretical arguments** about it. You must submit a brief (a couple of paragraphs) about the theory for my approval by `r dates$Mon[13]` (submitted in ICON). Late submission will be penalized 1/5 of the section for each day of being late. 
+* The **final proposal** is due by `r dates$Mon[17]` (submitted in ICON). Late paper will be penalized 10/100 of the total grade for each day of being late. 
 
 
 The proposal is expected to be 1500 - 2500 words (excluding the title and reference pages) in double-spaced, 1-inch margins, and 12 font size.
@@ -459,9 +459,9 @@ bib[c("Tang2016")]
 
 | Item                    | Criterion                                                                                                                      | Grade |
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------------|-------|
-| Word Counts | > 500 4; 300--500 2; <300 0        | X     |
-| Summary of the material | Clearly described the logic and main arguments 2; covered the main arguments 1; failed to capture the main arguments 0        | X     |
-| Learned point            | Clearly explained the learned points and their importance 2; clearly describe the points learned 1; no learned point mentioned 0 | X     |
+| Word Count | > 500 4; 300--500 2; <300 0        | X     |
+| Summary | Clearly describe the logic and main arguments 2; cover the main arguments 1; fail to capture the main arguments 0        | X     |
+| Learned point            | Clearly explain the learned points and their importance 2; clearly describe the points learned 1; no learned point mentioned 0 | X     |
 | Critical thinking       | Clear opinions and why 2; have a perspective of the reading 1; no perspective at all 0                                      | X     |
 
 
@@ -480,7 +480,7 @@ bib[c("Tang2016")]
 | Research Design (20%)           | Does the author clearly describe the strategy to test the hypotheses? Does the author defend his/her method choice well?                                                                                            | X     |
 | Data (10%)                      | Is there a complete plan of data collection? How do the data fit the research design? Validations?                                                                                                                   | X     |
 | Feasibility (5%)                | Is the research design a feasible one for a college student? What are the potential difficulties the researcher may encounter?                                                                                         | X     |
-| Citation (5%)                   | Are the citations well presented? Is there a full bibliography attached? Are the citation and bibliography styles consistent with the APSR requirement?                                                             | X     |
+| Citation (10%)                   | Are the citations well presented? Is there a full bibliography attached? Are the citation and bibliography styles consistent with the APSR requirement?                                                             | X     |
 | Overall writing (10%)           | Was the proposal proofread and edited? Are the paragraphs well framed and organized? Do the word count and layout match the requirement?                                                                                                  | X     |
 
 
