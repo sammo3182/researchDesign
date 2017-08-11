@@ -1,0 +1,396 @@
+---
+title: "Investigating Inequality with Real-Life Data"
+subtitle: "Research Strategies and Methods"
+author: "Yue Hu, University of Iowa"
+output:
+  ioslides_presentation:
+    incremental: yes
+    css: style.css
+    logo: image/logo.gif
+    self_contained: yes
+    slidy_presentation: null
+    transition: faster
+    widescreen: yes
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, fig.pos = '!h')
+
+library(pacman)
+p_load(dotwhisker, ggplot2, interplot, # Visualization
+       ordinal, RefManageR,# Applied
+       # dependency
+       readxl, haven, descr, stringi, stringr, arm, car, stargazer, data.table,
+       broom, tidyverse) # data wrangling
+
+set.seed(313)
+```
+
+# Overview
+
+## Who am I?
+
+* A PhD Candidate
+* A Political Scientist
+* A Methodologist
+
+
+* A nerd.<br><br><div class="centered">
+<img src="http://24.media.tumblr.com/6ea3526cb2a028206020a77bc90c4c90/tumblr_mmye72PiLD1rlfmr3o1_500.gif" height = 300 />
+</div>
+
+
+
+## What Shall We Discuss?
+
+How to conduct a political scientific research?
+
+* Taking inequality as an example.
+    + Informational: not very much.
+    + Practical: Yeah!
+* Two parts:
+    + Strategy
+    + Method
+
+```{r}
+# Bib setting
+bib <- ReadBib("../../../04_CV/publication.bib", check = FALSE)
+BibOptions(check.entries = FALSE, 
+           first.inits = FALSE,
+           style = "html",
+           max.names = 3,
+           dashed = FALSE,
+           sorting = "ydnt")
+```
+    
+----
+
+Two examples
+
+```{r results="asis"}
+bib[c("Solt2017", "Solt2016")]
+```
+
+* READY TO START?<br><br><div class="centered">
+<img src="http://farm1.staticflickr.com/612/22310264210_7f80a0b41e_o.gif" height = 180 />
+</div>
+
+# Well...Some stretching first?
+<div class="centered">
+<img src="http://www.healthline.com/hlcmsresource/images/topic_centers/Fitness-Exercise/400x400_Stretches_to_Do_at_Work_Every_Day_Overhead_Reach.gif" height = 300 />
+</div>
+
+# Strategies
+
+## What's My Topic?
+
+* Inequality. Yes.
+    + Where does it come from?
+* Where do most questions come from? 
+    + Some deep thoughts? 
+        + <span style="color:red">Nope.</span>
+    + Some personal experience? 
+        + <span style="color:red">Nope.</span>
+    + Movie, TV, music? 
+        + <span style="color:red">Probably, but nope.</span>
+            
+----
+
+Where should you look for?
+
+* Some other paper, e.g., Solt et al. 2017.
+* Term paper, e.g., Solt et al. 2016.
+
+
+
+## Question, Question...
+* What's a good question? (KKV 1994)
+    + Important
+    + Potentially failed
+    + Ignored or misunderstood
+
+
+## Pratical Rules
+* Powerful
+    + Curious
+    + General
+    + Falsified
+    
+* Attractive
+    + Mind-blowing
+    + Simple
+    + Punchy
+
+
+
+## Example: Solt et al. 2017
+
+* Low-income group $\rightarrow$ Income inequality $\rightarrow$ Class consciousness<br><br><div class="centered">
+<img src="http://st2.depositphotos.com/3343629/11463/i/950/depositphotos_114639548-stock-photo-social-inequality-between-rich-poor.jpg" height = 200 />
+</div>
+    + Self-correction?
+    + Spiritual or material?
+
+## Example: Solt et al. 2016
+
+* Low-income group $\rightarrow$ Income inequality $\rightarrow$ Meritocracy
+    + Meritocracy<br><br><div class="centered">
+<img src="http://media.yayomg.com/wp-content/uploads/2016/03/yayomg-zootopia-character-quiz-4.gif" height = 200 />
+</div>
+    + Poor vs. Rich
+    + Social Structure: Self-reproducing vs. self-negating
+
+
+## So, does your research question like her/him?
+
+* <div class="centered">
+<img src="http://assets1.ignimgs.com/2017/03/06/wonderwoman-1280-9amembargo-1488818748850_1280w.jpg" height = 250 />
+</div>
+* <div class="centered">
+<img src="http://www.cbr.com/wp-content/uploads/robot6/2016/03/FB_Superman.jpg" height = 250 />
+</div>
+    
+
+## Where Are You, My Research Question?
+
+* Office hours
+* Literature
+* <span style="color:red">Chat</span>
+
+
+## Theory or Myth?
+* What's a theory? 
+* Something like this?<br><br><div class="centered">
+<img src="http://www.med.upenn.edu/hbhe4/images/9_1.gif" height = 400 />
+</div>
+
+* Yes, and no.
+
+## A Good Theory
+
+* Not have to be complicate
+* Not have to be detailed
+* Not have to be static
+
+
+## Principles 
+* Scientific (Popper 1968)
+    + Consistent
+    + Falsifiable
+* Valid
+    + Unit of Analysis
+    + Causal inference
+* General
+    + General terms
+    + Avoid stretching
+
+
+## Example: Solt et al. 2017
+* Situational trigger
+    + Economic comparison
+    + Relative economic position
+    
+* Low-income group $\rightarrow$ More income inequality $\rightarrow$ More class consciousness<br><br><div class="centered">
+<img src="http://lovelace-media.imgix.net/uploads/1390/a7cf7180-cd22-0133-f0ec-0a6c20e5e327.gif" height = 200 />
+</div>
+
+
+## Example: Solt et al. 2016
+
+* Conflict theory (Brady 2004; Oliver 2001)
+    + Inequality $\rightarrow$ awakening $\rightarrow$ fight for redistribution
+    + <div class="centered"><img src="http://img.gifmagazine.net/gifmagazine/images/463474/original.gif" height = 300 /></div>
+
+----
+
+* Relative power theory (Solt 2010)
+    + Money = political source
+    + The riches teach the poor 
+    + <div class="centered"><img src="http://4.bp.blogspot.com/-P2ucjgNCfhU/Vx_A0IwQt8I/AAAAAAAAIHE/ZaH5zDUwR_4sWzrGLqhu6m2jQZSnCHFUwCLcB/s1600/9%2BHYPNOSIS.gif" height = 300 /></div>
+
+
+
+## Theoretical $\rightarrow$ Opertional
+
+* Rule of building a causal theory (KKV 1994)
+    + Falsifiable
+    + Consistent
+    + Variance in the dependent variable
+    + Concrete
+    + Feasible
+* How to show these in your paper?
+    + Hypotheses
+    + Measurement
+
+## Hypotheses 
+
+* Logical rather than descriptive or normative statement
+* Clear relationship
+* Small set
+* Fuzzy-set test (Mahoney 2001)
+* KEY: Straightforward<br><br><div class="centered">
+<img src="http://i1.wp.com/exgag.com/wp-content/uploads/2016/08/straightforward-8.gif" height = 300 />
+</div>
+
+
+## Example:
+
+* Solt et al. 2017: Poor people living with high inequality regard themselves more/less as "have-not."
+* Solt et al. 2016: Poor people living with high inequality believe in meritocracy more/less.
+
+## Measurement
+
+* Internal Validity
+    + Construct validity
+    + Causal validity
+    + Statistical validity
+* External Validity
+    + Scientific replication
+* Ecological Validity
+* Coding rule: unbiased and efficient
+
+## Example: Meritocracy
+
+* Newman, Johnston, and Lown (2015): Pew data
+    + 2005-06:
+        + "Most people who want to get ahead can make it if they’re willing to work hard." 
+        + "Hard work and determination are no guarantee of success for most people."
+    + 2007: four-point agree-disagree
+        + "Hard work offers little guarantee of success."
+        + "Success in life is pretty much determined by forces outside our control."
+    + 2009: four-point agree-disagree
+        + "Hard work offers little guarantee of success."
+
+
+## What's the problem?
+
+* Not all data
+* Selected method.
+
+----
+
+<div class="centered">
+<img src="image/three_measures.jpg" height = 600 width = 800 />
+</div>
+
+## Example: Inequality
+
+* Income
+    + Census
+    + Self-report
+* GINI coefficient
+    + <div class="centered">
+<img src="http://www.econweb.com/texts/current/Mansions/lorenz-gini-increase-ani.gif" height = 300 />
+</div>
+
+
+# Methods
+
+## Where Does the Data Come from?
+
+* Case: 
+    + Governmental archives
+    + Academic paper
+    + Internet
+* Survey
+* Statistical data
+
+## Example: GINI coefficient
+
+* Solt et al 2016,2017: 
+* SWIID: The best Gini data.
+
+## Standardized World Income Inequality Database 
+
+* <span style="color:yellow">Frederick Solt</span>, Associate Professor in Political Science, University of Iowa.<br><br><div class="centered">
+<img src="image/Solt.jpg" height = 250 />
+</div>
+
+* The best GINI dataset
+    + Base model: Luxembourg Income Study
+    + Yearly updated
+    + Website: http://fsolt.org/swiid/
+
+## What Method Should I Use?
+
+* Theory-driven
+* Debates
+    + Small-N vs. Large-N
+    + Quantitative vs. Qualitative
+* Process
+    + Build up from a simple model
+    + Select method based on the nature of data
+    + Add necessary controls
+    + Space and time
+
+
+## Example: Solt et al. 2016
+
+Hypothesis: Poor people living with high inequality believe in meritocracy more/less.
+
+* Model: <br><br><div class="centered"><img src="image/model.png" width = 800 /></div>
+    + Ordered Logit
+    + Multilevel Model
+
+----
+
+* Why Interaction?
+    + How to interpret it?
+    + Coefficient?
+    + Correct way: <br><br><div class="centered"><img src="image/margin.png" width = 800 /></div>
+
+
+## How to Report the Results?
+
+* Table? <br><br><div class="centered"><img src="http://svmiller.com/images/voteincome-table.png" height = 450 /></div>
+
+----
+
+* Kastellec and Leoni (2007): Plot
+    + Efficient & Focused
+* Example: Solt et al. 2016 <br><br><div class="centered">
+<img src="image/dotwhisker.jpg" height = 450 />
+</div>
+
+## How about Interaction
+* <div class="centered"><img src="image/interaction1.jpg" height = 500 /></div>
+
+## One Step Further
+<div class="centered"><img src="image/interaction2.jpg" height = 500 /></div>
+
+## Checklist for Research Design
+
+* Do I have a good question?
+* Do I have a developed theory?
+* Do I have a set of causal hypotheses?
+* Do I select appropriate measurements?
+* Is my data source legit?
+* Is my method legit?
+* Do I present the results in the most efficient way?
+* <span style="color:yellow">Don't forget to chat with your adviser, faculty members, and colleagues!</span>
+
+# Some Tips for Qualitative Fellows
+## How Can I Be a Qualitative Social Scientist?
+* Equivalently complex (if not more)!
+* Be scientific! (see Przeworski and Teune 1970)
+* Method section! (process tracing, thick description, case comparison......).
+* Incorporate numbers!
+* Visualize your data! (AtLas.ti, NVivo, Quirkos, etc.)
+
+----
+
+Coauthor with me and other quantitative scholars---WE NEED YOU!<br><br><div class="centered"><img src="http://az616578.vo.msecnd.net/files/2017/02/24/6362356279775455992014710845_tumblr_mr867ushV71so4ndqo1_500.gif" height = 400 /></div>
+
+
+## Where can you find the slides?
+My Homepage: https://sammo3182.github.io/
+
+## Questions?
+<div class="centered">
+<img src="http://static.comicvine.com/uploads/original/11123/111239784/5369046-5100930-batman-come-at-me-bro.gif" height = 500 />
+</div>
+
+# Class Ends...
+<div class="centered">
+<img src="http://pa1.narvii.com/5778/c4e11fd94c8b13fe1b5e61836ececf419256534c_hq.gif" height = 300 />
+</div>

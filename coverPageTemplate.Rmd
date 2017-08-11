@@ -1,0 +1,14 @@
+---
+title: "Cover Page"
+author: "[Author's Name (HawkID)]"
+output: word_document
+---
+
+| Item                   | Content |
+|------------------------|---------|
+| Research Question      |         |
+| Theory in One Sentence |         |
+| Method                 |         |
+| Data Source            |         |
+| Reference Number       |         |
+| Word Count             |         |

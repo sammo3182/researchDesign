@@ -11,7 +11,7 @@ title: "POLI 2000: Designing Political Research"
 author: Yue Hu
 date: "Fall 2017"
 email: "yue-hu-1@uiowa.edu"
-#web: "uiowa.instructure.com/courses/65855"
+web: uiowa.instructure.com/courses/65855
 officehours: "12:30 -- 15:30 M & by Appointment"
 office: "313 Shaeffer Hall"
 classroom: "105 EPB"
@@ -188,7 +188,7 @@ dates$content[dates$Mon == ymd("2017-09-04")] <- "What's A Good Question (Labor 
 dates$content[dates$Mon == ymd("2017-11-20")] <- "Thanks Giving Break"
 dates$content[dates$Mon == ymd("2017-12-11")] <- "Final Week"
 
-dates$content[is.na(dates$content)] <- c("Being a Political Scientist", "I'm A Scientist", "Where Does the Questions Come From", "What's A Concept", "Let's Measure Politics", "Measurement in Practice", "What's A Theory?", "Theory and Causal Inference", "Experimenting on Politics", "Principles of Case Study", "Case Study in Practice", "A Glance of Other Small-N Methods", "Understanding Large-N Analyses", "Professionalization")
+dates$content[is.na(dates$content)] <- c("Being a Political Scientist", "Being A Scientist", "Where Does A Question Come From", "What's A Concept?", "Let's Measure Politics", "Measurement in Practice", "What's A Theory?", "Theory and Causal Inference", "Experimenting on Politics", "Principles of Case Study", "Case Study in Practice", "A Glance of Other Small-N Methods", "Understanding Large-N Analyses", "Professionalization")
 
 weekList <- paste0("Week ", dates$weekNum, " (", dates$Mon, "/", dates$Wed, "): ", dates$content)
 ```
@@ -289,7 +289,7 @@ You are required to submit a research proposal by the end of the semester.
 You could write it for your degree thesis or a funding application.
 The proposal is expected to include at least six parts:
 
-1. A cover table (see the template on ICON).
+1. A cover page (see the template on ICON).
 1. An introduction to your research question and why it is important.
 1. A brief literature review about what scholars have done on this topic. You need to cite at least three articles published in academic journals in political science and discuss how they relate to your topic. Your citation should be in the style used by the American Political Science Association (see the guideline [here](http://www.apsanet.org/portals/54/Files/Publications/APSAStyleManual2006.pdf)).
 1. A section discussing your theory and hypotheses.
@@ -309,7 +309,7 @@ Here is the general plan and some important dates:
 The proposal is expected to be 1500 - 2500 words (excluding the title and reference pages) in double-spaced, 1-inch margins, and 12 font size.
 The proposal will be evaluated based on each of the above parts and the overall writing quality (see more details in [Rubric for Research Proposal]).
 
-## Extra credit
+## Extra Credits
 I offer five extra credits that can be directly contributed to your final grade (1 extra credit = 1 score of the grade).
 There are two ways to get extra credits. 
 
@@ -318,9 +318,9 @@ There are two ways to get extra credits.
 1. You can earn two credits by gaining a Certification in Human Subjects Protections (CITI) in "Group 2 - Social & Behavioral - IRB-02". See more information about it [here](https://hso.research.uiowa.edu/certifications-human-subjects-protections-citi). To get the credit, you need to send the CITI proof to me by the due of the research paper.
 
 
-# Required Textbook:
+# Required Textbook
 ```{r, results = "asis"}
-bib[c("Babbie2012")]
+bib[c("Babbie2016")]
 ```
 
 
@@ -331,7 +331,7 @@ bib[c("Keohane2009", "King2006")]
 ```
 
 ## `r weekList[2]`
-@Babbie2012, pp.1-27, 112-120.
+@Babbie2016, pp.1--28, 113--120.
 
 ```{r, results = "asis"}
 bib[c("King1995")]
@@ -343,7 +343,7 @@ bib["Geddes2010"]
 ```
 
 ## `r weekList[4]`
-@Babbie2012, pp.91-112.
+@Babbie2016, pp.89--113.
 
 ```{r, results = "asis"}
 bib[c("Ragin2010")]
@@ -351,14 +351,14 @@ bib[c("Ragin2010")]
 (Chapter 2)
 
 ## `r weekList[5]`
-@Babbie2012, pp.165-177.
+@Babbie2016, pp.124--135.
 
 ```{r, results = "asis"}
 bib[c("Collier1997")]
 ```
 
 ## `r weekList[6]`
-@Babbie2012, pp.177-194, 197-223.
+@Babbie2016, pp.135--152, 156--180.
 
 ```{r, results = "asis"}
 bib[c("Adcock2001")]
@@ -377,7 +377,7 @@ Midterm Review
 ## `r weekList[8]`
 Midterm.
 
-@Babbie2012, pp.57-83.
+@Babbie2016, pp.32--58.
 
 ## `r weekList[9]`
 
@@ -387,7 +387,7 @@ bib[c("Gerring2005", "Fearon1991")]
 
 ## `r weekList[10]`
 
-@Babbie2012, pp.271-291.
+@Babbie2016, pp.225--244.
 
 ```{r, results = "asis"}
 bib[c("Gerber2011")]
@@ -402,7 +402,7 @@ bib[c("Gerring2004")]
 ```{r, results = "asis"}
 bib[c("Przeworski1970")]
 ```
-31-39, 74-87.
+31--39, 74--87.
 
 
 ## `r weekList[12]`
@@ -415,17 +415,14 @@ bib[c("Bennett2007", "Geddes2010")]
 
 *Due for the brief of the theory: `r dates$Mon[13]`.*
 
-@Babbie2012, pp.295-321.
+@Babbie2016, pp.307--320, 323--348, 382--408.
 
-```{r, results = "asis"}
-bib[c("Munck2004")]
-```
 
 ## `r weekList[14]`
 
 ## `r weekList[15]`
 
-@Babbie2012, pp.415-438.
+@Babbie2016, pp.411-430.
 
 ```{r, results = "asis"}
 bib[c("Tang2016")]
@@ -433,7 +430,7 @@ bib[c("Tang2016")]
 
 ## `r weekList[16]`
 
-@Babbie2012, pp.498-519.
+@Babbie2016, pp.487-507.
 
 [Presentation at APSA 2014: Policy Bargaining and International Conflict](https://www.youtube.com/watch?v=bwNBXuz2eRg)
 
@@ -471,7 +468,7 @@ bib[c("Tang2016")]
 
 | Item                            | Criterion                                                                                                                                                                                                            | Grade |
 |---------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------|
-| Cover table (5%)                | Is the table fully filled? Is every element defined?                                                                                                                                                                | X     |
+| Cover Page (5%)                | Is the table fully filled? Is every element defined?                                                                                                                                                                | X     |
 | Research Question Approval (5%) | Was the research proposal approved by 2017-10-09?                                                                                                                                                                   | X     |
 | Brief of Theory (5%)            | Was the brief of the theory submitted by 2017-11-12?                                                                                                                                                                | X     |
 | Introduction (10%)              | Is the research question well stated? Does the intro clearly explain the importance of the study? Does the intro clearly explain the potential contribution of this project?                                        | X     |

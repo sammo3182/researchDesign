@@ -42,7 +42,7 @@
 @Article{Keohane2009,
   author    = {Keohane, Robert O},
   title     = {Political Science as a Vocation},
-  journal   = {PS: Political Science and Politics},
+  journal   = {PS: Political Science \& Politics},
   year      = {2009},
   volume    = {42},
   number    = {02},
@@ -326,7 +326,7 @@
 @Article{King2006,
   author    = {King, Gary},
   title     = {Publication, Publication},
-  journal   = {PS: Political Science and Politics},
+  journal   = {PS: Political Science \& Politics},
   year      = {2006},
   volume    = {39},
   number    = {01},
@@ -338,7 +338,7 @@
 @Article{King1995,
   author    = {King, Gary},
   title     = {Replication, Replication},
-  journal   = {PS: Political Science and Politics},
+  journal   = {PS: Political Science \& Politics},
   year      = {1995},
   volume    = {28},
   number    = {03},
@@ -524,6 +524,16 @@
   owner     = {Yue Hu},
   publisher = {Cambridge Univ Press},
   timestamp = {2014.06.19},
+}
+
+@Book{Babbie2016,
+  title         = {The Practice of Social Research},
+  publisher     = {Cengage Learning},
+  year          = {2016},
+  author        = {Babbie, Earl R},
+  edition       = {14},
+  isbn          = {Print ISBN: 9781305104945, 1305104943; eText ISBN: 9781305445567, 1305445562},
+  __markedentry = {[Yue Hu:6]},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
