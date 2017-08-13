@@ -197,18 +197,17 @@ weekList <- paste0("Week ", dates$weekNum, " (", dates$Mon, "/", dates$Wed, "): 
 ## Class Performance (10% attendance + 10% participation + 5% presentation). 
 
 I will take attendance at the beginning of every class. 
-You are given three (free) absences (i.e., no excuse is needed) but any absences beyond that will result in ONE WHOLE GRADE REDUCTION per absence regardless of the excuse, except for serious medical reasons or participating in University-sponsored events.
+You are given three (free) absences (i.e., no excuse is needed), but any absences beyond that will result in ONE WHOLE GRADE REDUCTION per absence regardless of the excuse, except for serious medical reasons or participating in University-sponsored events.
 Further, if you are part of any University-sponsored event that may cause more than three absences, you should let me know at least 24 hours before the fourth absence and show me the verification that you are the formal or necessary participant of the event. 
 Non-University sponsored events are not excusable absences. 
-You should use your free absences for these events.
+You should use your free absences for them.
 The ratio of the times of your attendance to the total number of the classes minus three will determine how much you will get from the 10% attendance grade.
 If the ratio is equal or above one, you will get full 10% attendance grade.
 Confused? Come see me sooner rather than later if you need clarification of this policy.   
 
-Regarding participation, I am looking for you to show that you have fully read and critically evaluated the assigned readings (all selected articles and chapters outside the textbooks will be available in ICON) and are actively engaged in our in-class discussions.
-Before each week's class, you will receive a one-page reading guideline in ICON.
-It will give you a hint how to read the week's readings and to which part you should pay special attention. 
-The guideline will always include a recommended reading order and several questions to help you comprehend the materials.
+Regarding participation, I am looking for you to show that you have fully read and critically evaluated the assigned readings (all selected articles and chapters outside the textbooks are available in the [Modules tab of ICON](https://uiowa.instructure.com/courses/65855/modules)) and are actively engaged in our in-class discussions.
+Before each week's class, you will a quick reading guideline in ICON including some summaries and questions (also in the [Modules]((https://uiowa.instructure.com/courses/65855/modules))).
+Hope it can give you a hint about how to read the week's readings and to which part you should pay special attention. 
 
 ```{r signUp, eval = FALSE}
 sheet <- data.frame(day = seq(from = start, to = end, by = "days")) %>%
@@ -242,17 +241,19 @@ data.table::fwrite(sheet, file = "signUp.csv")
 ```
 
 
+An important part of class performance is in-class presentation.
 By the second week, we will decide a presentation schedule. 
-You will sign in a [schedule sheet](https://docs.google.com/spreadsheets/d/1s7WX9B5ePwlLhyOlqV_XBHU6lFmbHsyClbAOLV5Jaek/edit?usp=sharing) by picking the topic and articles you are interested.
-Starting from the third Wednesday, every first 10-20 minutes will be your showtime.
-The student who signed for that day will make an oral presentation about one reading material of the given week.
-The presentation is expected to include three parts: (1) a summary of the article and its relations with other materials, (2) which point in the article impresses you the most and why, and (3) at least one question you really want to know but the article does not spell it out. 
+In each class day following, we will have two of you to share your thoughts on a required reading for the given week.
+You can sign up for the date to present in the [course calendar ](https://uiowa.instructure.com/calendar#view_name=scheduler&view_start=2017-08-30&appointment_group_id=195)(ICON-Calendar-In-Class Presentation-Click the date-Reserve).
+Starting from the third Wednesday (`r dates[3,"Wed"]`), every first 10 minutes will be your showtime.
+The students who sign for same day are expected work together to prepare and conduct the presentation.
+The presentation is expected to include three parts: (1) a quick summary of the article and its relations with other materials, (2) which point in the article impresses you the most and why, and (3) at least one question you really want to know but the article does not spell it out. 
 I will evaluate your performance in each---especially the latter two---aspects (see more details in [Rubric for In-Class Presentation]).
 *There is no chance for makeup presentation if you miss it.* 
 
 ## In-Class Quizzes (15%)
 You will get eight pop quizzes throughout the semester. 
-Each quiz includes 1-2 questions about the readings of the given week.
+Each quiz includes 1-2 questions about the readings of the given *week*.
 (Hint: some questions may come from the reading guideline.)
 The six highest scores of them will contribute to your final grade.
 Quizzes will be administered and completed at the beginning of class. 
@@ -269,8 +270,8 @@ Moreover, I would like to see
 
 1. One and ONLY one paragraph to summarize each material (article or assigned chapter).
 1. Some discussion about what you learn from these materials relating to the weekly topic.
+1. Discussing how the target materials relates to others in the given week.
 1. Your perspective on the argument in the materials---do you agree with the authors? If yes, why are their arguments convincing for you? If not, why?
-1. Citing other sources if appropriate (but not required).
 
 The paper should be 500-1000 words.
 It will be graded on a 10 scale and evaluated based on the above points (see more details in [Rubric for Critical Response Paper]).
@@ -289,9 +290,9 @@ You are required to submit a research proposal by the end of the semester.
 You could write it for your degree thesis or a funding application.
 The proposal is expected to include at least six parts:
 
-1. A cover page (see the template on ICON).
+1. A cover page (see the [template on ICON](https://uiowa.instructure.com/courses/65855/files/4424694?module_item_id=1468917)).
 1. An introduction to your research question and why it is important.
-1. A brief literature review about what scholars have done on this topic. You need to cite at least three articles published in academic journals in political science and discuss how they relate to your topic. Your citation should be in the style used by the American Political Science Association (see the guideline [here](http://www.apsanet.org/portals/54/Files/Publications/APSAStyleManual2006.pdf)).
+1. A brief literature review about what scholars have done on this topic. You need to cite at least three articles published in academic journals in political science and discuss how they relate to your topic. Your citation should be in the style used by the American Political Science Association (see the [guideline](http://www.apsanet.org/portals/54/Files/Publications/APSAStyleManual2006.pdf)).
 1. A section discussing your theory and hypotheses.
 1. A section discussing the data and method you plan to use for testing your theory and why they are the best choice for your project.
 1. A section discussing the operational feasibility of your research design.
@@ -315,7 +316,7 @@ There are two ways to get extra credits.
 
 1. You can earn three extra credits by using bibliography management software (EndNote, Jabref, Zotero, etc. See more information about this type of software [here](https://en.wikipedia.org/wiki/Comparison_of_reference_management_software).) and submitting relevant bibliography files with your proposal.
 
-1. You can earn two credits by gaining a Certification in Human Subjects Protections (CITI) in "Group 2 - Social & Behavioral - IRB-02". See more information [here](https://hso.research.uiowa.edu/certifications-human-subjects-protections-citi). To get the credit, you need to send the CITI proof to me by the due of the research paper.
+1. You can earn two credits by gaining a Certification in Human Subjects Protections (CITI) in "Group 2 - Social & Behavioral - IRB-02". See more information [here](https://hso.research.uiowa.edu/certifications-human-subjects-protections-citi). To get the credits, you need to send the CITI proof to me by the due of the research paper.
 
 
 # Required Textbook
@@ -446,19 +447,19 @@ bib[c("Tang2016")]
 
 | Item                          | Criterion                                                                                                                                         | Grade |
 |-------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|-------|
-| Duration                      | > 5 mins 1; 3-5 mins .5; < 3 min 0.                                                                                                               | X     |
+| Duration                      | 5-10 mins 1; < 5 min 0.                                                                                                               | X     |
 | Summary       | Clearly described the logic and main arguments 1; covered the main arguments 0.5; failed to capture the main arguments 0.                         | X     |
-| Relation with other materials | Clearly explained the relation with the topic of the week and other materials 1; mention another material 0.5; only talked about the assigned reading 0. | X     |
 | Impressive point              | Clearly described impressive point(s) and explained why 1; mentioned the impressive point 0.5; not discuss the point at all 0.                   | X     |
-| Critical reading              | Clearly described the question and why it's important 1; posted a question 0.5; not raise any question 0.                                         | X     |                                                   |       |
+| Critical thinking              | Clearly described the question and why it's important 1; posted a question 0.5; not raise any question 0.                                         | X     |                                                   |       |
 
 # Rubric for Critical Response Paper {#id}
 
 | Item                    | Criterion                                                                                                                      | Grade |
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------------|-------|
-| Word Count | > 500 4; 300--500 2; <300 0        | X     |
+| Word Count | > 500 2; 300--500 1; <300 0        | X     |
 | Summary | Clearly describe the logic and main arguments 2; cover the main arguments 1; fail to capture the main arguments 0        | X     |
 | Learned point            | Clearly explain the learned points and their importance 2; clearly describe the points learned 1; no learned point mentioned 0 | X     |
+| Relation with other materials | Clearly explained the relation with the topic of the week and other materials 2; mention another material 1; only talked about the assigned reading 0. | X     |
 | Critical thinking       | Clear opinions and why 2; have a perspective of the reading 1; no perspective at all 0                                      | X     |
 
 
