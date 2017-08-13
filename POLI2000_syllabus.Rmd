@@ -230,7 +230,7 @@ sheet <- select(sheet, -weekDay) %>%
   "Babbie 2016", "Gerber&Green 2011",
   "Gerring 2004", "Przeworski&Teune 1970",
   "Geddes 2010", "Bennett&Elman 2007",
-  "Babbie 2016", "Munck 2004",
+  "Babbie 2016 (307-48)", "Babbie 2016 (382-408)",
   "Babbie 2016", "Tang et al. 2016"), 
   pre1 = NA, pre2 = NA)
 
