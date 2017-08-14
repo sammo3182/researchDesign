@@ -1,0 +1,86 @@
+---
+title: "Hello, Political Science!"
+subtitle: "Week 1"
+author: "Yue Hu"
+output:
+  ioslides_presentation:
+    incremental: yes
+    css: style.css
+    logo: image/logo.gif
+    self_contained: yes
+    slidy_presentation: null
+    transition: faster
+    widescreen: yes
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, fig.pos = '!h')
+
+library(pacman)
+p_load(dotwhisker, ggplot2, interplot, # Visualization
+       ordinal, RefManageR,# Applied
+       # dependency
+       readxl, haven, descr, stringi, stringr, arm, car, stargazer, data.table,
+       broom, tidyverse) # data wrangling
+
+set.seed(313)
+```
+
+# Overview
+
+## Who am I?
+
+* A Comparativist
+* A Methodologist
+* An Expert in Chinese Politics
+
+
+* <div class="centered">
+<img src="http://24.media.tumblr.com/6ea3526cb2a028206020a77bc90c4c90/tumblr_mmye72PiLD1rlfmr3o1_500.gif" height = 300 />
+</div>
+
+## Why taking this class?
+
+* Because you can become: 
+    + <span style="color:yellow">*The scientist outside the laboratory, the master of social complexity, the protector of political truth, and the breaker of rumors and conspiracies*</span>
+    + <div class="centered"><img src="image/daenerys.gif" height = 300 /></div>
+
+## Why taking this class, seriously?
+
+* Learn how to conduct research in **political science**.
+* Learn how to **evaluate** arguments, evidence, and data.
+* Contribute to your *degree*.
+
+## What's our ultimate goal?
+
+Produce research projects like her or him:
+
+* <div class="centered">
+<img src="http://assets1.ignimgs.com/2017/03/06/wonderwoman-1280-9amembargo-1488818748850_1280w.jpg" height = 220 />
+</div>
+* <div class="centered">
+<img src="http://www.cbr.com/wp-content/uploads/robot6/2016/03/FB_Superman.jpg" height = 220 />
+</div>
+    
+
+## How to do that?
+* Research Question
+* Theory and Hypothesis
+* Reseach Design
+    + Methods
+    + Data
+<br><br><br><br>
+* More details? Let's have a look at the syllabus
+
+## Some highlights
+* No final exam!
+* Semi open-book midterm!
+* Only one response paper!
+* Only one final project!
+<br><br><br><br>
+* Let's go through the [syllabus](https://github.com/sammo3182/researchDesign/blob/master/POLI2000_syllabus.pdf).
+
+# Let's call it for a day!
+<div class="centered">
+<img src="http://pa1.narvii.com/5778/c4e11fd94c8b13fe1b5e61836ececf419256534c_hq.gif" height = 300 />
+</div>
