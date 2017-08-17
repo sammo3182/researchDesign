@@ -42,40 +42,40 @@ weekList <- paste0("Week ", dates$weekNum, " (", dates$Mon, "/", dates$Wed, "): 
 
 ## `r weekList[1]`
 This is the first week of our class.
-As the beginning, you will read articles from two big names in political science.
-In the articles they discuss what's political science and how to be a qualified political scientist. 
+As the beginning, you will read articles by two big names in political science.
+They discuss what's political science and how to be a qualified political scientist. 
 You are recommend to read Koehane (2009) first and then King (2006) and try to answer the following questions.
 
-* According to Koehane, what's political science, and with what's the crucial character a political scientist need to equip themselves? 
-* What's an inference? What's the different between the so-called "descriptive" and "causal" inferences?
-* Why should we care about reliability and validity in inferences?
-* Why is experiment the best way to explore causal inferences?
-* Why do the standards in natural science not fit political science well in Koehane's view?
-* What's the way King suggest to start a research project? What's the benefit? Are there other ways?
-* Why does King emphasize to have a minimal-change version before a fully-improved version in the replications?
+* According to Koehane, what's political science, and what's the crucial character of political scientists (and students in political science)? 
+* What does inference mean in political science research? How are the so-called "descriptive" and "causal" inferences different from each other?
+* Why should we care about reliability and validity of inferences?
+* Why is experiment the best way to detect causal inferences?
+* Do the standards in natural science fit political science? Why or why not?
+* What's the way King suggests to start a research project? Why does he recommond it?
+* Why does King emphasize to offer a minimal-change analysis before a fully-improved analysis in the replications?
 
 
-## `r weekList[2]`
+<!-- ## `r weekList[2]` -->
 
 
-## `r weekList[3]`
+<!-- ## `r weekList[3]` -->
 
-## `r weekList[4]`
+<!-- ## `r weekList[4]` -->
 
-## `r weekList[5]`
+<!-- ## `r weekList[5]` -->
 
-## `r weekList[6]`
+<!-- ## `r weekList[6]` -->
 
-## `r weekList[7]`
-*Due for the research question approval: `r dates$Wed[7]`.*
-
-
-## `r weekList[8]`
+<!-- ## `r weekList[7]` -->
+<!-- *Due for the research question approval: `r dates$Wed[7]`.* -->
 
 
-## `r weekList[9]`
+<!-- ## `r weekList[8]` -->
 
-## `r weekList[10]`
+
+<!-- ## `r weekList[9]` -->
+
+<!-- ## `r weekList[10]` -->
 
 
 ## `r weekList[11]`
