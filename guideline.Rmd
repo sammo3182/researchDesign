@@ -44,7 +44,8 @@ weekList <- paste0("Week ", dates$weekNum, " (", dates$Mon, "/", dates$Wed, "): 
 This is the first week of our class.
 As the beginning, you will read articles by two big names in political science.
 They discuss what's political science and how to be a qualified political scientist. 
-You are recommend to read Koehane (2009) first and then King (2006) and try to answer the following questions.
+You are recommend to read Koehane (2009) first and then King (2006).
+Try to find the answers to the following questions during your reading.
 
 * According to Koehane, what's political science, and what's the crucial character of political scientists (and students in political science)? 
 * What does inference mean in political science research? How are the so-called "descriptive" and "causal" inferences different from each other?
