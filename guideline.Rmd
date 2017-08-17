@@ -1,0 +1,98 @@
+---
+title: "Reading Guideline"
+author: "Yue Hu"
+output: html_document
+---
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+
+library(pacman)
+p_load(dotwhisker, ggplot2, interplot,# Visualization
+       lubridate, RefManageR,# Applied
+       # dependency
+       readxl, haven, descr, stringi, stringr, arm, car, stargazer,
+       broom, tidyverse) # data wrangling
+
+set.seed(313)
+```
+
+```{r calendar, include=FALSE}
+# Opening Date: 2017-08-21 ####
+start <- ymd("2017-08-21")
+# Final Week: 2017-12-11 ####
+end <- ymd("2017-12-17")
+
+dates <- data.frame(day = seq(from = start, to = end, by = "days")) %>%
+  mutate(day = ymd(day), weekDay = wday(day), weekNum = week(day)) %>% # get the relative week number
+  mutate(weekNum = weekNum - (min(weekNum) - 1)) %>%
+    filter(weekDay %in% c(2,4)) %>% # only keep Monday and Wednesday
+      spread(key = weekDay, value = day) %>% # long to wide
+        rename(Mon = `2`, Wed = `4`)
+
+dates$content <- NA
+## Holidays
+dates$content[dates$Mon == ymd("2017-09-04")] <- "What's A Good Question (Labor Day)"
+dates$content[dates$Mon == ymd("2017-11-20")] <- "Thanks Giving Break"
+dates$content[dates$Mon == ymd("2017-12-11")] <- "Final Week"
+
+dates$content[is.na(dates$content)] <- c("Being a Political Scientist", "I'm A Scientist", "Where Does the Questions Come From", "What's A Concept", "Let's Measure Politics", "Measurement in Practice", "What's A Theory?", "Theory and Causal Inference", "Experimenting on Politics", "Principles of Case Study", "Case Study in Practice", "A Glance of Other Small-N Methods", "Understanding Large-N Analyses", "Professionalization")
+
+weekList <- paste0("Week ", dates$weekNum, " (", dates$Mon, "/", dates$Wed, "): ", dates$content)
+```
+
+## `r weekList[1]`
+This is the first week of our class.
+As the beginning, you will read articles from two big names in political science.
+In the articles they discuss what's political science and how to be a qualified political scientist. 
+You are recommend to read Koehane (2009) first and then King (2006) and try to answer the following questions.
+
+* According to Koehane, what's political science, and with what's the crucial character a political scientist need to equip themselves? 
+* What's an inference? What's the different between the so-called "descriptive" and "causal" inferences?
+* Why should we care about reliability and validity in inferences?
+* Why is experiment the best way to explore causal inferences?
+* Why do the standards in natural science not fit political science well in Koehane's view?
+* What's the way King suggest to start a research project? What's the benefit? Are there other ways?
+* Why does King emphasize to have a minimal-change version before a fully-improved version in the replications?
+
+
+## `r weekList[2]`
+
+
+## `r weekList[3]`
+
+## `r weekList[4]`
+
+## `r weekList[5]`
+
+## `r weekList[6]`
+
+## `r weekList[7]`
+*Due for the research question approval: `r dates$Wed[7]`.*
+
+
+## `r weekList[8]`
+
+
+## `r weekList[9]`
+
+## `r weekList[10]`
+
+
+## `r weekList[11]`
+
+## `r weekList[12]`
+
+
+## `r weekList[13]`
+
+*Due for the brief of the theory: `r dates$Mon[13]`.*
+
+## `r weekList[14]`
+
+## `r weekList[15]`
+
+
+## `r weekList[16]`
+
+## `r weekList[17]`
+*Due for the research proposal: `r dates$Mon[17]`.*
