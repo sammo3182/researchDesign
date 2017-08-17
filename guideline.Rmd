@@ -78,21 +78,21 @@ You are recommend to read Koehane (2009) first and then King (2006) and try to a
 <!-- ## `r weekList[10]` -->
 
 
-## `r weekList[11]`
+<!-- ## `r weekList[11]` -->
 
-## `r weekList[12]`
-
-
-## `r weekList[13]`
-
-*Due for the brief of the theory: `r dates$Mon[13]`.*
-
-## `r weekList[14]`
-
-## `r weekList[15]`
+<!-- ## `r weekList[12]` -->
 
 
-## `r weekList[16]`
+<!-- ## `r weekList[13]` -->
 
-## `r weekList[17]`
-*Due for the research proposal: `r dates$Mon[17]`.*
+<!-- *Due for the brief of the theory: `r dates$Mon[13]`.* -->
+
+<!-- ## `r weekList[14]` -->
+
+<!-- ## `r weekList[15]` -->
+
+
+<!-- ## `r weekList[16]` -->
+
+<!-- ## `r weekList[17]` -->
+<!-- *Due for the research proposal: `r dates$Mon[17]`.* -->
