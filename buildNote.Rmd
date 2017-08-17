@@ -84,3 +84,18 @@ dates$content[is.na(dates$holiday)] <- c("Intro", "Scientific Research", "Concep
 dates
 ```
 
+# Analysis of class distriubtion
+
+```{r year}
+class <- read.csv("classList.csv") %>%
+  mutate(Class = factor(Class, levels = c("Second Year", "Third Year", "Fourth Year",  "Unclassified"), labels = c("Second Year", "Third Year", "Fourth Year",  "Visiting")))
+
+
+ggplot(data=class, aes(x=Class)) +
+    geom_histogram(binwidth=.5, colour="black", stat = "count")
+
+ggplot(data=class, aes(x=factor(1), fill = Primary.Program)) +
+    geom_bar(width = 1) +
+  coord_polar(theta = "y")
+```
+

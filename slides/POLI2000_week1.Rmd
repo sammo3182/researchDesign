@@ -51,6 +51,7 @@ set.seed(313)
 * Learn how to **evaluate** arguments, evidence, and data.
 * Contribute to your *degree*.
 
+
 ## What's our ultimate goal?
 
 Produce research projects like her or him:
@@ -84,3 +85,32 @@ Produce research projects like her or him:
 <div class="centered">
 <img src="http://pa1.narvii.com/5778/c4e11fd94c8b13fe1b5e61836ececf419256534c_hq.gif" height = 300 />
 </div>
+
+# Being a Political Scienist
+## Who are the political scientists?
+* Are they? <br><br><div class="centered">
+<img src="image/leaders.jpg" height = 300 />
+</div>
+
+----
+
+* How about them?<br><br><div class="centered">
+<img src="image/bosses.jpg" height = 300 />
+</div>
+
+---
+
+* Or them?<br><br><div class="centered">
+<img src="image/thrones.jpg" height = 400/>
+</div>
+
+* NONE OF THEM!
+
+## These are!
+* <div class="centered">
+<img src="image/polisci.jpg" height = 500 />
+</div>
+
+## What is political science?
+## What do political scientists do?
+## How to do it correctly?
