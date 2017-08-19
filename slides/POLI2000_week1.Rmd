@@ -1,6 +1,6 @@
 ---
 title: "Hello, Political Science!"
-subtitle: "Week 1"
+subtitle: "Design Political Research: Week 1"
 author: "Yue Hu"
 output:
   ioslides_presentation:
@@ -18,7 +18,7 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, fig.pos = 
 
 library(pacman)
 p_load(dotwhisker, ggplot2, interplot, # Visualization
-       ordinal, RefManageR,# Applied
+       RefManageR, emo,# Applied
        # dependency
        readxl, haven, descr, stringi, stringr, arm, car, stargazer, data.table,
        broom, tidyverse) # data wrangling
@@ -45,40 +45,22 @@ set.seed(313)
     + <span style="color:yellow">*The scientist outside the laboratory, the master of social complexity, the protector of political truth, and the breaker of rumors and conspiracies*</span>
     + <div class="centered"><img src="image/daenerys.gif" height = 300 /></div>
 
-## Why taking this class, seriously?
+## Why taking this class (seriously)?
 
 * Learn how to conduct research in **political science**.
 * Learn how to **evaluate** arguments, evidence, and data.
 * Contribute to your *degree*.
 
-
-## What's our ultimate goal?
-
-Produce research projects like her or him:
-
-* <div class="centered">
-<img src="http://assets1.ignimgs.com/2017/03/06/wonderwoman-1280-9amembargo-1488818748850_1280w.jpg" height = 220 />
-</div>
-* <div class="centered">
-<img src="http://www.cbr.com/wp-content/uploads/robot6/2016/03/FB_Superman.jpg" height = 220 />
-</div>
-    
-
-## How to do that?
-* Research Question
-* Theory and Hypothesis
-* Reseach Design
-    + Methods
-    + Data
-<br><br><br><br>
-* More details? Let's have a look at the syllabus
-
-## Some highlights
+## Some highlights.
 * No final exam!
-* Semi open-book midterm!
 * Only one response paper!
 * Only one final project!
-<br><br><br><br>
+
+
+----
+
+More details?
+
 * Let's go through the [syllabus](https://github.com/sammo3182/researchDesign/blob/master/POLI2000_syllabus.pdf).
 
 # Let's call it for a day!
@@ -104,13 +86,95 @@ Produce research projects like her or him:
 <img src="image/thrones.jpg" height = 400/>
 </div>
 
-* NONE OF THEM!
+* <span style="color:yellow">**NONE OF THEM!**</span>
 
 ## These are!
 * <div class="centered">
 <img src="image/polisci.jpg" height = 500 />
 </div>
 
-## What is political science?
-## What do political scientists do?
+## Why are they political scientists?
+
+* They believe that they are scientists (lll￢ω￢).<br><br><div class="centered">
+<img src="image/lmaCat.png" height = 300/>
+</div>
+* They follow the same understanding of political science.
+* They follow the same principles and procedures to study politics.
+
+## What's political science?
+
+* Politics: attempts 
+    + Organize human groups to determine internal rules
+    + Compete and cooperate with other organized groups
+    + Reactions to such attempts.
+    
+## What's Science?
+* Can we use the criteria from social science?<br><br><div class="centered">
+<img src="image/newton.gif" height = 400/>
+</div>
+
+----
+
+* Science: Procedure
+    + Publicly known
+    + Make and evaluate inferences
+    + Self-conscious application of methods that are themselves subject to public evaluation. 
+    
+* Political Science: *The study of politics through the procedures of science*.
+
+
 ## How to do it correctly?
+Step I : Ask a question
+
+* How did the Charlottesville event happen?
+* Commonly acceptable national health plan?
+* How dare Kim Jong-un go against the whole world?
+
+* Are they proper questions?<br><br><div class="centered">
+<img src="image/question.gif" height = 250/>
+</div>
+    
+----
+    
+* Yes and no
+    + Puzzle: what we observe <span style="color:yellow">does not fit</span> with our preconceptions based on established theory.
+    + Substantively important: <span style="color:yellow">Whose mind are you going to change about what?</span>
+
+## Step II: Clarify your object
+* Conceptualization
+    + Explicit
+    + Consistent
+    
+## Step III: Inference
+* Descriptive inference: <br><br>Established premises + a particular set of facts $\rightarrow$ general conclusions.
+    + e.g., Democratic Peace, IOs reduce conflicts
+    + Reliability
+    + Validity
+* Causal Inference: Counterfactual situation
+    + e.g., ?
+    + Difficult
+    
+## Step IV: Presentation
+* Structure
+    + Title:
+        + "The effect of IGOs on interstate conflict"?
+        + Key point + Argument
+            + "Mediating interstate conflicts: Regional vs. global international organizations"
+    + Abstract: short + powerful
+    + Following professional presenting procedure
+    + Clear words and plain languages
+    
+## A good political science research?
+
+* They should look like her/him!<br><br><div class="centered">
+<img src="http://assets1.ignimgs.com/2017/03/06/wonderwoman-1280-9amembargo-1488818748850_1280w.jpg" height = 200 />
+</div>
+<div class="centered">
+<img src="http://www.cbr.com/wp-content/uploads/robot6/2016/03/FB_Superman.jpg" height = 200 />
+</div>
+            
+## Who can do it right?
+William Howard Taft vs. Robert Maynard Hutchins<br><br>
+<div class="centered">
+<img src="image/TaftHutchins.png" height = 400/>
+</div>
