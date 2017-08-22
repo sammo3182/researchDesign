@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.7.18)  22 AUG 2017 08:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.7.18)  22 AUG 2017 11:16
 entering extended mode
 **./POLI2000_syllabus.tex
 (POLI2000_syllabus.tex
@@ -620,7 +620,14 @@ Package: amsthm 2015/03/04 v2.20.2
 \c@proposition=\count113
 \c@example=\count114
 \c@exercise=\count115
-(POLI2000_syllabus.aux)
+(POLI2000_syllabus.aux
+
+LaTeX Warning: Label `id' multiply defined.
+
+
+LaTeX Warning: Label `id' multiply defined.
+
+)
 \openout1 = `POLI2000_syllabus.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 115.
@@ -696,20 +703,146 @@ LaTeX Info: Redefining \nameref on input line 115.
 \@outlinefile=\write3
 \openout3 = `POLI2000_syllabus.out'.
 
-! I can't write on file `POLI2000_syllabus.pdf'.
-Please type another file name for output
-! Emergency stop.
-<to be read again> 
-                   \edef 
-l.115 \begin{document}
-                       
-Here is how much of TeX's memory you used:
- 9586 strings out of 493318
- 132613 string characters out of 3138993
- 204880 words of memory out of 3000000
- 13073 multiletter control sequences out of 15000+200000
- 7699 words of font info for 17 fonts, out of 3000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 28i,0n,43p,186b,272s stack positions out of 5000i,500n,10000p,200000b,50000s
+("D:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count117
+\scratchdimen=\dimen134
+\scratchbox=\box32
+\nofMPsegments=\count118
+\nofMParguments=\count119
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count120
+\MPscratchDim=\dimen135
+\MPnumerator=\count121
+\makeMPintoPDFobject=\count122
+\everyMPtoPDFconversion=\toks27
+)
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 118.
 
-!  ==> Fatal error occurred, no output PDF file produced!
+("D:\Program Files\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 118.
+
+("D:\Program Files\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 118
+.
+("D:\Program Files\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 118
+.
+("D:\Program Files\MiKTeX 2.9\tex\latex\lm\omxlmex.fd"
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 118.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 118.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 118.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 125.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 128.
+
+("D:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Overfull \hbox (10.60037pt too wide) in alignment at lines 125--133
+[] []
+ []
+
+[1
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 321.
+
+("D:\Program Files\MiKTeX 2.9\tex\latex\lm\omslmr.fd"
+File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 321.
+[3] [4]
+Overfull \hbox (6.00009pt too wide) in paragraph at lines 463--468
+\T1/lmr/m/n/10.95 com / view / 10 . 1093 / oxfordhb / 9780199604456 . 001 . 000
+1 / oxfordhb-[]9780199604456-[]e-[]050 ? mediaType =
+ []
+
+[5] [6] [7]
+Overfull \hbox (10.51913pt too wide) in paragraph at lines 536--538
+[]|\T1/lmr/m/n/10.95 Grade|  
+ []
+
+
+Overfull \hbox (5.81699pt too wide) in paragraph at lines 583--585
+[]|\T1/lmr/m/n/10.95 Grade|  
+ []
+
+[8
+
+pdfTeX warning (ext4): destination with the same identifier (name{id}) has been
+ already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.631 \clearpage
+                ]pdfTeX warning (ext4): destination with the same identifier (n
+ame{id}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.633 ...{Rubric for Research Proposal}\label{id}}
+                                                  
+Overfull \hbox (15.2141pt too wide) in paragraph at lines 641--643
+[]|\T1/lmr/m/n/10.95 Grade|  
+ []
+
+
+Overfull \hbox (3.58272pt too wide) in paragraph at lines 667--669
+[]|\T1/lmr/m/n/10.95 Introduction 
+ []
+
+[9
+
+] [10
+
+] [11] [12
+
+] 
+AED: lastpage setting LastPage
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 867.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 867.
+(POLI2000_syllabus.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 867.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 867.
+Package rerunfilecheck Info: File `POLI2000_syllabus.out' has not changed.
+(rerunfilecheck)             Checksum: 05CBD436378B28A4C13EE1CADC484E2B;11026.
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 867.
+ ) 
+Here is how much of TeX's memory you used:
+ 10207 strings out of 493318
+ 142496 string characters out of 3138993
+ 219738 words of memory out of 3000000
+ 13576 multiletter control sequences out of 15000+200000
+ 50902 words of font info for 40 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 28i,12n,43p,522b,378s stack positions out of 5000i,500n,10000p,200000b,50000s
+{D:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{D:/Program Files/M
+iKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}<D:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/lm/lmbx10.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lm
+bx12.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><D:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><D:/Program Files/MiKTeX 2.
+9/fonts/type1/public/lm/lmr17.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/lm/lmr9.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><D
+:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><D:/Program Files/M
+iKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb>
+Output written on POLI2000_syllabus.pdf (12 pages, 280395 bytes).
+PDF statistics:
+ 326 PDF objects out of 1000 (max. 8388607)
+ 72 named destinations out of 1000 (max. 500000)
+ 337 words of extra memory for PDF output out of 10000 (max. 10000000)
+

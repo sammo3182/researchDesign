@@ -243,7 +243,10 @@ data.table::fwrite(sheet, file = "signUp.csv")
 
 An important part of class performance is in-class presentation.
 By the second week, we will decide a presentation schedule. 
-In each class day following, we will have two of you to share your thoughts on a required reading for the given week.
+In each class day following, we will have two of you to share your thoughts on a required reading for a given day.
+(In the following schedule, you will usually see two reading materials for each week.
+The Monday presenters are required to focus on the first materia, and the Wednesday presenters should focuses on the second one.
+For Week 13, the reading materials come from the same source, I've separated the readings for the presenters and marked them in the Schedule section.)
 You can sign up for the date to present in the [course calendar ](https://uiowa.instructure.com/calendar#view_name=scheduler&view_start=2017-08-30&appointment_group_id=195)(ICON-Calendar-In-Class Presentation-Click the date-Reserve).
 Starting from the third Wednesday (`r dates[3,"Wed"]`), every first 10 minutes will be your showtime.
 The students who sign for same day are expected work together to prepare and conduct the presentation.
@@ -416,7 +419,7 @@ bib[c("Bennett2007", "Geddes2010")]
 
 *Due for the brief of the theory: `r dates$Mon[13]`.*
 
-@Babbie2016, pp.307--320, 323--348, 382--408.
+@Babbie2016, pp.307--320, 323--348 (Mon.), 382--408 (Wed.).
 
 
 ## `r weekList[14]`
