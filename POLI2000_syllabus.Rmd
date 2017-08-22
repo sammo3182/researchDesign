@@ -332,7 +332,7 @@ bib[c("Keohane2009", "King2006")]
 ```
 
 ## `r weekList[2]`
-@Babbie2016, pp.1--28, 113--120.
+@Babbie2016, pp.4--28, 113--120.
 
 ```{r, results = "asis"}
 bib[c("King1995")]

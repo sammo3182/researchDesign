@@ -51,7 +51,7 @@ set.seed(313)
 * Learn how to **evaluate** arguments, evidence, and data.
 * Contribute to your *degree*.
 
-## Some highlights.
+## Some highlights
 * No final exam!
 * Only one response paper!
 * Only one final project!
