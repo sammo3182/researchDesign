@@ -108,6 +108,13 @@ More details?
     + Compete and cooperate with other organized groups
     + Reactions to such attempts.
     
+* How is it different from 
+    + Sociology?
+    + Pyschology?
+    + Anthopology?
+    + History?
+    + Journalism
+    
 ## What's Science?
 * Can we use the criteria from social science?<br><br><div class="centered">
 <img src="image/newton.gif" height = 400/>
@@ -128,7 +135,7 @@ Step I : Ask a question
 
 * How did the Charlottesville event happen?
 * Commonly acceptable national health plan?
-* How dare Kim Jong-un go against the whole world?
+* How dare Kim Jong-un goes against the whole world?
 
 * Are they proper questions?<br><br><div class="centered">
 <img src="image/question.gif" height = 250/>
