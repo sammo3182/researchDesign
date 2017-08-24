@@ -3,44 +3,11 @@ title: "Reading Guideline"
 author: "Yue Hu"
 output: html_document
 ---
-```{r setup, include = FALSE}
-knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 
-library(pacman)
-p_load(dotwhisker, ggplot2, interplot,# Visualization
-       lubridate, RefManageR,# Applied
-       # dependency
-       readxl, haven, descr, stringi, stringr, arm, car, stargazer,
-       broom, tidyverse) # data wrangling
 
-set.seed(313)
-```
 
-```{r calendar, include=FALSE}
-# Opening Date: 2017-08-21 ####
-start <- ymd("2017-08-21")
-# Final Week: 2017-12-11 ####
-end <- ymd("2017-12-17")
 
-dates <- data.frame(day = seq(from = start, to = end, by = "days")) %>%
-  mutate(day = ymd(day), weekDay = wday(day), weekNum = week(day)) %>% # get the relative week number
-  mutate(weekNum = weekNum - (min(weekNum) - 1)) %>%
-    filter(weekDay %in% c(2,4)) %>% # only keep Monday and Wednesday
-      spread(key = weekDay, value = day) %>% # long to wide
-        rename(Mon = `2`, Wed = `4`)
-
-dates$content <- NA
-## Holidays
-dates$content[dates$Mon == ymd("2017-09-04")] <- "What's A Good Question (Labor Day)"
-dates$content[dates$Mon == ymd("2017-11-20")] <- "Thanks Giving Break"
-dates$content[dates$Mon == ymd("2017-12-11")] <- "Final Week"
-
-dates$content[is.na(dates$content)] <- c("Being a Political Scientist", "Being A Scientist First!", "Where Does A Question Come From?", "What's A Concept?", "Let's Measure Politics!", "Measurement in Practice", "What's A Theory?", "Theory and Causal Inference", "Experimenting on Politics", "Principles of Case Study", "Case Study in Practice", "A Glance of Other Small-N Methods", "Understanding Large-N Analyses", "Professionalization")
-
-weekList <- paste0("Week ", dates$weekNum, " (", dates$Mon, "/", dates$Wed, "): ", dates$content)
-```
-
-## `r weekList[1]`
+## Week 1 (2017-08-21/2017-08-23): Being a Political Scientist
 This is the first week of our class.
 As the beginning, you will read articles by two big names in political science.
 They discuss what's political science and how to be a qualified political scientist. 
@@ -56,7 +23,7 @@ Try to find the answers to the following questions during your reading.
 * Why does King emphasize to offer a minimal-change analysis before a fully-improved analysis in the replications?
 
 
-## `r weekList[2]`
+## Week 2 (2017-08-28/2017-08-30): Being A Scientist First!
 From this week, we formally start our journey towards being a political scientist.
 The first step is to understand how political scientists (or social scientists in general) contribute to improving the insight into human society. 
 The first part of Babbie discusses how social scientific inquiries are different from ordinary human inquiries and why they are important and valuable.
@@ -71,41 +38,41 @@ Try to think about the following questions when you read the readings:
 * According to King, what's the purpose to do replication and why it is important for political science?
 * Why are we worrying ourselves with what might be called "duplication" of misting research? Isn't the more important question actual replication where the same measurements are applied to new substantive areas, countries, or time periods?
 
-<!-- ## `r weekList[3]` -->
+<!-- ## Week 3 (2017-09-04/2017-09-06): What's A Good Question (Labor Day) -->
 
-<!-- ## `r weekList[4]` -->
+<!-- ## Week 4 (2017-09-11/2017-09-13): Where Does A Question Come From? -->
 
-<!-- ## `r weekList[5]` -->
+<!-- ## Week 5 (2017-09-18/2017-09-20): What's A Concept? -->
 
-<!-- ## `r weekList[6]` -->
+<!-- ## Week 6 (2017-09-25/2017-09-27): Let's Measure Politics! -->
 
-<!-- ## `r weekList[7]` -->
-<!-- *Due for the research question approval: `r dates$Wed[7]`.* -->
-
-
-<!-- ## `r weekList[8]` -->
+<!-- ## Week 7 (2017-10-02/2017-10-04): Measurement in Practice -->
+<!-- *Due for the research question approval: 2017-10-04.* -->
 
 
-<!-- ## `r weekList[9]` -->
-
-<!-- ## `r weekList[10]` -->
+<!-- ## Week 8 (2017-10-09/2017-10-11): What's A Theory? -->
 
 
-<!-- ## `r weekList[11]` -->
+<!-- ## Week 9 (2017-10-16/2017-10-18): Theory and Causal Inference -->
 
-<!-- ## `r weekList[12]` -->
-
-
-<!-- ## `r weekList[13]` -->
-
-<!-- *Due for the brief of the theory: `r dates$Mon[13]`.* -->
-
-<!-- ## `r weekList[14]` -->
-
-<!-- ## `r weekList[15]` -->
+<!-- ## Week 10 (2017-10-23/2017-10-25): Experimenting on Politics -->
 
 
-<!-- ## `r weekList[16]` -->
+<!-- ## Week 11 (2017-10-30/2017-11-01): Principles of Case Study -->
 
-<!-- ## `r weekList[17]` -->
-<!-- *Due for the research proposal: `r dates$Mon[17]`.* -->
+<!-- ## Week 12 (2017-11-06/2017-11-08): Case Study in Practice -->
+
+
+<!-- ## Week 13 (2017-11-13/2017-11-15): A Glance of Other Small-N Methods -->
+
+<!-- *Due for the brief of the theory: 2017-11-13.* -->
+
+<!-- ## Week 14 (2017-11-20/2017-11-22): Thanks Giving Break -->
+
+<!-- ## Week 15 (2017-11-27/2017-11-29): Understanding Large-N Analyses -->
+
+
+<!-- ## Week 16 (2017-12-04/2017-12-06): Professionalization -->
+
+<!-- ## Week 17 (2017-12-11/2017-12-13): Final Week -->
+<!-- *Due for the research proposal: 2017-12-11.* -->
