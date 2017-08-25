@@ -1,0 +1,553 @@
+% Encoding: UTF-8
+
+@Book{VanEvera1997,
+  title          = {Guide to Methods for Students of Political Science},
+  publisher      = {Cornell University Press},
+  year           = {1997},
+  author         = {Van Evera,Stephen},
+  series         = {Cornell paperbacks},
+  isbn           = {9780801484575},
+  endnotereftype = {Book},
+  groups         = {research design},
+  lccn           = {lc97017808},
+  timestamp      = {2017-06-13},
+}
+
+@Book{Babbie2012,
+  title          = {The Practice of Social Research},
+  publisher      = {Wadsworth Cengage Learning},
+  year           = {2012},
+  author         = {Babbie, Earl R.},
+  address        = {Australia},
+  edition        = {13},
+  isbn           = {9781133049791 1133049796},
+  endnotereftype = {Book},
+  groups         = {research design},
+  timestamp      = {2017-06-13},
+}
+
+@Article{Dryzek2006,
+  author    = {Dryzek, John S},
+  title     = {Revolutions without Enemies: Key Transformations in Political Science},
+  journal   = {American Political Science Review},
+  year      = {2006},
+  volume    = {100},
+  number    = {04},
+  pages     = {487--92},
+  groups    = {week1},
+  publisher = {Cambridge Univ Press},
+  timestamp = {2014.06.19},
+}
+
+@Article{Keohane2009,
+  author    = {Keohane, Robert O},
+  title     = {Political Science as a Vocation},
+  journal   = {PS: Political Science \& Politics},
+  year      = {2009},
+  volume    = {42},
+  number    = {02},
+  pages     = {359--363},
+  publisher = {Cambridge Univ Press},
+  timestamp = {2017-06-13},
+}
+
+@Article{Lakatos1970,
+  author  = {Lakatos,Imre and Musgrave Alan},
+  title   = {Falsification and the Methodology of Scientific Research Programmes},
+  journal = {Criticism and the Growth of Knowledge},
+  year    = {1970},
+  pages   = {91--180},
+}
+
+@Book{Ragin2010,
+  title     = {Constructing Social Research: The Unity and Diversity of Method},
+  publisher = {Pine Forge Press},
+  year      = {2010},
+  author    = {Ragin, Charles C and Amoroso, Lisa M},
+  timestamp = {2017-06-13},
+}
+
+@InBook{Geddes2010,
+  chapter   = {2},
+  pages     = {27--88},
+  title     = {Big Questions, Little Answers: How the Questions You Choose Affect the Answer You Get},
+  publisher = {University of Michigan Press},
+  year      = {2010},
+  author    = {Geddes, Barbara},
+  address   = {Ann Arbor},
+  booktitle = {Paradigms and Sand Castles: Theory Building and Research Design in Comparative Politics},
+  timestamp = {2017-06-13},
+}
+
+@Article{Sartori1970,
+  author    = {Sartori, Giovanni},
+  title     = {Concept Misformation in Comparative Politics},
+  journal   = {American Political Science Review},
+  year      = {1970},
+  volume    = {64},
+  number    = {04},
+  pages     = {1033--1053},
+  publisher = {Cambridge Univ Press},
+  timestamp = {2017-06-17},
+}
+
+@Article{Collier1993,
+  author    = {Collier, David and Mahon, James E},
+  title     = {Conceptual "Stretching" Revisited: Adapting Categories in Comparative Analysis},
+  journal   = {American Political Science Review},
+  year      = {1993},
+  volume    = {87},
+  number    = {04},
+  pages     = {845--855},
+  publisher = {Cambridge Univ Press},
+}
+
+@Article{Collier1997,
+  author    = {Collier, David and Levitsky, Steven},
+  title     = {Democracy with Adjectives: Conceptual Innovation in Comparative Research},
+  journal   = {World Politics},
+  year      = {1997},
+  volume    = {49},
+  number    = {03},
+  pages     = {430--451},
+  publisher = {Cambridge Univ Press},
+  timestamp = {2017-06-13},
+}
+
+@Article{Mintz2004,
+  author    = {Alex Mintz},
+  title     = {Foreign Policy Decision Making in Familiar and Unfamiliar Settings},
+  journal   = {Journal of Conflict Resolution},
+  year      = {2004},
+  volume    = {48},
+  number    = {1},
+  pages     = {91--104},
+  timestamp = {2017-06-15},
+}
+
+@Article{Bachrach1962,
+  author    = {Bachrach, Peter and Baratz, Morton S},
+  title     = {Two Faces of Power},
+  journal   = {American Political Science Review},
+  year      = {1962},
+  volume    = {56},
+  number    = {04},
+  pages     = {947--952},
+  publisher = {Cambridge Univ Press},
+}
+
+@Article{Barnett2005,
+  author    = {Barnett, Michael and Duvall, Raymond},
+  title     = {Power in International Politics},
+  journal   = {International Organization},
+  year      = {2005},
+  volume    = {59},
+  number    = {01},
+  pages     = {39--75},
+  publisher = {Cambridge Univ Press},
+}
+
+@Article{Mintz2006,
+  author    = {Mintz, Alex and Redd, Steven B and Vedlitz, Arnold},
+  title     = {Can We Generalize from Student Experiments to the Real World in Political Science, Military Affairs, and International Relations?},
+  journal   = {Journal of Conflict Resolution},
+  year      = {2006},
+  volume    = {50},
+  number    = {5},
+  pages     = {757--776},
+  publisher = {Sage Publications Sage CA: Thousand Oaks, CA},
+  timestamp = {2017-06-14},
+}
+
+@Article{Seawright2014,
+  author    = {Seawright, Jason and Collier, David},
+  title     = {Rival Strategies of Validation Tools for Evaluating Measures of Democracy},
+  journal   = {Comparative Political Studies},
+  year      = {2014},
+  volume    = {47},
+  number    = {1},
+  pages     = {111--138},
+  groups    = {Democracy and Authoritarianism, Democracy and Authoritarianism; text analysis},
+  owner     = {Sammo},
+  publisher = {SAGE Publications},
+  timestamp = {2015.03.06},
+}
+
+@Article{Gerring2004,
+  author    = {Gerring, John},
+  title     = {What is a Case Study and What is it Good for?},
+  journal   = {American Political Science Review},
+  year      = {2004},
+  volume    = {98},
+  number    = {02},
+  pages     = {341--354},
+  groups    = {Comparative inquiry},
+  owner     = {Sammo},
+  publisher = {Cambridge Univ Press},
+  timestamp = {2015.05.26},
+}
+
+@InBook{Geddes1990,
+  pages     = {89--129},
+  title     = {How the Cases You Choose Affect the Answers You Get: Selection Bias in Comparative Politics},
+  publisher = {University of Michigan Press},
+  year      = {2010},
+  author    = {Geddes, Barbara},
+  address   = {Ann Arbor},
+  booktitle = {Paradigms and Sand Castles: Theory Building and Research Design in Comparative Politics},
+  timestamp = {2015.05.25},
+}
+
+@Article{DeJuan2016,
+  author    = {De Juan, Alexander and Pierskalla, Jan Henryk},
+  title     = {Civil War Violence and Political Trust: Microlevel Evidence from Nepal},
+  journal   = {Conflict Management and Peace Science},
+  year      = {2016},
+  volume    = {33},
+  number    = {1},
+  pages     = {67--88},
+  publisher = {Sage Publications Sage UK: London, England},
+}
+
+@Book{Przeworski1970,
+  title     = {The Logic of Comparative Social Inquiry},
+  publisher = {Joh Wiley and Sons},
+  year      = {1970},
+  author    = {Przeworski, Adam and Teune, Henry},
+  address   = {New York},
+  timestamp = {2014.06.08},
+}
+
+@Article{Levy2008,
+  author    = {Levy, Jack S},
+  title     = {Case Studies: Types, Designs, and Logics of Inference},
+  journal   = {Conflict Management and Peace Science},
+  year      = {2008},
+  volume    = {25},
+  number    = {1},
+  pages     = {1--18},
+  owner     = {Yue Hu},
+  publisher = {Taylor and Francis},
+}
+
+@Article{Geertz1994,
+  author    = {Geertz, Clifford},
+  title     = {Thick Description: Toward an Interpretive Theory of Culture},
+  journal   = {Readings in the Philosophy of Social Science},
+  year      = {1994},
+  pages     = {213--31},
+  publisher = {MIT Press},
+  timestamp = {2014.06.19},
+}
+
+@Article{Capoccia2007,
+  author    = {Capoccia, Giovanni and Kelemen, R Daniel},
+  title     = {The Study of Critical Junctures: Theory, Narrative, and Counterfactuals in Historical Institutionalism},
+  journal   = {World Politics},
+  year      = {2007},
+  volume    = {59},
+  number    = {03},
+  pages     = {341--369},
+  publisher = {Cambridge Univ Press},
+  timestamp = {2014.06.19},
+}
+
+@InCollection{Bennett2008,
+  author    = {Bennett, Andrew},
+  title     = {Process Tracing: A Bayesian Perspective},
+  booktitle = {Oxford Handbook of Political Methodology},
+  year      = {2008},
+  editor    = {Box-Steffensmeier, Janet and Brady, Henry and Coiller, David},
+  pages     = {702--21},
+  groups    = {Comparative inquiry},
+  journal   = {Oxford Handbook of Political Methodology},
+  owner     = {Sammo},
+  timestamp = {2015.05.27},
+}
+
+@Article{Tang2016,
+  author    = {Tang, Wenfang and Hu, Yue and Jin, Shuai},
+  title     = {Affirmative Inaction: Language Education and Labor Mobility among China's Muslim Minorities},
+  journal   = {Chinese Sociological Review},
+  year      = {2016},
+  number    = {48},
+  pages     = {346--66},
+  issue     = {4},
+  timestamp = {2017-06-14},
+}
+
+@Article{Hafner-Burton2006,
+  author    = {Hafner-Burton, Emilie M and Montgomery, Alexander H},
+  title     = {Power Positions: International Organizations, Social Networks, and Conflict},
+  journal   = {Journal of Conflict Resolution},
+  year      = {2006},
+  volume    = {50},
+  number    = {1},
+  pages     = {3--27},
+  groups    = {Peaceful Rise},
+  publisher = {Sage Publications Sage CA: Thousand Oaks, CA},
+  timestamp = {2017-06-14},
+}
+
+@Article{Perez2017,
+  author    = {Perez, Efren O and Tavits, Margit},
+  title     = {Language Shapes People's Time Perspective and Support for Future-Oriented Policies},
+  journal   = {American Journal of Political Science},
+  year      = {2017},
+  pages     = {1--13},
+  groups    = {Language},
+  publisher = {Wiley Online Library},
+  timestamp = {2017-06-14},
+}
+
+@Article{Mahoney2006,
+  author    = {Mahoney, James and Goertz, Gary},
+  title     = {A Tale of Two Cultures: Contrasting Quantitative and Qualitative Research},
+  journal   = {Political Analysis},
+  year      = {2006},
+  volume    = {14},
+  number    = {3},
+  pages     = {227--49},
+  owner     = {Yue Hu},
+  publisher = {SPM-PMSAPSA},
+}
+
+@Article{Almond1988,
+  author    = {Almond, Gabriel A},
+  title     = {Separate Tables: Schools and Sects in Political Science},
+  journal   = {PS: Political Science \& Politics},
+  year      = {1988},
+  volume    = {21},
+  number    = {4},
+  pages     = {828--42},
+  timestamp = {2014.06.19},
+}
+
+@Article{King2006,
+  author    = {King, Gary},
+  title     = {Publication, Publication},
+  journal   = {PS: Political Science \& Politics},
+  year      = {2006},
+  volume    = {39},
+  number    = {01},
+  pages     = {119--125},
+  publisher = {Cambridge Univ Press},
+  timestamp = {2017-06-15},
+}
+
+@Article{King1995,
+  author    = {King, Gary},
+  title     = {Replication, Replication},
+  journal   = {PS: Political Science \& Politics},
+  year      = {1995},
+  volume    = {28},
+  number    = {03},
+  pages     = {444--452},
+  publisher = {Cambridge Univ Press},
+  timestamp = {2017-06-15},
+}
+
+@Article{McKeown1999,
+  author    = {McKeown, Timothy J},
+  title     = {Case Studies and the Statistical Worldview Review of King, Keohane, and Verba's Designing Social Inquiry Scientific Inference in Qualitative Research},
+  journal   = {International Organization},
+  year      = {1999},
+  volume    = {53},
+  number    = {01},
+  pages     = {161--190},
+  publisher = {Cambridge Univ Press},
+  timestamp = {2017-06-15},
+}
+
+@Article{Gerring2010,
+  author    = {Gerring, John},
+  title     = {Causal mechanisms: Yes, But...},
+  journal   = {Comparative Political Studies},
+  year      = {2010},
+  volume    = {43},
+  number    = {11},
+  pages     = {1499--1526},
+  owner     = {Yue Hu},
+  publisher = {SAGE Publications},
+  timestamp = {2014.06.19},
+}
+
+@Article{Adcock2001,
+  author    = {Adcock, Robert and Collier, David},
+  title     = {Measurement Validity: A Shared Standard for Qualitative and Quantitative Research},
+  journal   = {American Political Science Review},
+  year      = {2001},
+  volume    = {33},
+  pages     = {529--546},
+  timestamp = {2017-06-15},
+}
+
+@InCollection{Gerber2011,
+  author    = {Gerber, Alan S and Green, Donald P},
+  title     = {Field Experiments and Natural Experiments},
+  booktitle = {The Oxford Handbook of Political Science},
+  year      = {2011},
+  editor    = {Robert E. Goodin},
+  timestamp = {2017-06-15},
+  url       = {http://www.oxfordhandbooks.com/view/10.1093/oxfordhb/9780199604456.001.0001/oxfordhb-9780199604456-e-050?mediaType=Article},
+  urldate   = {2017-06-15},
+}
+
+@InCollection{McKeown2004,
+  author    = {McKeown, Timothy J},
+  title     = {Case Studies and the Limits of the Quantitative Worldview},
+  booktitle = {Rethinking Social Inquiry: Diverse Tools, Shared Standards},
+  publisher = {Lanham, MD: Rowman and Littlefield},
+  year      = {2004},
+  editor    = {David Collier and Henry E. Brady},
+  pages     = {139--167},
+  timestamp = {2017-06-15},
+}
+
+@Article{Most1982,
+  author    = {Most, Benjamin A and Starr, Harvey},
+  title     = {Case Selection, Conceptualizations and Basic Logic in the Study of War},
+  journal   = {American Journal of Political Science},
+  year      = {1982},
+  pages     = {834--856},
+  publisher = {JSTOR},
+  timestamp = {2017-06-15},
+}
+
+@InCollection{Munck2004,
+  author    = {Munck, Gerardo L.},
+  title     = {Tools for Qualitative Research},
+  booktitle = {Rethinking Social Inquiry: Diverse Tools, Shared Standards},
+  publisher = {Lanham, MD: Rowman and Littlefield},
+  year      = {2004},
+  editor    = {David Collier and Henry E. Brady},
+  pages     = {105--121},
+  timestamp = {2017-06-15},
+}
+
+@Article{Schedler2012,
+  author    = {Schedler, Andreas},
+  title     = {Judgment and Measurement in Political Science},
+  journal   = {Perspectives on Politics},
+  year      = {2012},
+  volume    = {10},
+  number    = {1},
+  pages     = {21--36},
+  owner     = {Yue Hu},
+  timestamp = {2014.06.19},
+}
+
+@Article{Treier2008,
+  author    = {Treier, Shawn and Jackman, Simon},
+  title     = {Democracy as a Latent Variable},
+  journal   = {American Journal of Political Science},
+  year      = {2008},
+  volume    = {52},
+  number    = {1},
+  pages     = {201--217},
+  groups    = {Method problem in IR},
+  owner     = {Sammo},
+  publisher = {Wiley Online Library},
+  timestamp = {2015.04.10},
+}
+
+@Article{Gerring2005,
+  author    = {Gerring, John},
+  title     = {Causation: A Unified Framework for the Social Sciences},
+  journal   = {Journal of Theoretical Politics},
+  year      = {2005},
+  volume    = {17},
+  number    = {2},
+  pages     = {163--198},
+  publisher = {Sage Publications Sage CA: Thousand Oaks, CA},
+  timestamp = {2017-06-28},
+}
+
+@Article{Fearon1991,
+  author    = {Fearon, James D.},
+  title     = {Counterfactuals and Hypothesis Testing In Political Science},
+  journal   = {World Politics},
+  year      = {1991},
+  volume    = {43},
+  number    = {2},
+  pages     = {169--195},
+  timestamp = {2014.06.08},
+}
+
+@Article{Bernstein2000,
+  author    = {Bernstein, Steven and Lebow, Richard Ned and Stein, Janice Gross and Weber, Steven},
+  title     = {God Gave Physics the Easy Problems: Adapting Social Science to an Unpredictable World},
+  journal   = {European Journal of International Relations},
+  year      = {2000},
+  volume    = {6},
+  number    = {1},
+  pages     = {43--76},
+  publisher = {Sage Publications},
+  timestamp = {2014.06.19},
+}
+
+@Article{Johnson2002,
+  author    = {Johnson, James},
+  title     = {How Conceptual Problems Migrate: Rational Choice, Interpretation, and the Hazards of Pluralism},
+  journal   = {Annual Review of Political Science},
+  year      = {2002},
+  volume    = {5},
+  number    = {1},
+  pages     = {223--48},
+  date      = {2017-06-17},
+  publisher = {Annual Reviews 4139 El Camino Way, PO Box 10139, Palo Alto, CA 94303-0139, USA},
+  timestamp = {2014.06.19},
+  urldate   = {2017-06-17},
+}
+
+@Article{Bennett2007,
+  author    = {Bennett, Andrew and Elman, Colin},
+  title     = {Case Study Methods in the International Relations Subfield},
+  journal   = {Comparative Political Studies},
+  year      = {2007},
+  volume    = {40},
+  number    = {2},
+  pages     = {170--195},
+  publisher = {Sage Publications Sage CA: Thousand Oaks, CA},
+  timestamp = {2017-06-17},
+}
+
+@Article{King2013,
+  author    = {King, Gary and Pan, Jennifer and Roberts, Margaret E},
+  title     = {How Censorship in China Allows Government Criticism but Silences Collective Expression},
+  journal   = {American Political Science Review},
+  year      = {2013},
+  volume    = {107},
+  number    = {02},
+  pages     = {326--343},
+  groups    = {Democracy and Authoritarianism, Democracy and Authoritarianism; text analysis},
+  owner     = {Yue Hu},
+  publisher = {Cambridge Univ Press},
+  timestamp = {2014.06.19},
+}
+
+@Book{Babbie2016,
+  title         = {The Practice of Social Research},
+  publisher     = {Cengage Learning},
+  year          = {2016},
+  author        = {Babbie, Earl R},
+  edition       = {14},
+  isbn          = {Print: 9781305104945, 1305104943; eText: 9781305445567, 1305445562},
+  __markedentry = {[Yue Hu:6]},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
+
+@Comment{jabref-meta: fileDirectory:D:\\MEGAsync\\Dropbox\\01_Instruction\\Employment\\researchDesign;}
+
+@Comment{jabref-meta: saveActions:enabled;
+date[normalize_date]
+editor[unicode_to_latex]
+pages[normalize_page_numbers]
+journal[unicode_to_latex]
+month[normalize_month]
+author[unicode_to_latex]
+all-text-fields[ordinals_to_superscript]
+title[html_to_latex,unicode_to_latex]
+booktitle[unicode_to_latex]
+;}
