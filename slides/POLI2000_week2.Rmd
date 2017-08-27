@@ -5,7 +5,7 @@ author: "Yue Hu"
 output:
   ioslides_presentation:
     incremental: yes
-    css: style.css
+    # css: style.css
     logo: image/logo.gif
     self_contained: yes
     slidy_presentation: null
@@ -58,10 +58,10 @@ How about this one?<br><br><div class="centered">
 ## Direct and Indirect Inquiries
 * Inquiry
     + Observation
-    + Aggreement reality
+    + Agreement reality
 
 <div class="notes">
-<span style="color:red">Aggreement reality</span>: Those things we "know" as part and aprcel of the culture we share with those around us (Babbie 2016, 7). 
+<span style="color:red">Agreement reality</span>: Those things we "know" as part and parcel of the culture we share with those around us (Babbie 2016, 7). 
 </div>
 
 * What's the relation between the two?
@@ -74,7 +74,7 @@ How about this one?<br><br><div class="centered">
 
 ----
 
-Aggreement Reality<br><br><div class="centered">
+Agreement Reality<br><br><div class="centered">
 <img src="image/ScienceTrume.png" height = 500 />
 </div>
 
@@ -163,17 +163,11 @@ Three general steps:
 </div>
 
 
-## Republication, republication
-* Why should a project be republicable?
+## Replication, replication
+* Why should a project be reproducable?
     + Transparency (?)
     + Future research (?)
 
-
-## A qualified replication
-* Replication dataset
-* Publicly accessable
-* Ways to do:
-    + replication vs. reproduction (duplication vs. replication)
 
 ## Exception
 * Qualitative research (?)
@@ -181,10 +175,48 @@ Three general steps:
 * Average score of this course?
 * A survey on two people?
 * A proprietary data?
-* Key criterion: releasing might hurt others
+* *Key criterion: releasing might hurt others*
 
 
-## Again, why do we want to do so?
+## A qualified replication
+* Replication dataset
+* Publicly accessible
+* Ways to do:
+    + replication vs. reproduction (duplication vs. replication)
+
+## So, what next?
 * Why are we worrying ourselves with what might be called "duplication"
 of misting research? Isn't the more important question actual replication where the same measurements are applied to new substantive areas, countries, or time periods?
 
+## Let's try
+Newman BJ, Johnston CD and Lown PL, False consciousness or class awareness? Local income inequality, personal economic position, and belief in American meritocracy. *American Journal of Political Science* 59(2), 2015: 326–340.
+
+* Argument: Economic inequality reduces low-income people's belief in meritocracy.
+* Dependent variable: *Disbelief* in meritocracy
+    + Measured by survey questions
+* Independent variable: economic inequality
+    + Measured by Gini Coefficient.
+* Data source: 2005, 2007, 2009 Pew surveys.
+
+## A Real Reproduction
+
+1. **Replication**: Use the replication dataset offered by the authors to replicate the results
+    + Partially failed.
+1. **Reproduction**: 
+    + Check all available datasets: 1999-2012 (hint: 2005, 2007, 2009 in the original paper)
+
+----
+
+<div class="centered">
+<img src="image/measure.png" height = 550 width = 800 />
+</div>
+
+## Reproduction continued
+* Inequality on American dream: poor vs. rich
+    + <div class="centered">
+<img src="image/interaction.png" height = 450 width = 800 />
+</div>
+
+## Reproduction: conclusion
+* Newman, Johnston, and Lown: Economic inequality <span style="color:yellow">reduces</span> low-income people's belief in meritocracy.
+* Reproduction results: Economic inequality <span style="color:red">reinforces</span> low-income people's belief in meritocracy.
