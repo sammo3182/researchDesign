@@ -37,7 +37,7 @@ set.seed(313)
 
 # Social Scientific Inquiry
 
-## In a world there's no science
+## If no scientific inquiry, how do you know
 * Is this guy eatable?<br><br><div class="centered">
 <img src="image/mushroom.jpg" height = 400 />
 </div>
