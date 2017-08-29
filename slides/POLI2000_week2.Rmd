@@ -190,12 +190,21 @@ of misting research? Isn't the more important question actual replication where 
 ## Let's try the shortcut
 Newman BJ, Johnston CD and Lown PL, False consciousness or class awareness? Local income inequality, personal economic position, and belief in American meritocracy. *American Journal of Political Science* 59(2), 2015: 326–340.
 
+## Main parts {.smaller}
+
 * Argument: Economic inequality reduces low-income people's belief in meritocracy.
-* Dependent variable: *Disbelief* in meritocracy
-    + Survey questions.
-* Independent variable: economic inequality
-    + Gini Coefficients.
+    + Does it make sense?
+    + Other ways to connect *inequality* and *meritocracy*?
+    + Are they affected by a third variable.
+* Dependent variable: *Disbelief* in meritocracy (survey question)
+    + Can a survey measure meritocracy? 
+    + What does meritocracy mean? Could that be something else?
+* Independent variable: economic inequality (gini Coefficients).
+    + Other measurement of inequality
+    + Does aggregate inequality measure inidividual feelings?
 * Data source: 2005, 2007, 2009 Pew surveys.
+    + Quantitative or qualitative?
+    + 2005, 2007, 2009?
 
 ## A Real Reproduction
 
