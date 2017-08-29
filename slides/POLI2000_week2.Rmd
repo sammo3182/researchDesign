@@ -133,7 +133,7 @@ Just a reminder, though.
 * Two approaches
     + Inductive
     + Deductive
-<br><br>
+<br><br><br><br><br>
     
 <p class="forceBreak">
 * <img src="image/wheelScience.png" height = 350 width = 480 />
