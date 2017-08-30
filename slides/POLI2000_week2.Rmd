@@ -163,9 +163,8 @@ Three general steps:
 
 
 ## Replication, replication
-* Why should a project be reproducable?
+* Why should a project be replicable?
     + Transparency (?)
-    + Future research (?)
 
 
 ## Exception
@@ -182,15 +181,36 @@ Three general steps:
 * Publicly accessible
 * Ways to do:
     + replication vs. reproduction (duplication vs. replication)
+    + *Why are we worrying ourselves with what might be called "duplication"
+of existing research? Isn't the more important question actual replication where the same measurements are applied to new substantive areas, countries, or time periods?*
 
-## So, what next?
-* Why are we worrying ourselves with what might be called "duplication"
-of misting research? Isn't the more important question actual replication where the same measurements are applied to new substantive areas, countries, or time periods?
+## An Example: Expeirments on prisoner's dilemma
 
-## Let's try the shortcut
-Newman BJ, Johnston CD and Lown PL, False consciousness or class awareness? Local income inequality, personal economic position, and belief in American meritocracy. *American Journal of Political Science* 59(2), 2015: 326–340.
+```{r results='asis'}
+pri <- matrix(c("2,2", "3,0", "0,3", "1,1"), ncol = 2)
+colnames(pri) <- rownames(pri) <- c("Quiet", "Fink")
+library(xtable)
+print(xtable(pri, align = "lrr"), type = "html")
+```
+<br><br>
 
-## Main parts {.smaller}
+* Rapoport, Guyer, and Gordon 1976: 
+    + separate room; small number of times
+    + 50%-94% choose fink.
+* Deutsch 1958, Frank, Gilovich, and Regan 1993
+    + face-to-face
+    + 29% w. communication; 70% w/o communication
+
+## Try yourself
+Newman BJ, Johnston CD and Lown PL, "False consciousness or class awareness? Local income inequality, personal economic position, and belief in American meritocracy," *American Journal of Political Science* 59(2), 2015: 326–340.
+
+<div class="centered">
+<img src="image/NJLinteraction.png" height = 400 />
+</div>
+
+
+
+## Components of the NJL paper {.smaller}
 
 * Argument: Economic inequality reduces low-income people's belief in meritocracy.
     + Does it make sense?
@@ -199,14 +219,18 @@ Newman BJ, Johnston CD and Lown PL, False consciousness or class awareness? Loca
 * Dependent variable: *Disbelief* in meritocracy (survey question)
     + Can a survey measure meritocracy? 
     + What does meritocracy mean? Could that be something else?
-* Independent variable: economic inequality (gini Coefficients).
+* Independent variable: economic inequality (gini Coefficients) and rich-poor difference.
     + Other measurement of inequality
-    + Does aggregate inequality measure inidividual feelings?
+    + Does aggregate inequality measure individual feelings?
+    + How to find the rich poor difference?
 * Data source: 2005, 2007, 2009 Pew surveys.
     + Quantitative or qualitative?
     + 2005, 2007, 2009?
 
 ## A Real Reproduction
+
+Frederick Solt, Yue Hu, Kevan Hudson, et al. “Economic Inequality and Belief in
+Meritocracy in the United States”. Research and Politics 3.4 (2016), pp. 1-7.
 
 1. **Replication**: Use the replication dataset offered by the authors to replicate the results
     + Partially failed.
@@ -228,3 +252,6 @@ Newman BJ, Johnston CD and Lown PL, False consciousness or class awareness? Loca
 ## Reproduction: conclusion
 * Newman, Johnston, and Lown: Economic inequality <span style="color:yellow">reduces</span> low-income people's belief in meritocracy.
 * Reproduction results: Economic inequality <span style="color:red">reinforces</span> low-income people's belief in meritocracy.
+* <div class="centered">
+<img src="image/wrong.gif" height = 300 />
+</div>
