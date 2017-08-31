@@ -71,7 +71,27 @@ Try to think about the following questions when you read the readings:
 * According to King, what's the purpose to do replication and why it is important for political science?
 * Why are we worrying ourselves with what might be called "duplication" of misting research? Isn't the more important question actual replication where the same measurements are applied to new substantive areas, countries, or time periods?
 
-<!-- ## `r weekList[3]` -->
+## `r weekList[3]`
+
+The reading for this week is pretty long, isn't it---especially given that we only have one class? 
+So, here are some good news:
+first, despite its length, this is an excellent piece illustrating how to start from a general interest to a qualified political science research.
+You would rarely find such a detailed illustration that elaborate every single step to build up a project in other research design articles (or even books)!
+So, treat it not only as an introduction of political scientific inquiries but also a template that, when you don't know what or how to do the next step in your own project, go back to check *how Geddes did* and mimic her.
+More than often, you will get some inspiration to get out of the mesh.
+Second, regarding the week topic, you can pay most attention to the first 24 pages (pp.27--50) and scan the later 38 pages. 
+In the class, we will also mostly focus on how the author narrows a big romantic question to a testable topic to examine.
+I will briefly discuss the later sections to show how the question selection and research strategy affect the research design and empirical tests, but, again, our focus will still on the research question exploration and generalization.
+
+When you read the chapter, try to find answers to the following questions:
+
+* What is the mental preparation a scholar should make when they start a project?
+* Why is it a bad idea to try to seek research questions directly from the existing literature?
+* In Geddes' case, she also used literature several times, how do they differ from the method to use literature that she disagree?
+* What's a model? How is it useful in the research question hunting?
+* What's analytic narratives? How does it differ from Geddes' approach?
+* How does Geddes disaggregate the large question?
+* Why does Geddes focus on individuals to examine the topic of interest?
 
 <!-- ## `r weekList[4]` -->
 

@@ -255,3 +255,7 @@ Meritocracy in the United States”. Research and Politics 3.4 (2016), pp. 1-7.
 * <div class="centered">
 <img src="image/wrong.gif" height = 300 />
 </div>
+
+## How to do replication in a fancy way?
+[Github repo](https://github.com/fsolt/meritocracy)
+
