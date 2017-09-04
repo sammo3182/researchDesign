@@ -13,17 +13,9 @@ output:
     widescreen: yes
 ---
 
-<style>
-div#before-column p.forceBreak {
-    break-before: column;
-}
-div#after-column p.forceBreak {
-    break-after: column;
-}
-</style>
 
 ```{r setup, include = FALSE}
-knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, fig.pos = '!h')
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 
 library(pacman)
 p_load(dotwhisker, ggplot2, interplot, # Visualization
@@ -35,227 +27,78 @@ p_load(dotwhisker, ggplot2, interplot, # Visualization
 set.seed(313)
 ```
 
-# Social Scientific Inquiry
+# Where's my research question?
 
-## If no scientific inquiry, how do you know
-* Is this guy eatable?<br><br><div class="centered">
-<img src="image/mushroom.jpg" height = 400 />
-</div>
+## KKV's List{.smaller}
 
-----
+1. Choose a hypothesis seen as <span style="color:yellow">important</span> by scholars in the literature but for which <span style="color:yellow">no one</span> has completed a systematic study. ("literature"?)
+1. Choose a hypothesis in the literature that we <span style="color:yellow">suspect</span> is been adequately confirmed and investigate whether it is indeed false.
+1. Attempt to resolve or provide further  <span style="color:yellow">evidence of one side</span> of a controversy in the literature—perhaps demonstrate that the controversy wasunfounded from the start.
+1. Design research to illuminate or evaluate <span style="color:yellow">unquestioned assumptions</span> in the literature.
+1. Argue that an important topic has been <span style="color:yellow">overlooked</span> in the literature and then proceed to contribute a systematic study to the area.
 
-We observe<br><br><div class="centered">
-<img src="image/mushroomT.jpg" height = 400 />
-</div>
-
-----
-
-How about this one?<br><br><div class="centered">
-<img src="image/mushroomP.jpg" height = 400 />
-</div>
-
-
-## Direct and Indirect Inquiries
-* Inquiry
-    + Observation
-    + Agreement reality
-        + Those things we "know" as part and parcel of the culture we share with those around us (Babbie 2016, 7)
-* What's the relation between the two?
-
-## Let's try another question:
-* Is our president smart or not?
-    + Observation<br><br><div class="centered">
-<img src="image/trumpEclipse.jpg" height = 350 />
-</div>
-
-----
-
-Agreement Reality<br><br><div class="centered">
-<img src="image/ScienceTrume.png" height = 500 />
-</div>
-
-## Enough for a conclusion?
-
-* But if we trace a longer story:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/h7XfH3XimXA?ecver=1" frameborder="0" allowfullscreen></iframe>
-
-## Protential Problems of Human Inquiry
-
-* Selection observation
-* Inaccurate observation
-* Overgeneralization
-
-----
-
-* Illogical Reasoning<br><br><div class="centered">
-<img src="image/gamblerFallacy.jpg" height = 500 />
-</div>
-
-## How does social science avoid these isses?
-* What question can be answered? Science vs. Philosophy<br><br><div class="centered">
-<img src="image/phiSci.png" height = 450 />
-</div>
-
-----
-
-<div class="centered">
-<img src="image/phiSci2.png" height = 450 />
-</div>
-
-Just a reminder, though.
-
-## Target for social science
-* What is?
-* Why?
-    + But why not "what should be"?
+* A question that
+    + people care (and/or?)
+    + has not been studied (and/or?)
+    + the existing confirmation might be wrong (and/or?)
+    + relates to one side (and/or?)
+    + the premise is wrong (and/or?)
+    + something is missing (and/or?)
     
-## Prerequisite
-* Social regularities.
-    + Patterns in social life
-        + How can we sure about this?
-            + Objections: Triviality, exception, human interfere
-        + Who do social scientists focus?
-            + Variable (independent? dependent?)
+## Why does Geddes feel they are useless?
+
+<div style="float: left; width: 50%;">
+"It assumes, however, that the relevant literature really does contain a considerable accumulation of theory and stylized facts." (Geddes 2010, 29)
+
+* Why does this bother Geddes? (GT)
+    + The literature contains only a little consensus.
+    + Vage in definition and empirics.
+    + Opinions rather than theory. 
+</div>
+
+<div style="float: right; width: 50%;">
+* What's the dangers?
+    + Lost the main points.<br><div class="centered"><img src="image/pennyWise.png" height = 400 /></div>
+</div>
     
-## How does it work?
+## So, Geddes suggested
+* An intense but unfocused curiosity, intuition, or indignation<br><div class="centered"><img src="image/curiosity.gif" height = 400 /></div> (GT)
+* Being creative: observation $\times$ conjecture
+    + Model?
 
-<div class="centered">
-<img src="image/variable.png" height = 500 />
+
+## When is the literature useful?
+
+<div style="float: left; width: 50%;">
+* Stimulus<br><br><div class="centered"><img src="image/stimulus.gif" height = 400 /></div>
 </div>
 
-## What do social science want to gain ultimately?{.columns-2}
+<div style="float: right; width: 50%;">
+* Expectation<br><br><div class="centered"><img src="image/expectation.gif" height = 400 /></div>
+</div>
 
-* Three purpose
-    + Exploration
-    + Description
-    + Explanation
+## Why is inductive research useful?
+* Inductive? 
+    + prevailing?
+    + Danger? 
+        + Correlation is not causation.
+* Analytic narratives
+    + Tracing the mechanism
+    + Focusing on the fundamental unit
+    + Next step?
+        + Empirical evidence
+        
+## Example: Barrington Moore{.smaller}
+"No bourgeois, no democracy" (1966, 418): The likelihood of democracy increases once the size of the bourgeoisie has passed a certain threshold.
 
-* Two approaches
-    + Inductive
-    + Deductive
-<br><br><br><br><br>
+* When
+    + Democracies would not be expected to occur  <span style="color:yellow">before</span> the industrial and commercial revolutions.
+
+* Where
+    + The establishment of democracies would be expected first in the countries that  <span style="color:yellow">industrialized</span> first.
+    + Democracy would be less likely in countries in which wealth comes mainly from the  <span style="color:yellow">export</span> of mineral resources.
+    + Democracy would be less likely in countries in which  <span style="color:yellow">foreigners or pariah capitalists</span> excluded from the political community own most enterprises.
     
-<p class="forceBreak">
-* <img src="image/wheelScience.png" height = 350 width = 480 />
-</p>
-
-## Other choices
-* Determinism vs. agency
-* Qualitative vs. quantitative
-
-
-# Roadmap and Shortcut
-
-## Roadmap for social research
-
-Three general steps:
-
-1. Tell a story.
-1. Characterize the roles in the story.
-1. Match the story with the real life.
-
-
-----
-
-<div class="centered">
-<img src="image/procedure.png" height = 600 />
-</div>
-
-
-## Replication, replication
-* Why should a project be replicable?
-    + Transparency (?)
-
-
-## Exception
-* Qualitative research (?)
-    + Not an exception
-* Average score of this course?
-* A survey on two people?
-* A proprietary data?
-* *Key criterion: releasing might hurt others*
-
-
-## A qualified replication
-* Replication dataset
-* Publicly accessible
-* Ways to do:
-    + replication vs. reproduction (duplication vs. replication)
-    + *Why are we worrying ourselves with what might be called "duplication"
-of existing research? Isn't the more important question actual replication where the same measurements are applied to new substantive areas, countries, or time periods?*
-
-## An Example: Expeirments on prisoner's dilemma
-
-```{r results='asis'}
-pri <- matrix(c("2,2", "3,0", "0,3", "1,1"), ncol = 2)
-colnames(pri) <- rownames(pri) <- c("Quiet", "Fink")
-library(xtable)
-print(xtable(pri, align = "lrr"), type = "html")
-```
-<br><br>
-
-* Rapoport, Guyer, and Gordon 1976: 
-    + separate room; small number of times
-    + 50%-94% choose fink.
-* Deutsch 1958, Frank, Gilovich, and Regan 1993
-    + face-to-face
-    + 29% w. communication; 70% w/o communication
-
-## Try yourself
-Newman BJ, Johnston CD and Lown PL, "False consciousness or class awareness? Local income inequality, personal economic position, and belief in American meritocracy," *American Journal of Political Science* 59(2), 2015: 326–340.
-
-<div class="centered">
-<img src="image/NJLinteraction.png" height = 400 />
-</div>
-
-
-
-## Components of the NJL paper {.smaller}
-
-* Argument: Economic inequality reduces low-income people's belief in meritocracy.
-    + Does it make sense?
-    + Other ways to connect *inequality* and *meritocracy*?
-    + Are they affected by a third variable.
-* Dependent variable: *Disbelief* in meritocracy (survey question)
-    + Can a survey measure meritocracy? 
-    + What does meritocracy mean? Could that be something else?
-* Independent variable: economic inequality (gini Coefficients) and rich-poor difference.
-    + Other measurement of inequality
-    + Does aggregate inequality measure individual feelings?
-    + How to find the rich poor difference?
-* Data source: 2005, 2007, 2009 Pew surveys.
-    + Quantitative or qualitative?
-    + 2005, 2007, 2009?
-
-## A Real Reproduction
-
-Frederick Solt, Yue Hu, Kevan Hudson, et al. “Economic Inequality and Belief in
-Meritocracy in the United States”. Research and Politics 3.4 (2016), pp. 1-7.
-
-1. **Replication**: Use the replication dataset offered by the authors to replicate the results
-    + Partially failed.
-1. **Reproduction**: 
-    + Check all available datasets: 1999-2012 (hint: 2005, 2007, 2009 in the original paper)
-
-----
-
-<div class="centered">
-<img src="image/measure.png" height = 550 width = 800 />
-</div>
-
-## Reproduction continued
-* Inequality on American dream: poor vs. rich
-    + <div class="centered">
-<img src="image/interaction.png" height = 450 width = 800 />
-</div>
-
-## Reproduction: conclusion
-* Newman, Johnston, and Lown: Economic inequality <span style="color:yellow">reduces</span> low-income people's belief in meritocracy.
-* Reproduction results: Economic inequality <span style="color:red">reinforces</span> low-income people's belief in meritocracy.
-* <div class="centered">
-<img src="image/wrong.gif" height = 300 />
-</div>
-
-## How to do replication in a fancy way?
-[Github repo](https://github.com/fsolt/meritocracy)
-
+* How
+    + In the contemporary world, democracy would be more likely in  <span style="color:yellow">more industrialized</span> countries.
+    + The likelihood of democracy would decline as  <span style="color:yellow">state ownership</span> of economic resources rose.
