@@ -1,5 +1,5 @@
 ---
-title: "Being Scientist First!"
+title: "What’s A Good Question"
 subtitle: "Design Political Research: Week 3"
 author: "Yue Hu"
 output:
@@ -27,13 +27,12 @@ p_load(dotwhisker, ggplot2, interplot, # Visualization
 set.seed(313)
 ```
 
-# Where's my research question?
 
 ## KKV's List{.smaller}
 
 1. Choose a hypothesis seen as <span style="color:yellow">important</span> by scholars in the literature but for which <span style="color:yellow">no one</span> has completed a systematic study. ("literature"?)
 1. Choose a hypothesis in the literature that we <span style="color:yellow">suspect</span> is been adequately confirmed and investigate whether it is indeed false.
-1. Attempt to resolve or provide further  <span style="color:yellow">evidence of one side</span> of a controversy in the literature—perhaps demonstrate that the controversy wasunfounded from the start.
+1. Attempt to resolve or provide further  <span style="color:yellow">evidence of one side</span> of a controversy in the literature—perhaps demonstrate that the controversy was unfounded from the start.
 1. Design research to illuminate or evaluate <span style="color:yellow">unquestioned assumptions</span> in the literature.
 1. Argue that an important topic has been <span style="color:yellow">overlooked</span> in the literature and then proceed to contribute a systematic study to the area.
 
@@ -52,7 +51,7 @@ set.seed(313)
 
 * Why does this bother Geddes? (GT)
     + The literature contains only a little consensus.
-    + Vage in definition and empirics.
+    + Vague in definition and empirics.
     + Opinions rather than theory. 
 </div>
 
@@ -62,7 +61,7 @@ set.seed(313)
 </div>
     
 ## So, Geddes suggested
-* An intense but unfocused curiosity, intuition, or indignation<br><div class="centered"><img src="image/curiosity.gif" height = 400 /></div> (GT)
+* An intense but unfocused curiosity, intuition, or indignation (GT)
 * Being creative: observation $\times$ conjecture
     + Model?
 
@@ -84,15 +83,15 @@ set.seed(313)
         + Correlation is not causation.
 * Analytic narratives
     + Tracing the mechanism
-    + Focusing on the fundamental unit
+    + Focusing on the fundamental unit (contrary to Babbie?)
     + Next step?
         + Empirical evidence
         
-## Example: Barrington Moore{.smaller}
+## Example: Step 1. Question Hunting{.smaller}
 "No bourgeois, no democracy" (1966, 418): The likelihood of democracy increases once the size of the bourgeoisie has passed a certain threshold.
 
 * When
-    + Democracies would not be expected to occur  <span style="color:yellow">before</span> the industrial and commercial revolutions.
+    + Democracies would not be expected to occur <span style="color:yellow">before</span> the industrial and commercial revolutions.
 
 * Where
     + The establishment of democracies would be expected first in the countries that  <span style="color:yellow">industrialized</span> first.
@@ -102,3 +101,48 @@ set.seed(313)
 * How
     + In the contemporary world, democracy would be more likely in  <span style="color:yellow">more industrialized</span> countries.
     + The likelihood of democracy would decline as  <span style="color:yellow">state ownership</span> of economic resources rose.
+
+## Step 2. Research Strategy
+* Big question to rigorous investigation
+* One process at a time
+* Research your question like cooking a dish<br><br><div class="centered"><img src="image/dishes.gif" height = 350 /></div>
+
+## Let's cook it
+
+<div class="centered"><img src="image/cook.gif" height = 500 /></div>
+
+## Dish: Authoritarinism transition
+
+* Literature: cook book
+    + Expectation: Transition are determined by the important groups
+    + Stimulus: 
+        + no cross-national study, no systematic comparison
+        + no complete process
+* Narrow down (Simplification)
+    + Key of transition: battles between winning and losing groups
+    + How? 
+        + Bargaining and negotiation
+        + Overtime, multiparty
+    + Why?
+        + Internal? External?
+
+----
+
+* One piece at a time:
+    + The politics within authoritarian governments, that is, how political rivalries, policy disagreements, and bargaining within different kinds of authoritarian regimes affect the incentives of authoritarian rulers to liberalize.
+        + Method requirement: comparison
+* Build the theory:
+    + Literature (again) in
+        + Not important divisions within the regime
+        + Officials wants to maintain in office
+            + Get sufficient supports from the constituents
+* Further narrow down
+    + Different leaders, different interests.
+
+## Wrap up
+* A question with emotional response.
+* Use the literature cautiously.
+* One piece at a time.
+
+## A practical way to identify a good question
+* "Do you want to talk it with your friends?"<br><br><div class="centered"><img src="image/interestingQ.gif" height = 400 /></div>
