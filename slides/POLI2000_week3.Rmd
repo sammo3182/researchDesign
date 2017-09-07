@@ -49,7 +49,7 @@ set.seed(313)
 <div style="float: left; width: 50%;">
 "It assumes, however, that the relevant literature really does contain a considerable accumulation of theory and stylized facts." (Geddes 2010, 29)
 
-* Why does this bother Geddes? (GT)
+* Why does this bother Geddes? 
     + The literature contains only a little consensus.
     + Vague in definition and empirics.
     + Opinions rather than theory. 
@@ -61,7 +61,7 @@ set.seed(313)
 </div>
     
 ## So, Geddes suggested
-* An intense but unfocused curiosity, intuition, or indignation (GT)
+* An intense but unfocused curiosity, intuition, or indignation 
 * Being creative: observation $\times$ conjecture
     + Model?
 

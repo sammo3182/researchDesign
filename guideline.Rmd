@@ -93,7 +93,21 @@ When you read the chapter, try to find answers to the following questions:
 * How does Geddes disaggregate the large question?
 * Why does Geddes focus on individuals to examine the topic of interest?
 
-<!-- ## `r weekList[4]` -->
+## `r weekList[4]`
+
+We talked about what is a good question in political science in the last week.
+We will continue this topic in this week and especially focus on how you can frame or refine a research question from a general interest and how to find a proper research strategy.
+Babbie provides a clear review of the general purposes in social research and relevant strategies social scientists usually take to achieve these purposes.
+Raign interprets the same topic in a different way and underscore some goals that are unique for social rather than natural science. 
+When you read these pieces, try to think about the following questions:
+
+* Babbie talked about three purposes of research. Can you give an example of each? Is there another purposes do you think a social research should aim?
+* What's ecological fallacy? Why does ecological fallacy cause a problem giving social science focuses on patterns in the society rather than a single case? 
+* What are cross-sectional and longitudinal studies? How are they different from each other?
+* Ragin argued that one purpose of social science research is to "interpret culturally or historically significant phenomena." Then does social scientists do the same job as historians? 
+* What are the relations among Ragin's seven goals of social research? 
+* How does Ragin match the research strategies with the goals? (esp. Table 2.1) Are you convinced by this matching?
+
 
 <!-- ## `r weekList[5]` -->
 
