@@ -29,9 +29,9 @@ set.seed(313)
 
 ## Why do we need conceptualization?
 
-1. Description NB:Seeking for general pattern
-1. Validation NB:For readers' check
-1. Clarification NB:Marking the boundary<br><br><div class="centered">
+1. Description
+1. Validation
+1. Clarification<br><br><div class="centered">
 <img src="image/conceptualization.jpg" height = 300 />
 </div>
 
@@ -103,7 +103,7 @@ set.seed(313)
 </div>
 
 
-## Of course, you can define it by: 
+## Of course,... 
 
 * Face shape
 
@@ -147,11 +147,17 @@ Does your definition make sense?<br><br>
 
 ## Some techniques
 
-Compromise with the reality.<br><br>
-
-<div class="centered">
-<img src="image/avoidStretching.png" height = 450 />
+<div style="float: left; width: 40%;">
+* Compromise with the reality.
 </div>
+
+
+<div style="float: right; width: 60%;">
+* <div class="centered">
+<img src="image/avoidStretching.png" height = 500 />
+</div>
+</div>
+
 
 ## Let's try it
 
