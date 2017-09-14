@@ -1,0 +1,165 @@
+---
+title: "What’s A Concept?"
+subtitle: "Design Political Research: Week 5"
+author: "Yue Hu"
+output:
+  ioslides_presentation:
+    incremental: yes
+    css: style.css
+    logo: image/logo.gif
+    self_contained: yes
+    slidy_presentation: null
+    transition: faster
+    widescreen: yes
+---
+
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+
+library(pacman)
+p_load(dotwhisker, ggplot2, interplot, # Visualization
+       RefManageR, emo,# Applied
+       # dependency
+       readxl, haven, descr, stringi, stringr, arm, car, stargazer, data.table,
+       broom, tidyverse) # data wrangling
+
+set.seed(313)
+```
+
+## Why do we need conceptualization?
+
+1. Description NB:Seeking for general pattern
+1. Validation NB:For readers' check
+1. Clarification NB:Marking the boundary<br><br><div class="centered">
+<img src="image/conceptualization.jpg" height = 300 />
+</div>
+
+## What's a valid concept?
+
+* Component 1: Indicators
+    + "A reflection of a variable we wish to study." (Babbie 128)
+    + <div class="centered">
+<img src="image/indicator.gif" height = 400 />
+</div>
+
+## Exercise I: Which one is an indicator?
+<div class="centered">
+<img src="image/indicatorTest.gif" height = 350 />
+</div>
+
+## Exercise II: Which one is an indicator?
+
+<div class="centered">
+<img src="image/indicatorTest2.gif" height = 350 />
+</div>
+
+## Component 2: Dimension
+
+* "A specifiable aspect" (Babbie 129)
+
+<div style="float: left; width: 50%;">
+* This?<br><br><div class="centered">
+<img src="image/dimension.gif" height = 200 />
+</div>
+</div>
+
+<div style="float: right; width: 50%;">
+* Also this.<br><br><div class="centered">
+<img src="image/perspectives.gif" height = 250 />
+</div>
+</div>
+
+## Exercise I: 
+
+* Sour:
+
+<div style="float: left; width: 50%;">
+* pH scale: <br><br><div class="centered">
+<img src="image/sour2.gif" height = 200 />
+</div>
+</div>
+
+<div style="float: right; width: 50%;">
+* Feeling: <br><br><div class="centered">
+<img src="image/sour1.gif" height = 250 />
+</div>
+</div>
+
+## Exercise II:
+
+* Hotness
+
+<div style="float: left; width: 50%;">
+  * Temperature: <br><br><div class="centered">
+  <img src="image/hot1.gif" height = 200 />
+  </div>
+</div>
+
+<div style="float: right; width: 50%;">
+  * Taste: <br><br><div class="centered">
+  <img src="image/hot2.gif" height = 250 />
+  </div>
+</div>
+
+
+## Of course, you can define it by: 
+
+* Face shape
+
+<div style="float: left; width: 50%;">
+* Hot <br><br><div class="centered">
+<img src="image/hot.jpg" height = 250 width = 350 />
+</div>
+</div>
+
+
+<div style="float: right; width: 50%;">
+* Not hot <br><br><div class="centered">
+<img src="image/notHot.jpg" height = 250 width = 350 />
+</div>
+</div>
+
+## Component 3: Mutually agreement
+
+Does your definition make sense?<br><br>
+<div class="centered">
+<img src="image/agreement.gif" height = 350 />
+</div>
+
+## Invalid conceptualization: stretching
+
+"When the concept of democracy is applied to cases for which, by relevant scholarly standards, it is not appropriate."
+
+<div class="centered">
+<img src="image/stretching.jpg" height = 400 />
+</div>
+
+
+## Avoid stretching
+
+* Sartori's ladder:
+    + Defining attributes (*connotation*)
+    + Applied cases (*extension*)
+    + <div class="centered">
+<img src="image/sartoriLadder.png" height = 350 />
+</div>
+
+## Some techniques
+
+Compromise with the reality.<br><br>
+
+<div class="centered">
+<img src="image/avoidStretching.png" height = 450 />
+</div>
+
+## Let's try it
+
+How to define "democracy" so that China can be included?
+
+* Suffrage
+* Contestation
+* Civil liberties
+* Elected government
+
+

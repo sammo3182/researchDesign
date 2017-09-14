@@ -109,7 +109,21 @@ When you read these pieces, try to think about the following questions:
 * How does Ragin match the research strategies with the goals? (esp. Table 2.1) Are you convinced by this matching?
 
 
-<!-- ## `r weekList[5]` -->
+## `r weekList[5]`
+
+In this week we learn how to conceptualize.
+This is a step when you have found a research question and start to think about how to frame and present the primary components in it so that both you and your potential readers have an agreement on what your study is about.
+Babbie discussed the basic principles of conceptualization, while most of his examples are quite sociological.
+So, Collier and Levitsky's piece comes in to show you how a concept could be defined in a political research. 
+Pay attention to the "ladder" illustration and see how one can use it to avoid invalid conceptualization.
+Read through these materials and try to think about the following questions:
+
+* How do you know a concept is valid?
+* How is a conceptualization conducted? Which two components should be involved?
+* What's "hermeneutic circle" of definition? How is that helpful for conceptualization?
+* What's Satori's ladder? How does it help conceptualization?
+* What's conceptual stretching? What's conceptual differentiation?
+
 
 <!-- ## `r weekList[6]` -->
 

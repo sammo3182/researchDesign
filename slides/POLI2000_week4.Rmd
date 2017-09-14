@@ -5,7 +5,7 @@ author: "Yue Hu"
 output:
   ioslides_presentation:
     incremental: yes
-    # css: style.css
+    css: style.css
     logo: image/logo.gif
     self_contained: yes
     slidy_presentation: null
@@ -29,8 +29,6 @@ set.seed(313)
 
 # Quiz Time!! 
 <img style="float: right;" src="image/quiz.gif" height = 300 />
-
-
 
 ## Focus?
 When you have a topic or question of interest, what can you do with it?
@@ -63,7 +61,6 @@ When you have a topic or question of interest, what can you do with it?
 <img src="image/census.jpg" height = 500 />
 </div>
 
-*GT: difference from exploration*
 
 # Oh, Causality!
 <div class="centered">
@@ -187,11 +184,6 @@ Ragin's purpose of soical research:
 * Why is it important?
 * What's the relation of this purpose with explanation?
 
-(GT: 
-1. someone said one can't say understand it if it cannot predict the future.
-1. predicting rates is much easier.)
-
-
 ## Interpreting
 
 Theda Skocpol (1979): *States and Social Revolutions*
@@ -214,4 +206,9 @@ Theda Skocpol (1979): *States and Social Revolutions*
 * Studies of social media
 * Studies of terrorism
 
-# No research exists in vacuum!
+## No research exists in vacuum!
+
+* Concerning the substantive questions
+* Relying on empirical evidence:
+    + cross-sectional
+    + time-series

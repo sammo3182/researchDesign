@@ -86,7 +86,7 @@ set.seed(313)
     + Focusing on the fundamental unit (contrary to Babbie?)
     + Next step?
         + Empirical evidence
-        
+
 ## Example: Step 1. Question Hunting{.smaller}
 "No bourgeois, no democracy" (1966, 418): The likelihood of democracy increases once the size of the bourgeoisie has passed a certain threshold.
 
@@ -132,9 +132,9 @@ set.seed(313)
     + The politics within authoritarian governments, that is, how political rivalries, policy disagreements, and bargaining within different kinds of authoritarian regimes affect the incentives of authoritarian rulers to liberalize.
         + Method requirement: comparison
 * Build the theory:
-    + Literature (again) in
+    + Literature in (again)
         + Not important divisions within the regime
-        + Officials wants to maintain in office
+        + Officials want to maintain in office
             + Get sufficient supports from the constituents
 * Further narrow down
     + Different leaders, different interests.
