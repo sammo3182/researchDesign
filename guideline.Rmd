@@ -125,7 +125,27 @@ Read through these materials and try to think about the following questions:
 * What's conceptual stretching? What's conceptual differentiation?
 
 
-<!-- ## `r weekList[6]` -->
+## `r weekList[6]`
+
+In this week, we will start the first operationalization step: measuring abstract concepts.
+Babbie discussed basic principles and several ways to build measurements.
+Our task is not to being expert on any of them but being exposed to all of them so that we know what we can do when we intend to do something.
+Therefore, pay more attention to fundamental rules of measurements and the advantages and disadvantages of each measurement approach rather than the technical details.
+One of the crucial concern of concept measurement is its validity. 
+Babbie briefly discusses about it and Adcock and Collier specify it in terms of political science.
+In particular, they discussed a core concern in measurement validity: contextual specification.
+Also, for now, you can just briefly scan their discussion about the typology of validation, unless you are interested.
+They are helpful but involves reliability and precision mentioned in Babbie also as a type of measurement validation. 
+Be careful not letting this typology mess up your understanding from Babbie.
+
+Read through these materials and try to think about the following questions:
+
+* How do you choose from the four measure types (nominal, ordinal, interval, and ratio)? What is the assumption you've make when you choose one of them?
+* What's the relation among measurement precision, reliability, and accuracy?
+* What steps should one go through to build an index?
+* What is a "true" liker scale?
+* Why should scholars be concerned about contextual specification in building the measurements?
+* What are the means for scholars to build contextual specified concepts? 
 
 <!-- ## `r weekList[7]` -->
 <!-- *Due for the research question approval: `r dates$Wed[7]`.* -->
