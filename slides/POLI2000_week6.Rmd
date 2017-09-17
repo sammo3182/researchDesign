@@ -5,7 +5,7 @@ author: "Yue Hu"
 output:
   ioslides_presentation:
     incremental: yes
-    # css: style.css
+    css: style.css
     logo: image/logo.gif
     self_contained: yes
     slidy_presentation: null
