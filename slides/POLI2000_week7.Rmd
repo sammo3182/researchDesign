@@ -1,0 +1,155 @@
+---
+title: "Measurement in Practice"
+subtitle: "Design Political Research: Week 7"
+author: "Yue Hu"
+output:
+  ioslides_presentation:
+    incremental: yes
+    # css: style.css
+    logo: image/logo.gif
+    self_contained: yes
+    slidy_presentation: null
+    transition: faster
+    widescreen: yes
+---
+
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+
+library(pacman)
+p_load(dotwhisker, ggplot2, interplot, # Visualization
+       RefManageR, emo,# Applied
+       # dependency
+       readxl, haven, descr, stringi, stringr, arm, car, stargazer, data.table,
+       broom, tidyverse) # data wrangling
+
+set.seed(313)
+```
+
+## Traditions in Measure Democracy
+
+* Level of measurement
+* Structural equation model with latent variables
+* Pragmatic
+* Case-based
+
+## Level of measurement
+
+* Method: Guttman scaling
+    + Each component is a binary (or more complicate) question.
+        + "Evaluation your Instructor":
+            + Is your instructor handsome? (Yes/Sure/Indeed)
+            + Is your instructor knowledgeable? (Certainly/Absolutely/Definitely)
+            + Do you feel he is the best instructor? (For sure/Of course/Oh,yeah)
+    + The score is the accumulation of the components.
+
+----
+
+So, if your instructor get a score in 3 ~ 9, then you will know he is:
+
+* <div class="centered">
+<img src="image/shameless.png" height = 300 />
+</div> as he lets you to evaluate him as above.
+
+
+## Example: Polity IV
+
+* Coverage: 167 countries
+* Period: 1800--2015
+* Scoring:
+    + Each state has two scores: autocracy vis-a-vis democracy
+        + The competitiveness of political participation (1‐3)
+        + The competitiveness of executive recruitment (1‐2)
+        + The openness of executive recruitment (1)
+        + The constraints on the chief executive (1‐4)
+    + The components are added up as a "polity" score (-10 to 10) for each state.
+
+
+## Concern about the LoM
+
+* Some underlining assumptions:
+    1. Adding up?
+    1. Equal distance between scores.
+    1. Experts?
+
+## SEM
+
+```{r sem, fig.height=3}
+DiagrammeR::grViz("
+digraph democracy {
+
+  # a 'graph' statement
+  graph [overlap = true, fontsize = 20]
+
+  # several 'node' statements
+  node [shape = oval, fixedsize = false]
+  a [label = 'Democracy']
+
+  node [shape = box, fontname = Helvetica]
+  b [label = 'Competitiveness of \npolitical participation'] 
+  c [label = 'Competitiveness of \nexecutive recruitment'] 
+  d [label = 'Openness of \nexecutive recruitment'] 
+  e [label = 'Constraints on \nthe chief executive'] 
+  
+
+  # edge definitions with the node IDs
+  a -> {b c d e}
+}
+")
+
+
+```
+
+Method: statistically seeking for the "latent" variable.
+
+$$
+\begin{aligned}
+ Democracy &\sim \beta_a\mbox{Competitiveness of political participation}; \\
+ Democracy &\sim \beta_b\mbox{Competitiveness of executive recruitment};\\
+ Democracy &\sim \beta_c\mbox{Openness of executive recruitment};\\
+ Democracy &\sim \beta_d\mbox{Constraints on the chief executive}.
+\end{aligned}
+$$
+
+----
+
+### Pros:
+1. Brings together various variables
+2. Focus directly on causal connections
+3. Random error and bias
+4. Reduce measurement errors
+
+### Cons:
+1. Intuitive (substantive) meaning?
+
+
+## Pragmatic approach
+
+Sensible rather than puristical measurements. 
+
+* "In spite of all their conceptual and observational differences, the various approaches yield highly similar classifications of regimes. Hence, there is no reason to think that the results that follow depend on the particular way regimes were classified" Przeworski et al. (2000, 55)
+
+
+* Issues: 
+    + Ad hoc treatments of descriptive inference
+    + A lack of systematic attention to measurement
+    + Selection of measures 
+    
+
+## Case-based approach
+
+* A book project + a deep yet narrow understanding
+* Concern: Detail vs. Systematical<br><br><div class="centered">
+<img src="image/caseApproach.jpg" height = 300 />
+</div>
+
+## A ideal measurement
+
+<div class="centered">
+<img src="image/devastator.gif" height = 300 />
+</div>
+
+* But in practice:
+    + Interests of time and space
+    + At least a validation statement

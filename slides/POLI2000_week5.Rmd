@@ -35,7 +35,7 @@ set.seed(313)
 <img src="image/conceptualization.jpg" height = 300 />
 </div>
 
-## What's a valid concept?
+## How to construct an concept?
 
 * Component 1: Indicators
     + "A reflection of a variable we wish to study." (Babbie 128)
@@ -159,13 +159,5 @@ Does your definition make sense?<br><br>
 </div>
 
 
-## Let's try it
-
-How to define "democracy" so that China can be included?
-
-* Suffrage
-* Contestation
-* Civil liberties
-* Elected government
 
 
