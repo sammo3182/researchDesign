@@ -153,3 +153,94 @@ Sensible rather than puristical measurements.
 * But in practice:
     + Interests of time and space
     + At least a validation statement
+    
+# Midterm Review
+
+## Question format
+
+* Open-book
+
+* Identification $\times$ 6 (30%)
+* Interpretation $\times$ 1 (30%)
+* Short essay $\times$ 2 (40%)
+
+## Time distribution
+
+75 mins in total.
+
+* Identification: 24 min (2 ~ 4 min/question)
+* Interpretation: 5 ~ 10 min 
+* Short essay 40 min (15 ~ 20 min/question)
+
+
+## Examples: Indentification
+
+### Question
+
+Explan the following term: Dependent variable
+
+### Answer
+
+Dependent variable is a variable assumed to depend on or be caused by the independent variable. (Babbie 18)
+
+
+## Examples: Interpretation
+
+### Question
+
+What issue does the following image reflect?
+Explain why this issue could be problemetic for social science researh.
+
+<div class="centered">
+<img src="image/ecologicalII.jpg" height = 300 />
+</div>
+
+----
+
+### Answer (114 words)
+
+The above image reflects an *ecological fallacy* issue. 
+It happens when researchers erroneously drawing conclusions about individuals solely from the observation of groups (Babbie 103).
+
+
+It could be problematic *because* the characteristics shown at the aggregate level of a group are not necessarily the characteristics of each individual in the group.
+In this case, any estimation about the individuals at the group level could lead to a misleading conclusion. 
+
+
+*As shown in the image*, each piece in this puzzle is irregular, but at the aggregate level, they compose a regular square. 
+If one argues that each piece in the puzzle is a regular square because their composition is a square, this conclusion is invalid.
+
+
+## Example: Short essay
+
+### Question: 
+
+Why does Geddes recommend political scientist to use analystic narrative (Geddes 2010)? How can scholars apply it in political science? Using an example to illustrate.
+
+----
+
+### Answer (222 words)
+
+Analytic narrative is an approach in social science that focuses on the mechanisms that translate such macrohistorical forces into specific political outcomes.
+Geddes recommends this method because the goal of political science research is to understand underlying political processes rather than to explain, in the sense of identifying the correlates of, complex outcomes.
+Analytic narrative can help researchers to comprehend such understanding. 
+
+To apply it in the practice in political science, researchers should focus on the fundamental unit of politics and break up the traditional big questions into more precisely defined questions about what individuals do in specific situations that recur often enough to support generalizations about them.
+Moreover, Geddies points out finding the mechanism is an essential part but not the end product of political research.
+The research effort is not complete until empirical tests have shown that implications drawn from the argument are consistent with reality (Geddies 38).
+
+----
+
+### Answer (Continued)
+
+In the example Geddes provided to illustrate this approach, she is interested in the big question "no bourgeois, no democracy."
+To study this question, she narrows this question down to a specific focus of the transition from authoritarianism and identifies the fundamental unit in this process as the political rivalries and relationships.
+She draws implications about these relationships and the corresponding consequences of the transitions and uses empirical data to test them.
+
+
+
+## Suggestions:
+
+1. Being familiar with the materials ahead.
+1. Using your time strategically.
+1. Cite the sources of your anwers (e.g., "According to Babbie (75),..." or "......(Babbie, 75).")
