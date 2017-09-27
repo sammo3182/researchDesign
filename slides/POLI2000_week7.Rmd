@@ -161,16 +161,16 @@ Sensible rather than puristical measurements.
 * Open-book
 
 * Identification $\times$ 6 (30%)
-* Interpretation $\times$ 1 (30%)
+* Interpretation $\times$ 2 (30%)
 * Short essay $\times$ 2 (40%)
 
 ## Time distribution
 
 75 mins in total.
 
-* Identification: 24 min (2 ~ 4 min/question)
-* Interpretation: 5 ~ 10 min 
-* Short essay 40 min (15 ~ 20 min/question)
+* Identification: 25 min (2 ~ 5 min/question)
+* Interpretation: 20 min (5 ~ 10 min/question)
+* Short essay 30 min (10 ~ 15 min/question)
 
 
 ## Examples: Indentification
@@ -215,32 +215,49 @@ If one argues that each piece in the puzzle is a regular square because their co
 
 ### Question: 
 
-Why does Geddes recommend political scientist to use analystic narrative (Geddes 2010)? How can scholars apply it in political science? Using an example to illustrate.
+Babbies discussed three fundamental purposes of social research.
+What are they?
+How do scholars design research for these goals?
+Using political science examples to illustrate.
 
 ----
 
-### Answer (222 words)
+### Answer (317 words)
 
-Analytic narrative is an approach in social science that focuses on the mechanisms that translate such macrohistorical forces into specific political outcomes.
-Geddes recommends this method because the goal of political science research is to understand underlying political processes rather than to explain, in the sense of identifying the correlates of, complex outcomes.
-Analytic narrative can help researchers to comprehend such understanding. 
+The three fundamental purposes Babbies discusses are exploration, description, and explanation.
+Exploration *is* conducted to explore a topic, that is, to start to familiarize a researcher with that topic. 
+This approach typically occurs when a researcher examines a new interest or when the subject of study itself is relatively new.
 
-To apply it in the practice in political science, researchers should focus on the fundamental unit of politics and break up the traditional big questions into more precisely defined questions about what individuals do in specific situations that recur often enough to support generalizations about them.
-Moreover, Geddies points out finding the mechanism is an essential part but not the end product of political research.
-The research effort is not complete until empirical tests have shown that implications drawn from the argument are consistent with reality (Geddies 38).
+*An example* for exploratory research could be an observation of the populist trend in the U.S.
+This research does not aim to provide a complete picture of the contemporary American public opinion trend or to examine any theory-based hypothesis or implication.
+The only purpose is only to find out, for example, who are in this trend, what is the context that this trend occurs, and how influential this trend is.
+
+Another major purpose of many social science studies is to describe situations and events. 
+The researcher observes and then describes what was observed. 
+In comparison to exploration and casual observations, descriptive research is usually more systematic, accurate, and precise.
+
 
 ----
 
 ### Answer (Continued)
 
-In the example Geddes provided to illustrate this approach, she is interested in the big question "no bourgeois, no democracy."
-To study this question, she narrows this question down to a specific focus of the transition from authoritarianism and identifies the fundamental unit in this process as the political rivalries and relationships.
-She draws implications about these relationships and the corresponding consequences of the transitions and uses empirical data to test them.
+An example of descriptive research is the Correlation of War (COW) project.
+The project precisely records a series of data of every interstate conflicts in the modern history of human being, such as size, engaged parties, and duration.
+The goal of the project is to describe accurately and precisely a wide variety of characteristics of interstate conflicts rather than testing any hypothesis.
 
+The third purpose Babbie discusses is explanation.
+Descriptive studies answer questions of what, where, when, and how;
+explanatory questions, of why. 
+It includes two types: ideographic explanation which seeks a complete, in-depth understanding of a single case and nomothetic explanation which focuses on the general patterns that can be used to explain a series of cases or phenomena. 
+
+An example for explanatory research can be a study about why international organizations cannot eliminate interstate conflicts.
+The researchers should give relevant theories and hypotheses and provide corresponding empirical tests to complete an explanatory study (Babbie 89-91).
 
 
 ## Suggestions:
 
 1. Being familiar with the materials ahead.
+1. Short and clear sentences.
 1. Using your time strategically.
 1. Cite the sources of your anwers (e.g., "According to Babbie (75),..." or "......(Babbie, 75).")
+1. READABLE HAND-WRITING.

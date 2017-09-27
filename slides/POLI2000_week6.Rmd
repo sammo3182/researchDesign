@@ -61,9 +61,24 @@ set.seed(313)
 
 ## Assumption behand the measurement levels
 
+* Nominal: only categorical differences, no intensity, no order.
+* Ordinal: equivalent differences between categories.
+* Interval: difference + order; not exactly how much different.
+* Ratio: values are homogeneous and can be calculated.
+
+----
+
 <div class="centered">
 <img src="image/measureLevel.png" height = 450 />
 </div>
+
+## Exercise: Measuring states' capacity
+
+* Definition?
+* Which type of measure?
+* What is the benefit?
+* What information you might lose?
+* What risk are taking?
 
 ## Measurement Validation
 
@@ -87,10 +102,33 @@ set.seed(313)
 
 ## Validity
 
-"Valid measurement is achieved when scores (including the results of qualitative classification) meaningfully capture the ideas contained in the corresponding concept." (Adcock and Collier 2001, 530)
-
 <div class="centered">
 <img src="image/validity.gif" height = 400 />
+</div>
+
+* "Valid measurement is achieved when scores (including the results of qualitative classification) meaningfully capture the ideas contained in the corresponding concept." (Adcock and Collier 2001, 530)
+
+## Precision, reliability, validity
+
+<div class="centered">
+<img src="image/threeMeasureCritaria.jpg" height = 450 />
+</div>
+
+
+
+## Validity in depth
+
+"Measurement is valid when the scores (level 4 in Figure 1), derived from a given indicator (level 3), can meaningfully be interpreted in terms of the systematized concept (level 2) that the indicator seeks to operationalize." (Adcock and Collier 2001, 531)
+
+* Content validation
+* Convergent validation
+* Constructive validation
+
+
+----
+
+<div class="centered">
+<img src="image/measureValidity.png" height = 600 />
 </div>
 
 ## Face validity
@@ -111,22 +149,6 @@ Cereal;
 ......
 </div>
 
-## Precision, reliability, validity
-
-<div class="centered">
-<img src="image/threeMeasureCritaria.jpg" height = 450 />
-</div>
-
-## Validity in depth
-
-"Measurement is valid when the scores (level 4 in Figure 1), derived from a given indicator (level 3), can meaningfully be interpreted in terms of the systematized concept (level 2) that the indicator seeks to operationalize." (Adcock and Collier 2001, 531)
-
-----
-
-<div class="centered">
-<img src="image/measureValidity.png" height = 600 />
-</div>
-
 ## Contextual specificity
 
 "Do you like pizza?"
@@ -143,7 +165,7 @@ Cereal;
 </div>
 </div>
 
-# How is a measurement looks like?
+# How does a measurement looks like?
 
 ## Qualitative: Typology
 
