@@ -1,0 +1,38 @@
+---
+title: "Midterm Review"
+output: html_document
+---
+
+The midterm will examine your understanding of the following concepts:
+
+1. Political science
+1. Agreement reality
+1. Purposes of social research
+1. Analytic narrative
+1. Research strategy
+1. Independent variable
+1. Dependent variable
+1. Correlation
+1. Spurious relationship
+1. Necessary and sufficient conditions
+1. Ecological fallacy
+1. Reductionism
+1. Cross-sectional study
+1. Longitudinal study
+1. Conceptualization
+1. Concept stretching
+1. Indicator
+1. Levels of measurement (nominal, ordinal, interval, ratio)
+1. Measurement precision
+1. Measurement reliability
+1. Measurement validity
+1. Face validity
+1. Index
+1. Scale
+1. Content validation
+1. Convergent validation
+1. Constructive validation
+1. Contextual specificity
+1. Level of measurement tradition
+1. Pragmatic tradition
+1. Case-based tradition
