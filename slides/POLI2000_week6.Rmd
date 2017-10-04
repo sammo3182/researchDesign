@@ -165,7 +165,7 @@ Cereal;
 </div>
 </div>
 
-# How does a measurement looks like?
+# What does a measurement look like?
 
 ## Qualitative: Typology
 

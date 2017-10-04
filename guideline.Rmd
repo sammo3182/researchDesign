@@ -29,6 +29,7 @@ dates <- data.frame(day = seq(from = start, to = end, by = "days")) %>%
       spread(key = weekDay, value = day) %>% # long to wide
         rename(Mon = `2`, Wed = `4`)
 
+
 dates$content <- NA
 ## Holidays
 dates$content[dates$Mon == ymd("2017-09-04")] <- "What's A Good Question (Labor Day)"
@@ -163,7 +164,23 @@ Read through the material and try to think about the following questions:
 * Is it possible for a scholar to apply multiple approaches to measure a concept? If so, which approaches can they combine, and what are the benefit and cost for this mixed application?
 
 
-<!-- ## `r weekList[8]` -->
+## `r weekList[8]`
+
+As you will take the midterm in this week, you only need to read one piece of material.
+However, it does not mean this one is less important than the readings in the other weeks.
+On contrary, we will start to discuss a core link in the chain of political research---theory.
+You also have a special assignment to write your own theory of your project.
+To do that right, you ought to know what's a theory first.
+That's what we will discuss in this week.
+A probably good news for you is that, since Babbie mentioned quite a few paradigms that are commonly used in sociology rather than political science, you don't have to closely read that part unless you are interested. 
+Focus more on the discussions about the components of social theories since p. 44. 
+
+Read through the material and try to think about the following questions:
+
+* How the macro and micro view are different in a theory building process?
+* What's positivism?
+* What's theory? What's proposition? What's hypothesis?
+* How can one conduct a deductive theory?
 
 
 <!-- ## `r weekList[9]` -->

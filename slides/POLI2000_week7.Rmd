@@ -69,7 +69,7 @@ So, if your instructor get a score in 3 ~ 9, then you will know he is:
 ## Concern about the LoM
 
 * Some underlining assumptions:
-    1. Adding up?
+    1. Adding up? Average? Multiple them? 
     1. Equal distance between scores.
     1. Experts?<br><br><div class="centered">
 <img src="image/expert.gif" height = 300 />
