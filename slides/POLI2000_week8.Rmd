@@ -1,0 +1,54 @@
+---
+title: "What's A Theory?"
+subtitle: "Design Political Research: Week 8"
+author: "Yue Hu"
+output:
+  ioslides_presentation:
+    incremental: yes
+    css: style.css
+    logo: image/logo.gif
+    self_contained: yes
+    slidy_presentation: null
+    transition: faster
+    widescreen: yes
+---
+
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+
+library(pacman)
+p_load(dotwhisker, ggplot2, interplot, # Visualization
+       RefManageR, emo,# Applied
+       # dependency
+       readxl, haven, descr, stringi, stringr, arm, car, stargazer, data.table,
+       broom, tidyverse) # data wrangling
+
+set.seed(313)
+```
+
+## Oh, paradigm!
+
+<div class="centered">
+<img src="image/paradigm.gif" height = 300 />
+</div>
+
+* What the bi~~ is paradigm?
+    + "A model or frame of reference through which to observe and understand." (Babbie 32)
+    + Epistemology? Approach? Method? 
+
+
+## Positivism
+
+"Scientific truths could be positively verified through empirical observations and the logical analysis of what was observed." (Babbie 35)
+
+* Reality is *independent* from human feelings, ideas, perceptions.
+* Social phenomena have to be treated like *physical objects*.
+* Knowledge is *value-free, objective, measurable*.
+* Knowledge can only be accessed objectively through a *scientific approach*.
+
+## Rational choice
+
+## Structuralism
+
+## Culturalism
