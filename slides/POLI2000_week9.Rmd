@@ -1,0 +1,75 @@
+---
+title: "Theory and Causal Inference"
+subtitle: "Design Political Research: Week 9"
+author: "Yue Hu"
+output:
+  ioslides_presentation:
+    incremental: yes
+    css: style.css
+    logo: image/logo.gif
+    self_contained: yes
+    slidy_presentation: null
+    transition: faster
+    widescreen: yes
+---
+
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+
+library(pacman)
+p_load(dotwhisker, ggplot2, interplot, # Visualization
+       RefManageR, emo,# Applied
+       # dependency
+       readxl, haven, descr, stringi, stringr, arm, car, stargazer, data.table,
+       broom, tidyverse) # data wrangling
+
+set.seed(313)
+```
+
+## How to understand causation?
+
+<div class="centered">
+<img src="image/causation.gif" height = 300 />
+</div>
+
+* Find A is causal, rather than random, consequence.
+* How do we identify the causes of A?
+* How do we justify B is a cause of A?
+
+
+## Pluralist view?
+
+* $\neq$ multicausality<br><br><div class="centered">
+<img src="image/multicausal.jpg" height = 400 />
+</div>
+
+----
+
+Pluralist view: formal causes, material causes, efficient causes, determistic causes, probabilistic causes, correlational causation, causal mechanisms...
+
+* Different explanations for the same causation
+* Different perspective of the same causal explanation.
+
+## Why not pluralist view?
+
+* Over-stating the differenct-ness
+* Not benefiting the research
+
+## A universal view
+
+* A minimal definition
+* 16 criteria of formal properties of causal arguments
+* 8 criteria for research design
+
+## Defining causation
+
+Cause: Events or conditions that raise the prior probability of some outcome occurring, under ceteris paribus conditions (Gerring 2005, 169).
+
+* $P(Y|X) > P(Y|-X).$
+* Why a minimal causation?
+    + Hint: Sartori's ladder
+* Bayesian framework?
+    + $Y(A|B) = \frac{Y(B|A)Y(A)}{Y(B)}$
+    + $Posterior = \frac{Likelihood\times Prior}{Evidence}$
+

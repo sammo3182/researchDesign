@@ -183,7 +183,18 @@ Read through the material and try to think about the following questions:
 * How can one conduct a deductive theory?
 
 
-<!-- ## `r weekList[9]` -->
+## `r weekList[9]`
+
+In this week we will discuss an important (if not the most important) concept in political research---causal theory. 
+It is the core for explanatory research.
+Gerring (2005) provides us a definition of causation and 23 criteria to build and validate a theory.
+Pay your attention to the formal critria of causal propositions, since you will use them to build your own theory in the final project. 
+On the other hand, we will discuss the rest 8 criteria in more detail, which will be the standards for you to assess an established theory (such as the one you build in your proposal) and also for me to evaluate your next assignment.
+
+Read through the materials and try to think about the following questions:
+
+* Why does Gerring go against the pluralist understanding of causation?
+* Is every formal criteria of causal propositions necessary for building a valid theory?
 
 <!-- ## `r weekList[10]` -->
 
