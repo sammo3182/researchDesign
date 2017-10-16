@@ -190,11 +190,15 @@ It is the core for explanatory research.
 Gerring (2005) provides us a definition of causation and 23 criteria to build and validate a theory.
 Pay your attention to the formal critria of causal propositions, since you will use them to build your own theory in the final project. 
 On the other hand, we will discuss the rest 8 criteria in more detail, which will be the standards for you to assess an established theory (such as the one you build in your proposal) and also for me to evaluate your next assignment.
+Fearon (1991) introduces us an important and useful method to build theoretical argument that is different from the regular hypothesis test.
+For those who plan to conduct qualitative analysis, this method can highly extend your researching scale even if you cannot find ideal cases to conduct an actual-case hypothesis test.
+For those quantitativists, the paper will help you to clarify the research logic of setting a valid research design connecting your theory and data.
 
 Read through the materials and try to think about the following questions:
 
 * Why does Gerring go against the pluralist understanding of causation?
 * Is every formal criteria of causal propositions necessary for building a valid theory?
+* What's conterfactual strategy? How is that different from the actual-case strategy in research design?
 
 <!-- ## `r weekList[10]` -->
 
