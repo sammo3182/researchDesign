@@ -200,7 +200,20 @@ Read through the materials and try to think about the following questions:
 * Is every formal criteria of causal propositions necessary for building a valid theory?
 * What's conterfactual strategy? How is that different from the actual-case strategy in research design?
 
-<!-- ## `r weekList[10]` -->
+## `r weekList[10]`
+
+Starting from this week, we start to learn how to play with the real-life data.
+The first method we will touch is experiment---the ideal method for social scientists to examine causal effects. Babbi discussed the basic logic and principles of experimental design. Gerber and Green (2011) talked about several very important assumptions which experimentalists should always check. Moreover, they discussed about two semi-experimental methods: field experiments and natural experiments.
+
+
+Read through the materials and try to think about the following questions:
+
+* What's a classic experimental design?
+* How does experiments deal with internal and external validity?
+* What's a field experiment? How is that different from the lab experiments?
+* What's a natural experiment? How is that different from the lab experiments?
+* What's Rubin's causal model? What can we do with it?
+* What are the fivek assumptions most experimental design should follow? What may happen if they are violated?
 
 
 <!-- ## `r weekList[11]` -->

@@ -1,0 +1,12 @@
+---
+title: "Minimum example"
+output:
+  ioslides_presentation:
+    self_contained: yes
+---
+
+## Slide
+
+<div class="centered">
+<img src="image/paradigm.gif" height = 300 />
+</div>
