@@ -209,6 +209,8 @@ The first method we will touch is experiment---the ideal method for social scien
 Read through the materials and try to think about the following questions:
 
 * What's a classic experimental design?
+* What's pretest and posttest? Why do we need them?
+* What's control group? Why do we need it? 
 * How does experiments deal with internal and external validity?
 * What's a field experiment? How is that different from the lab experiments?
 * What's a natural experiment? How is that different from the lab experiments?
