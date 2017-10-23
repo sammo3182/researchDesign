@@ -81,7 +81,9 @@ kable(text_tb, "html", align = "lcc")%>%
 
 ## Validity
 
-* Internal Validity
+"The approximate truth of the inference or knowledge claim."---Morton & Williams (2010, 254)
+
+* Internal Validity: The approximate truth of the inference or knowledge claim *within* a target population studies.
     + Construct validity
     + Causal validity
     + Statistical validity
@@ -89,7 +91,27 @@ kable(text_tb, "html", align = "lcc")%>%
     
 ## External vs. Ecological Validity
 
-<div class="centered">
+
+* <span style="color:gray">Internal Validity: The approximate truth of the inference or knowledge claim *within* a target population studies.</span>
+
+* External validity: The approximate truth of the inference or knowledge claim *beyond* a target population studies.
+* Ecological validity: Whether the methods, materials, and settings of the research are similar to a given target environment.
+
+## Which validity should be concerned?
+
+* <div class="centered">
+<img src="image/sherlock.jpg" height = 500 />
+</div>
+
+## Which validity should be concerned?
+
+* <div class="centered">
+<img src="image/matchedGuise.jpg" height = 500 />
+</div>
+
+## Which validity should be concerned?
+
+* <div class="centered">
 <img src="image/externalEcological.jpg" height = 500 />
 </div>
 
@@ -126,9 +148,8 @@ Subject will have the same effect regardless which group they are in.
 
 $$
 \begin{aligned}
-Assumption:& E(Y_{i1}|T_i = 1) = E(Y_{i1}|T_i = 0);\\
-           & E(Y_{i0}|T_i = 1) = E(Y_{i0}|T_i = 0).\\
-ATE:&        E(\tau_i) = E(Y_{i1}|T_i = 1) - E(Y_{i0}|T_i = 0).
+E(Y_{i1}|T_i = 1) =& E(Y_{i1}|T_i = 0);\\
+E(Y_{i0}|T_i = 1) =& E(Y_{i0}|T_i = 0).
 \end{aligned}
 $$
 </div>
@@ -222,3 +243,9 @@ The effect of stimulus on one subject is affected by other subjects.
 * Stimulation: It just happened.
 * Pro: Ecological and external validity
 * Con: Internal validity
+
+
+## Applying the experiment to your research
+
+* Group: 1, 4, 5, 8: field experiment
+* Group: 2, 3, 6, 7: natural experiment
