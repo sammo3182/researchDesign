@@ -218,7 +218,17 @@ Read through the materials and try to think about the following questions:
 * What are the fivek assumptions most experimental design should follow? What may happen if they are violated?
 
 
-<!-- ## `r weekList[11]` -->
+## `r weekList[11]`
+
+In this week, we will discuss one of the most common qualitative research method: case study. Gerring (2004) provides the basic definition of the approach and lays out the pros and cons of the method. Przeworski and Teune (1970) give the basic principles of the comparative case studies.
+
+Read through the materials and try to think about the following questions:
+
+* What's the difference between case and unit?
+* Can you test causality with single-unit analysis? How?
+* What's concomitant variation? How does it relate to the most similar system strategy?
+* What are the difference between most similiar and most different systems? Why should we care about them?
+
 
 <!-- ## `r weekList[12]` -->
 
