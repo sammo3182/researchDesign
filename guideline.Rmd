@@ -188,7 +188,7 @@ Read through the material and try to think about the following questions:
 In this week we will discuss an important (if not the most important) concept in political research---causal theory. 
 It is the core for explanatory research.
 Gerring (2005) provides us a definition of causation and 23 criteria to build and validate a theory.
-Pay your attention to the formal critria of causal propositions, since you will use them to build your own theory in the final project. 
+Pay your attention to the formal criteria of causal propositions, since you will use them to build your own theory in the final project. 
 On the other hand, we will discuss the rest 8 criteria in more detail, which will be the standards for you to assess an established theory (such as the one you build in your proposal) and also for me to evaluate your next assignment.
 Fearon (1991) introduces us an important and useful method to build theoretical argument that is different from the regular hypothesis test.
 For those who plan to conduct qualitative analysis, this method can highly extend your researching scale even if you cannot find ideal cases to conduct an actual-case hypothesis test.
@@ -215,7 +215,7 @@ Read through the materials and try to think about the following questions:
 * What's a field experiment? How is that different from the lab experiments?
 * What's a natural experiment? How is that different from the lab experiments?
 * What's Rubin's causal model? What can we do with it?
-* What are the fivek assumptions most experimental design should follow? What may happen if they are violated?
+* What are the five assumptions most experimental design should follow? What may happen if they are violated?
 
 
 ## `r weekList[11]`
@@ -227,10 +227,20 @@ Read through the materials and try to think about the following questions:
 * What's the difference between case and unit?
 * Can you test causality with single-unit analysis? How?
 * What's concomitant variation? How does it relate to the most similar system strategy?
-* What are the difference between most similiar and most different systems? Why should we care about them?
+* What are the difference between most similar and most different systems? Why should we care about them?
 
 
-<!-- ## `r weekList[12]` -->
+## `r weekList[12]`
+
+In this week, we'll learn how to apply the case-study principles in real-life research. The two material illustrate how this method is applied to projects in comparative politics and international relations. For Gedds (2010), you don't have to spend much time on the last section "Case Studies, Time Series, and Regression to the Mean," if you don't know what a regression is. If you do know, this is a good section to connect your quantitative research techniques to case study. Nor do you need to spend too much time on the QCA part in Bennett & Elman (2007). We will talk about this method in next week.
+
+Read through the materials and try to think about the following questions:
+
+* How can selection bias happens when doing case study?
+* What consequences can selection bias bring to research?
+* Can one conduct a case study with one single case? If one can, how?
+* What's deviant case? Why do we can care about it?
+* 
 
 
 <!-- ## `r weekList[13]` -->

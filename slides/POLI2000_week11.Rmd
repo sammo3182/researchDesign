@@ -46,18 +46,17 @@ An intensive study of a single unit for the purpose of understanding a larger cl
         + Spatial?
         + Temporal?
         
-## Observations? variables? Cases? Unites?
+## Observations? Variables? Cases? Unites?
 
 ```{r}
-text_tb <- data.frame(A_Case = "A Case",
-  A_Variable = paste0("Observation ", 1:3),
-                      A_Unit = "A Unit")
-colnames(text_tb) <- c(" ", "A Variable", " ")
+text_tb <- data.frame(Observed = 1:8,
+                      Gender = rep(c("Male", "Female"), times = 4), 
+                      Country = rep(c("US", "UK"), each = 4))
 
-kable(text_tb, "html", align = "lcc")%>%
-  kable_styling(full_width = TRUE, font_size = 25) %>%
-      column_spec(1:3, width = "7em")
+kable(text_tb, "html", align = "crr")%>%
+  kable_styling(full_width = TRUE, font_size = 25, bootstrap_options = c("responsive"))
 ```
+<br>
 
 * Is the U.S. a case, an observation, a unit, or a population?
 
@@ -83,12 +82,88 @@ kable(text_tb, "html", align = "lcc")%>%
 * Deep rather than broad, bounded scope of proposition
 * Comparing rather than represent other cases
 * Causal mechanism rather than effect
-* Deterministic rather than probabilisitic relations
+* Deterministic rather than probabilistic relations
 * Exploring rather than confirmatory test
 * Implication: <span style="color:red">what's a like/unlike case</span>?
 
 ## Why don't we let the case be representative?
 
+Randomization?
+
 <div class="centered">
 <img src="image/largeNum.png" height = 500 />
 </div>
+
+
+## PRINCIPLES of case comparison
+
+* Most similar system
+* Most different system
+
+## Concomitant variation (most similar system)
+
+"The belief that systems as similar as possible with respect to as many features as possible constitute the optimal samples for comparative inquiry (Przeworski and Teune 1970, 32)."
+
+<div class="centered">
+<img src="image/scandinavian.jpg" height = 400 />
+</div>
+
+## Why is some democracy's leader more powerful?
+
+Theory: Legislature structure.
+
+```{r}
+text_tb <- data.frame(US = c("American continent", "Broad territory", "Anglo-Saxon", "Democracy", "Federal", "Parliamentary"), 
+                      Canada = c("American continent", "Broad territory", "Anglo-Saxon", "Democracy", "Federal", "Presidential"))
+rownames(text_tb) <- c("Position", "Size", "Culture", "Polity", "Government", "Legislature")
+
+text_tb
+```
+
+## Application
+
+* Focus: *inter*systemic similarities and differences
+* Assumption: characteristics shared by one group of systems, such as can be removed (control).
+* Explanatory: Differences
+
+## Practice
+
+* What's an origin of water conflicts? (G 1,3)
+* What make two states apply the same policy? (G 2,4)
+* How does a government determine its environmental policy? (G 5,7)
+* What forms the political correctness of a society ? (G 6,8)
+
+## Most different system
+
+* Focus: *intra*systemic similarities and differences
+* Assumption: systemic factors do not play any role in explaining the observed behavior.
+* Control: Common systemic characteristics
+* Explanatory: Differences
+
+## Practice
+
+* What's an origin of water conflicts? (G 1,3)
+* What make two states apply the same policy? (G 2,4)
+* How does a government determine its environmental policy? (G 5,7)
+* What forms the political correctness of a society ? (G 6,8)
+
+## Comparison
+
+```{r}
+text_tb <- data.frame( Item = c("Assumption", "Focus", "Control", "Target"),
+  MSS = c("Similarity is irrelavant", "Difference", "Shared properties", "Sufficiency"), 
+  MDS = c("Differences is irrelevant", "Common Characteristics", "Different features", "Necessity"))
+
+kable(text_tb, "html", align = "lrr") %>%
+  kable_styling(full_width = TRUE, position = "center") %>%
+    column_spec(1, bold = T, border_right = T) %>%
+      column_spec(2:3, border_right = T)
+```
+
+* The first question to ask: whether the systems are the same or different on the dependent variable?
+
+## Schedule
+
+* Within, then cross-system
+* Main, then secondary variables
+* Stop: number of variables or degrees of freedom is exhausted
