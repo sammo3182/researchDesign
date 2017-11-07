@@ -1,6 +1,6 @@
 ---
-title: "Principles of Case Study"
-subtitle: "Design Political Research: Week 11"
+title: "PCase Study in Practice"
+subtitle: "Design Political Research: Week 12"
 author: "Yue Hu"
 output:
   ioslides_presentation:

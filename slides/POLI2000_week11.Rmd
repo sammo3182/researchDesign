@@ -97,10 +97,10 @@ Randomization?
 
 ## PRINCIPLES of case comparison
 
-* Most similar system
-* Most different system
+* Most similar systems
+* Most different systems
 
-## Concomitant variation (most similar system)
+## Concomitant variation (most similar systems)
 
 "The belief that systems as similar as possible with respect to as many features as possible constitute the optimal samples for comparative inquiry (Przeworski and Teune 1970, 32)."
 
@@ -113,8 +113,8 @@ Randomization?
 Theory: Legislature structure.
 
 ```{r}
-text_tb <- data.frame(US = c("American continent", "Broad territory", "Anglo-Saxon", "Democracy", "Federal", "Parliamentary"), 
-                      Canada = c("American continent", "Broad territory", "Anglo-Saxon", "Democracy", "Federal", "Presidential"))
+text_tb <- data.frame(US = c("American continent", "Broad territory", "Anglo-Saxon", "Democracy", "Federal", "Presidential"), 
+                      Canada = c("American continent", "Broad territory", "Anglo-Saxon", "Democracy", "Federal", "Parliamentary"))
 rownames(text_tb) <- c("Position", "Size", "Culture", "Polity", "Government", "Legislature")
 
 text_tb
@@ -137,8 +137,8 @@ text_tb
 
 * Focus: *intra*systemic similarities and differences
 * Assumption: systemic factors do not play any role in explaining the observed behavior.
-* Control: Common systemic characteristics
-* Explanatory: Differences
+* Control: Differences in the common systemic characteristics
+* Explanatory: Similarity
 
 ## Practice
 
@@ -161,9 +161,3 @@ kable(text_tb, "html", align = "lrr") %>%
 ```
 
 * The first question to ask: whether the systems are the same or different on the dependent variable?
-
-## Schedule
-
-* Within, then cross-system
-* Main, then secondary variables
-* Stop: number of variables or degrees of freedom is exhausted
