@@ -243,7 +243,15 @@ Read through the materials and try to think about the following questions:
 * 
 
 
-<!-- ## `r weekList[13]` -->
+## `r weekList[13]`
+
+We are exposed more methods to apply in qualitative research in this week. Be always aware that conducting qualitative does not mean you don't need to collect data. Nor are only numbers data. In this week, Babbie will illustrate us how to transfer daily conversations, group chattings, and written stories into analytic data. For the Monday part of the readings, focus on the interview and content analysis rather than the existing stat analysis and comparative research. We've talked about the latter when discussing case study and will talk about the former in the last week.
+
+Read through the materials and try to think about the following questions:
+
+* What's focus group? What's the advantage of this method than regular face-to-face interview?
+* What's content analysis? What should a researcher know before conducting the content analysis?
+* How can a researcher sample texts for content analysis? 
 
 <!-- *Due for the brief of the theory: `r dates$Mon[13]`.* -->
 

@@ -45,7 +45,6 @@ set.seed(313)
 ## Different types of selections
 
 <div style="float: left; width: 50%;">
-### Selection on IV
 <div class="centered">
 <img src="image/selectionX.png" height = 300 />
 </div>
@@ -54,7 +53,6 @@ set.seed(313)
 
 
 <div style="float: right; width: 50%;">
-### Selection on DV
 <div class="centered">
 <img src="image/selectionY.png" height = 300 />
 </div>
@@ -63,7 +61,7 @@ set.seed(313)
 
 ----
 
-### Selection on Both
+
 <div class="centered">
 <img src="image/selectionXY.png" height = 400 />
 </div>
@@ -187,3 +185,6 @@ than are personalist regimes.
 * Explicit attention to and process tracing on alternative explanations
 * Sustained focus on the question of "what else must be true" of the process
 * A wide variety of sources
+
+# Chance for a [fancy analysis](https://clas.uiowa.edu/polisci/resources/news-and-events/bose-speaker-series-benjamin-bagozzi)
+
