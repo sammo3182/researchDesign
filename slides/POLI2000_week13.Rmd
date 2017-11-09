@@ -142,3 +142,28 @@ set.seed(313)
 * Limited content
 * Limited scale
 * Subjective consistency
+
+# Qualitative Data Processing
+
+## Coding
+
+<div style="float: left; width: 30%;">
+* Open coding<br><br><div class="centered">
+<img src="image/openCoding.jpg" height = 300 />
+</div>
+
+</div>
+
+<div style="float: right; width: 70%;">
+* Axial coding<br><br><div class="centered">
+<img src="image/axialCoding.jpg" height = 300 />
+</div>
+
+</div>
+
+
+----
+
+* Selective coding<br><br><div class="centered">
+<img src="image/selectiveCoding.gif" height = 500 />
+</div>
