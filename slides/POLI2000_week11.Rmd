@@ -133,7 +133,7 @@ text_tb
 * How does a government determine its environmental policy? (G 5,7)
 * What forms the political correctness of a society ? (G 6,8)
 
-## Most different system
+## Most different systems
 
 * Focus: *intra*systemic similarities and differences
 * Assumption: systemic factors do not play any role in explaining the observed behavior.
