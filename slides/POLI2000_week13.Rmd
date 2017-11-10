@@ -113,7 +113,7 @@ set.seed(313)
 
 * Manifest content
 * Latent content
-* Online asssitance: [CATMA](http://catma.de/) or eMargin
+* Online assistance: [CATMA](http://catma.de/) or eMargin
 
 ## Example from CATMA
 
@@ -166,4 +166,19 @@ set.seed(313)
 
 * Selective coding<br><br><div class="centered">
 <img src="image/selectiveCoding.gif" height = 500 />
+</div>
+
+
+## Lab notes
+
+Keep records!!
+
+* Code notes
+* Theoretical notes
+* Operational notes
+
+## Let computer help you!
+
+<div class="centered">
+<img src="image/computerHelp.gif" height = 450 />
 </div>
