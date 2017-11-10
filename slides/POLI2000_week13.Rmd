@@ -143,6 +143,11 @@ set.seed(313)
 * Limited scale
 * Subjective consistency
 
+## A Taste of Text Analysis
+
+[Google Ngram Viewer](https://books.google.com/ngrams)
+
+
 # Qualitative Data Processing
 
 ## Coding
