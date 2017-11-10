@@ -1,0 +1,47 @@
+---
+title: "`RQDA` Example"
+output: html_notebook
+---
+
+```{r eval = FALSE}
+library(RQDA)
+RQDA()
+```
+
+
+
+# Setting
+Enter Name of coder
+
+# File
+Memo
+
+# Codes (Open coding)
+1. Enter and manage marks (creating a test concept)
+1. Mark interviews in the document
+
+# Code categories (Axial coding)
+1. Add the concept into categories
+1. See all types of the marked 
+
+
+# Cases (Axial coding)
+1. Profile to see the information table
+
+# Attributes (Open coding)
+1. Recording case properties
+
+# File categories (Axial coding)
+1. Categorizing files
+
+# Plot it (Selective coding)
+1. Select the categories 
+1. Right click to show the relations.
+
+# Output
+```{r eval = FALSE}
+getCodingTable()
+summaryCodings()
+exportCodings(file = "testQDA.html")
+```
+
