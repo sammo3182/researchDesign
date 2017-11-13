@@ -255,12 +255,21 @@ Read through the materials and try to think about the following questions:
 * How can a researcher use computer to analyze interview recordings?
 * What is QDA and what is QCA?
 
-<!-- *Due for the brief of the theory: `r dates$Mon[13]`.* -->
+*Due for the brief of the theory: `r dates$Mon[13]`.*
 
-<!-- ## `r weekList[14]` -->
+## `r weekList[14]`
+
+This week's readings expose you large-N methods to study political science issues. Babbie helps us set up some basic knowledge of drawing inference from data collected from a large number of observations. Tang, Hu, and Jin (2016) provides an example showing how to design an empirical examination based on large-N data and to combine univariate, bivariate, and multivariate analyses to test hypotheses.
+
+Read through the materials and try to think about the following questions:
+
+* What's univariate analysis?
+* What are the mean, mode, and median of a variable? 
+* How to conduct a bivariate analysis?
+* What's the puzzle Tang, Hu, and Jin (2016) want to solve?
+* How do they utilize large-N data to examine their hypotheses?
 
 <!-- ## `r weekList[15]` -->
-
 
 <!-- ## `r weekList[16]` -->
 

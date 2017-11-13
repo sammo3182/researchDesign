@@ -1,0 +1,177 @@
+---
+title: "Understanding Large-N Analyses"
+subtitle: "Design Political Research: Week 14"
+author: "Yue Hu"
+output:
+  ioslides_presentation:
+    incremental: yes
+    css: style.css
+    logo: image/logo.gif
+    self_contained: yes
+    slidy_presentation: null
+    transition: faster
+    widescreen: yes
+---
+
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+
+library(pacman)
+p_load(dotwhisker, interplot, # Visualization
+       RefManageR, emo,# Applied
+       knitr, kableExtra, # dependency
+       readxl, haven, descr, stringi, stringr, arm,broom, tidyverse) # data wrangling
+
+set.seed(313)
+```
+
+# Welcome to the large-N world!
+## How large is a Large-N N?
+
+<div class="centered">
+<img src="image/largeNum.png" height = 400 />
+</div>
+
+* Rule of thumb: $> 100$
+
+## How to analyze large-N data?
+
+* Univariate analysis
+* Bivariate analysis
+* Multivariate analysis
+
+## How to describe a variable?
+
+Mean: $\mu_x = \frac{\sum X_i}{N};$ Variance: $\sigma^2_x = E[(X - \mu_x)^2].$
+
+```{r meanVariance, fig.align='center'}
+ggplot(data = data.frame(x = c(-5, 5)), aes(x)) +
+  stat_function(colour = "red", fun = dnorm, n = 101, args = list(mean = 0, sd = 1)) + 
+  stat_function(colour = "blue", fun = dnorm, n = 101, args = list(mean = 0.5, sd = 1.5)) +
+  ylab("") + xlab("") +
+  geom_vline(xintercept = 0, linetype = "dashed", color = "red") +
+  geom_vline(xintercept = 0.5, linetype = "dashed", color = "blue") +
+  annotate("text", x = 1.2, y = .35, label = "Mean = 0\n SD = 1") + 
+  annotate("text", x = 2.5, y = .2, label = "Mean = 0\n SD = 1.5")
+```
+
+----
+
+
+Skewness: $\gamma_x = E[(\frac{X - \mu_x}{\sigma})^3].$
+
+
+```{r skewness, fig.align='center'}
+ggplot(data = data.frame(x = c(-.5, 1.5)), aes(x)) +
+  stat_function(colour = "red", fun = dbeta, n = 101, args = list(shape1 = 5, shape2 = 2)) + 
+  stat_function(colour = "blue", fun = dbeta, n = 101, args = list(shape1 = 2, shape2 = 5)) +
+  ylab("") + xlab("") +
+  annotate("text", x = -0.125, y = 1.5, label = "Right skewed") + 
+  annotate("text", x = 1.125, y = 1.5, label = "Left skewed")
+```
+
+----
+
+Kurtosis: $\kappa_x = E[(\frac{X - \mu_X}{\sigma})^4].$
+
+```{r kurtosis, fig.align='center'}
+ggplot(data = data.frame(x = c(-5, 5)), aes(x)) +
+  stat_function(colour = "darkgreen", fun = dnorm, n = 101, args = list(mean = 0, sd = .5)) + 
+  stat_function(colour = "red", fun = dnorm, n = 101, args = list(mean = 0, sd = 1)) + 
+  stat_function(colour = "blue", fun = dnorm, n = 101, args = list(mean = 0, sd = 2)) +
+  ylab("") + xlab("") +
+  annotate("text", x = 1.2, y = .6, label = "Leptokurtic") +
+  annotate("text", x = 2.25, y = .3, label = "Mesokurtic (Normal)") + 
+  annotate("text", x = 3.5, y = .1, label = "Platykurtic")
+```
+
+## Descriptive Statistics
+
+```{r descTable, results='asis'}
+library(stargazer)
+
+stargazer(select(mtcars, am, carb, cyl, gear,vs), type = "html", align = TRUE)
+```
+
+
+## Even better...
+
+```{r descriptive, fig.align='center'}
+df_desc <- select(mtcars, am, carb, cyl, gear,vs) %>% # select the variables
+  gather(var, value) # reshape the wide data to long data
+
+ggplot(data = df_desc, aes(x = as.factor(value))) + geom_bar() + 
+  facet_wrap(~ var, scales = "free", ncol = 3) + xlab("")
+```
+
+## How to describe a relationship?{.smaller}
+
+Contingency table:
+
+```{r}
+CrossTable(mtcars$gear, mtcars$cyl, prop.chisq = FALSE, prop.c = FALSE, prop.r = FALSE)
+```
+
+## Scatter plot
+
+```{r}
+ggplot(mtcars, aes(wt, mpg)) +
+  geom_point() +
+  ylab("Miles/(US) gallon") +
+  xlab("Weight (1000 lbs)")
+```
+
+# Do a multivariate analysis
+## Example: Tang, Hu, and Jin (2016)
+
+* Puzzle: Same education level, but difference in labor mobility between Han and Uyghur
+* Theory: Affirmative inaction language policy reduce Uyghurs' labor mobility.
+* Hypothesis: 
+    + $H_1$: Education is fairly equal between the Han and the Uyghur groups.
+    + $H_2$: The linguistically distinctive Uyghurs are far less proficient in Mandarin than the Han majority.
+    + $H_3$: Hans enjoy a higher degree of socioeconomic status than the Uyghurs.
+    + $H_4$: Language proficiency plays a favorable role in improving the socioeconomic conditions for the Uyghurs.
+    
+## Examination
+
+$H_{1,2}$: Education is fairly equal between the Han and the Uyghur groups.
+
+<div class="centered">
+<img src="image/eduMan.png" height = 400 />
+</div>
+
+----
+
+$H_2$: The linguistically distinctive Uyghurs are far less proficient in Mandarin than the Han majority.
+
+<div class="centered">
+<img src="image/eduMan2.png" height = 450 />
+</div>
+
+----
+
+$H_3$: Hans enjoy a higher labor mobility than the Uyghurs.
+
+<div class="centered">
+<img src="image/jobEth.png" height = 350 />
+</div>
+
+----
+
+$H_4$: Language proficiency plays a favorable role in improving the socioeconomic conditions for the Uyghurs.
+
+<div class="centered">
+<img src="image/sem.png" height = 450 />
+</div>
+
+## Wrap up
+
+How to do large-N analysis?
+
+* Elaborate the puzzle
+* Set up the theory
+* Imply hypotheses
+* Design empirical examination
+* Data analysis
+* Result discussion
