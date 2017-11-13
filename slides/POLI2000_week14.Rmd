@@ -43,6 +43,24 @@ set.seed(313)
 
 ## How to describe a variable?
 
+```{r fig.align="center"}
+df_var <- data.frame(x = sample(1:10, size = 100, replace = TRUE))
+
+ggplot(data = df_var, aes(x)) +
+  geom_bar() +
+  ylab("") + xlab("") +
+  scale_x_discrete(limit = 1:10) +
+  geom_vline(xintercept = as.numeric(c(mean(df_var$x), 
+                            names(sort(-table(df_var$x)))[1],
+                            median(df_var$x))), color = 1:3) +
+  annotate("text", x = 2, y = 12, label = "Mode") + 
+  annotate("text", x = 5, y = 11, label = "Mean") +
+  annotate("text", x = 6.5, y = 13, label = "Median")
+```
+
+
+## Moments of a variable
+
 Mean: $\mu_x = \frac{\sum X_i}{N};$ Variance: $\sigma^2_x = E[(X - \mu_x)^2].$
 
 ```{r meanVariance, fig.align='center'}
