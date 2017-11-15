@@ -1,0 +1,33 @@
+---
+title: "Understanding Large-N Analyses"
+subtitle: "Design Political Research: Week 14"
+author: "Yue Hu"
+output:
+  ioslides_presentation:
+    incremental: yes
+    #css: style.css
+    logo: image/logo.gif
+    self_contained: yes
+    slidy_presentation: null
+    transition: faster
+    widescreen: yes
+---
+
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+
+library(pacman)
+p_load(dotwhisker, interplot, # Visualization
+       RefManageR, emo,# Applied
+       knitr, kableExtra, # dependency
+       readxl, haven, descr, stringi, stringr, arm,broom, tidyverse) # data wrangling
+
+set.seed(313)
+```
+
+# You're done!
+
+<div class="centered">
+<img src="image/done.gif" height = 250 />
+</div>

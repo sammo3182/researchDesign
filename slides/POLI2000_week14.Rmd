@@ -184,13 +184,38 @@ ggplot(mtcars, aes(wt, mpg)) +
 # Do a multivariate analysis
 ## Example: Tang, Hu, and Jin (2016)
 
-* Puzzle: Same education level, but difference in labor mobility between Han and Uyghur
-* Theory: Affirmative inaction language policy reduce Uyghurs' labor mobility.
-* Hypothesis: 
-    + $H_1$: Education is fairly equal between the Han and the Uyghur groups.
-    + $H_2$: The linguistically distinctive Uyghurs are far less proficient in Mandarin than the Han majority.
-    + $H_3$: Hans enjoy a higher degree of socioeconomic status than the Uyghurs.
-    + $H_4$: Language proficiency plays a favorable role in improving the socioeconomic conditions for the Uyghurs.
+Puzzle: Same education level, but difference in labor mobility between Han and Uyghur
+
+<div style="float: left; width: 50%;">
+<div class="centered">
+<img src="image/han.jpeg" height = 300 />
+</div>
+
+</div>
+
+
+<div style="float: right; width: 50%;">
+<div class="centered">
+<img src="image/uyghur.jpg" height = 300 />
+</div>
+
+</div>
+
+
+## Theory
+
+Affirmative inaction language policy reduces Uyghurs' labor mobility.
+
+<div class="centered">
+<img src="image/uyghurStudent.jpg" height = 400 />
+</div>
+
+
+## Hypothesis: 
+* $H_1$: Education is fairly equal between the Han and the Uyghur groups.
+* $H_2$: The linguistically distinctive Uyghurs are far less proficient in Mandarin than the Han majority.
+* $H_3$: Hans enjoy a higher degree of socioeconomic status than the Uyghurs.
+* $H_4$: Language proficiency plays a favorable role in improving the socioeconomic conditions for the Uyghurs.
     
 ## Examination
 
@@ -234,3 +259,4 @@ How to do large-N analysis?
 * Design empirical examination
 * Data analysis
 * Result discussion
+
