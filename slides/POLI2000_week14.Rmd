@@ -5,7 +5,7 @@ author: "Yue Hu"
 output:
   ioslides_presentation:
     incremental: yes
-    css: style.css
+    #css: style.css
     logo: image/logo.gif
     self_contained: yes
     slidy_presentation: null
@@ -29,9 +29,24 @@ set.seed(313)
 # Welcome to the large-N world!
 ## How large is a Large-N N?
 
-<div class="centered">
+Let's revisit the toss of coin:
+
+* Tossing once? Head or Tail?<br><br><div class="centered">
+<img src="image/toss.gif" height = 350 />
+</div>
+
+
+----
+
+Tossing 1 million times? How many heads?
+
+* <div class="centered">
 <img src="image/largeNum.png" height = 400 />
 </div>
+
+## Law of Large numbers
+
+As the number of experiments (sample) increases, the ratio of outcomes will converge to the theoretical (population) average.
 
 * Rule of thumb: $> 100$
 
@@ -41,7 +56,17 @@ set.seed(313)
 * Bivariate analysis
 * Multivariate analysis
 
-## How to describe a variable?
+## Univariate analysis
+
+How can we describe a variable?
+
+* Creating the expectation of a variable
+    + Given a list: $(1, 1, 1, 2, 3, 3, 4)$
+    + Mean: $\frac{1 + 1 + 1 + 2 + 3 + 3 + 4}{7} = \frac{15}{7} \approx 2.143.$
+    + Median: 1, 1, 1, <span style="color:red">**2**</span>, 3, 3, 4
+    + Mode: </span>three 1s</span>, one 2, two 3s, and one 4.
+
+## Example in large-N data
 
 ```{r fig.align="center"}
 df_var <- data.frame(x = sample(1:10, size = 100, replace = TRUE))
@@ -58,6 +83,24 @@ ggplot(data = df_var, aes(x)) +
   annotate("text", x = 6.5, y = 13, label = "Median")
 ```
 
+## Which one should we choose?
+
+```{r distribution, fig.align='center'}
+df_var <- data.frame(x = rnorm(10000, mean = 0, sd = 1),
+                     y = c(rbeta(9900, shape1 = 5, shape2 = 2), rep(1.5, 100)),
+                     z = rnorm(10000, mean = 10, sd = 1),
+                     w = rbinom(10000, 1, .5)) %>%
+                       mutate(z = w * x + (1 - w) * z) %>%
+                         select(x, y, z) %>%
+                           gather(var, value)
+
+ggplot(df_var, aes(value)) +
+  geom_histogram() +
+  facet_wrap(~ var, scales = "free") +
+  xlab("") + ylab("")
+```
+
+
 
 ## Moments of a variable
 
@@ -70,7 +113,7 @@ ggplot(data = data.frame(x = c(-5, 5)), aes(x)) +
   ylab("") + xlab("") +
   geom_vline(xintercept = 0, linetype = "dashed", color = "red") +
   geom_vline(xintercept = 0.5, linetype = "dashed", color = "blue") +
-  annotate("text", x = 1.2, y = .35, label = "Mean = 0\n SD = 1") + 
+  annotate("text", x = -1.2, y = .35, label = "Mean = 0\n SD = 1") + 
   annotate("text", x = 2.5, y = .2, label = "Mean = 0\n SD = 1.5")
 ```
 
@@ -107,9 +150,7 @@ ggplot(data = data.frame(x = c(-5, 5)), aes(x)) +
 ## Descriptive Statistics
 
 ```{r descTable, results='asis'}
-library(stargazer)
-
-stargazer(select(mtcars, am, carb, cyl, gear,vs), type = "html", align = TRUE)
+knitr::kable(t(summary(select(mtcars, am, carb, cyl, gear,vs))))
 ```
 
 
