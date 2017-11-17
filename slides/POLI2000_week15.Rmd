@@ -1,6 +1,6 @@
 ---
 title: "Understanding Large-N Analyses"
-subtitle: "Design Political Research: Week 14"
+subtitle: "Design Political Research: Week 15"
 author: "Yue Hu"
 output:
   ioslides_presentation:
@@ -26,243 +26,251 @@ p_load(dotwhisker, interplot, # Visualization
 set.seed(313)
 ```
 
-# How to do literature research
+# Welcome to the large-N world!
+## How large is a Large-N N?
 
-## Where to find the established research?
+Let's revisit the toss of coin:
 
-<div style="float: left; width: 50%;">
-* Legit sources:
-    + Not Wikipedia
-    + Not CNN or FOX
-    + Not Twitter
-    <br><br>
-    + Books (research monograph)
-    + Academic Journal Articles
-
-</div>
-
-
-<div style="float: right; width: 50%;">
-
-* Where to find it? 
-    + <div class="centered"><img src="image/oxford.jpg" height = 200 /></div>
-    + <div class="centered"><img src="image/gscholar.png" height = 250 /></div>
-
-</div>
-
-## Using google scholar with library access
-
-<div class="centered">
-<img src="image/gscholar1.png" height = 500 />
-</div>
-
-----
-
-<div class="centered">
-<img src="image/gscholar2.png" height = 500 />
-</div>
-
-----
-
-<div class="centered">
-<img src="image/gscholar3.png" height = 450 />
-</div>
-
-----
-
-<div class="centered">
-<img src="image/gscholar4.png" height = 500 />
+* Tossing once? Head or Tail?<br><br><div class="centered">
+<img src="image/toss.gif" height = 350 />
 </div>
 
 
 ----
 
-<div class="centered">
-<img src="image/gscholar5.png" height = 500 />
+Tossing 1 million times? How many heads?
+
+* <div class="centered">
+<img src="image/largeNum.png" height = 400 />
 </div>
 
+## Law of Large numbers
 
-# How to write a paper?
+As the number of experiments (sample) increases, the ratio of outcomes will converge to the theoretical (population) average.
 
-## General tips
+* Rule of thumb: $> 100$
 
-* Using section titles.
-* Don't be too long (20--25 pages).
-* Don't over-quoting.
-* Again, playing as a lawyer rather than a detective or story teller!
+## How to analyze large-N data?
 
-## Introduction (1--2 pages)
+* Univariate analysis
+* Bivariate analysis
+* Multivariate analysis
 
-* <span style="color:red">**Most**</span> important part 
-    + Research question
-    + Importance
-    + Theory in <span style="color:purple">brief</span>
-    + Method in <span style="color:purple">brief</span>
-    + Findings in <span style="color:purple">brief</span>
-    + So what?
+## Univariate analysis
 
-## Literature Review (2--3 pages)
+How can we describe a variable?
 
-<div style="float: left; width: 50%;">
+* Creating the expectation of a variable
+    + Given a list: $(1, 1, 1, 2, 3, 3, 4)$
+    + Mean: $\frac{1 + 1 + 1 + 2 + 3 + 3 + 4}{7} = \frac{15}{7} \approx 2.143.$
+    + Median: 1, 1, 1, <span style="color:red">**2**</span>, 3, 3, 4
+    + Mode: </span>three 1s</span>, one 2, two 3s, and one 4.
 
-<div class="centered">
-<img src="image/funnel.gif" height = 300 />
-</div>
+## Example in large-N data
 
-</div>
+```{r fig.align="center"}
+df_var <- data.frame(x = sample(1:10, size = 100, replace = TRUE))
 
+ggplot(data = df_var, aes(x)) +
+  geom_bar() +
+  ylab("") + xlab("") +
+  scale_x_discrete(limit = 1:10) +
+  geom_vline(xintercept = as.numeric(c(mean(df_var$x), 
+                            names(sort(-table(df_var$x)))[1],
+                            median(df_var$x))), color = 1:3) +
+  annotate("text", x = 2, y = 12, label = "Mode") + 
+  annotate("text", x = 5, y = 11, label = "Mean") +
+  annotate("text", x = 6.5, y = 13, label = "Median")
+```
 
-<div style="float: right; width: 50%;">
+## Which one should we choose?
 
-* Short! Short! Short!
-* Organized & generalized
-* Contribution rather than findings
-* More than three citations
+```{r distribution, fig.align='center'}
+df_var <- data.frame(x = rnorm(10000, mean = 0, sd = 1),
+                     y = c(rbeta(9900, shape1 = 5, shape2 = 2), rep(1.5, 100)),
+                     z = rnorm(10000, mean = 10, sd = 1),
+                     w = rbinom(10000, 1, .5)) %>%
+                       mutate(z = w * x + (1 - w) * z) %>%
+                         select(x, y, z) %>%
+                           gather(var, value)
 
-</div>
-
-
-## PLAGIARISM{.smaller}
-
-* Easier than you think, even unintentionally!
-* In text: 
-    + Hu(2012, 15--36) finds that the literature in this area is well developed (King 2007). 
-* Bibliography: (Details in this [link](http://www.apsanet.org/APSR-Submission-Guidelines))
-    + Books: Ahlquist, John S. and Margaret Levi. 2013. In the Interest of Others: Leaders, Governance, and Political Activism in Membership Organizations. Princeton: Princeton University Press.
-    + Periodicals: Gerring, John. 2005a. "Causation: A Unified Framework for the Social Sciences." Journal of Theoretical Politics 17:2 (April):163-98.
-    + Chapter in Edited Collection: Brady, Henry E. and Cynthia S. Kaplan. 2011. "Conceptualizing and Measuring Ethnic Identity." In Measuring Identity: A Guide for Social Scientists, eds. Rawi Abdelal, Yoshiko M. Herrera, Alastair Iain Johnston, and Rose McDermott. New York: Cambridge University Press, 33-71.
-    + Web Sites: American Political Science Association. 2013. "About the APSA Africa Workshops." Washington, DC: American Political Science Association. Retrieved October 10, 2013 (http://www.apsanet.org/~africaworkshops/content_58417.cfm).
-
-## Theory (3--5 pages)
-
-<div style="float: left; width: 50%;">
-
-<div class="centered">
-<img src="image/xy.jpg" height = 300 />
-</div>
-
-</div>
+ggplot(df_var, aes(value)) +
+  geom_histogram() +
+  facet_wrap(~ var, scales = "free") +
+  xlab("") + ylab("")
+```
 
 
-<div style="float: right; width: 50%;">
 
-* Definition
-    + Dependent variable(s)
-    + Independent variable(s)
-* Clear relationship
-* Hypotheses!!
+## Moments of a variable
 
-</div>
+Mean: $\mu_x = \frac{\sum X_i}{N};$ Variance: $\sigma^2_x = E[(X - \mu_x)^2].$
 
-
-## Research Design (5--8 pages)
-
-
-<div style="float: left; width: 50%;">
-
-<div class="centered">
-<img src="image/diagram.jpg" height = 300 />
-</div>
-
-</div>
-
-
-<div style="float: right; width: 50%;">
-
-* Plan of collecting data
-    + Validation of the data selection
-* Plan of using data
-    + Justification of method choice
-* Feasibility of research design
-<br><br>
-
-* So far, research proposal
-
-</div>
-
-## Finishing
-
-<div style="float: left; width: 50%;">
-
-### Results (4--6 pages)
-
-* Empirics
-* Findings
-
-</div>
-
-
-<div style="float: right; width: 50%;">
-
-### Conclusion (1--2 pages)
-
-* Most important findings
-* Implications of the findings
-
-</div>
-
-
-# How to do academic presentation?
-
-## Preparation
-
-* Oral
-    + 10 slides for 15 mins
-    + Two-page long manuscript
-    + Mental set
-* Poster
-    + 7--8 sections
-    + An elevator speech (3--5 mins)
-
-## Slides
-
-<div class="centered">
-<img src="image/slide.png" height = 500 />
-</div>
+```{r meanVariance, fig.align='center'}
+ggplot(data = data.frame(x = c(-5, 5)), aes(x)) +
+  stat_function(colour = "red", fun = dnorm, n = 101, args = list(mean = 0, sd = 1)) + 
+  stat_function(colour = "blue", fun = dnorm, n = 101, args = list(mean = 0.5, sd = 1.5)) +
+  ylab("") + xlab("") +
+  geom_vline(xintercept = 0, linetype = "dashed", color = "red") +
+  geom_vline(xintercept = 0.5, linetype = "dashed", color = "blue") +
+  annotate("text", x = -1.2, y = .35, label = "Mean = 0\n SD = 1") + 
+  annotate("text", x = 2.5, y = .2, label = "Mean = 0\n SD = 1.5")
+```
 
 ----
 
-<div style="float: left; width: 60%;">
+
+Skewness: $\gamma_x = E[(\frac{X - \mu_x}{\sigma})^3].$
+
+
+```{r skewness, fig.align='center'}
+ggplot(data = data.frame(x = c(-.5, 1.5)), aes(x)) +
+  stat_function(colour = "red", fun = dbeta, n = 101, args = list(shape1 = 5, shape2 = 2)) + 
+  stat_function(colour = "blue", fun = dbeta, n = 101, args = list(shape1 = 2, shape2 = 5)) +
+  ylab("") + xlab("") +
+  annotate("text", x = -0.125, y = 1.5, label = "Right skewed") + 
+  annotate("text", x = 1.125, y = 1.5, label = "Left skewed")
+```
+
+----
+
+Kurtosis: $\kappa_x = E[(\frac{X - \mu_X}{\sigma})^4].$
+
+```{r kurtosis, fig.align='center'}
+ggplot(data = data.frame(x = c(-5, 5)), aes(x)) +
+  stat_function(colour = "darkgreen", fun = dnorm, n = 101, args = list(mean = 0, sd = .5)) + 
+  stat_function(colour = "red", fun = dnorm, n = 101, args = list(mean = 0, sd = 1)) + 
+  stat_function(colour = "blue", fun = dnorm, n = 101, args = list(mean = 0, sd = 2)) +
+  ylab("") + xlab("") +
+  annotate("text", x = 1.2, y = .6, label = "Leptokurtic") +
+  annotate("text", x = 2.25, y = .3, label = "Mesokurtic (Normal)") + 
+  annotate("text", x = 3.5, y = .1, label = "Platykurtic")
+```
+
+## Descriptive Statistics
+
+```{r descTable, results='asis'}
+knitr::kable(t(summary(select(mtcars, am, carb, cyl, gear,vs))))
+```
+
+
+## Even better...
+
+```{r descriptive, fig.align='center'}
+df_desc <- select(mtcars, am, carb, cyl, gear,vs) %>% # select the variables
+  gather(var, value) # reshape the wide data to long data
+
+ggplot(data = df_desc, aes(x = as.factor(value))) + geom_bar() + 
+  facet_wrap(~ var, scales = "free", ncol = 3) + xlab("")
+```
+
+## How to describe a relationship?{.smaller}
+
+Contingency table:
+
+```{r}
+CrossTable(mtcars$gear, mtcars$cyl, prop.chisq = FALSE, prop.c = FALSE, prop.r = FALSE)
+```
+
+## Scatter plot
+
+```{r}
+ggplot(mtcars, aes(wt, mpg)) +
+  geom_point() +
+  ylab("Miles/(US) gallon") +
+  xlab("Weight (1000 lbs)")
+```
+
+# Do a multivariate analysis
+## Example: Tang, Hu, and Jin (2016)
+
+Puzzle: Same education level, but difference in labor mobility between Han and Uyghur
+
+<div style="float: left; width: 50%;">
+<div class="centered">
+<img src="image/han.jpeg" height = 300 />
+</div>
+
+</div>
+
+
+<div style="float: right; width: 50%;">
+<div class="centered">
+<img src="image/uyghur.jpg" height = 300 />
+</div>
+
+</div>
+
+
+## Theory
+
+Affirmative inaction language policy reduces Uyghurs' labor mobility.
 
 <div class="centered">
-<img src="image/slide.png" height = 300 />
+<img src="image/uyghurStudent.jpg" height = 400 />
 </div>
 
-</div>
 
-
-<div style="float: right; width: 40%;">
-
-* 5-5-5 Rule (?)
-    + no more than five words per line of text, five lines of text per slide, and five text-heavy slides in a row
+## Hypothesis: 
+* $H_1$: Education is fairly equal between the Han and the Uyghur groups.
+* $H_2$: The linguistically distinctive Uyghurs are far less proficient in Mandarin than the Han majority.
+* $H_3$: Hans enjoy a higher degree of socioeconomic status than the Uyghurs.
+* $H_4$: Language proficiency plays a favorable role in improving the socioeconomic conditions for the Uyghurs.
     
-* Tips
-    + Clean background
-    + Colorful contents
-    + Explicit discussion
+## Examination
+
+$H_{1,2}$: Education is fairly equal between the Han and the Uyghur groups.
+
+<div class="centered">
+<img src="image/eduMan.png" height = 400 />
+</div>
+
+----
+
+$H_2$: The linguistically distinctive Uyghurs are far less proficient in Mandarin than the Han majority.
+
+<div class="centered">
+<img src="image/eduMan2.png" height = 450 />
+</div>
+
+----
+
+$H_3$: Hans enjoy a higher labor mobility than the Uyghurs.
+
+<div class="centered">
+<img src="image/jobEth.png" height = 350 />
+</div>
+
+----
+
+$H_4$: Language proficiency plays a favorable role in improving the socioeconomic conditions for the Uyghurs.
+
+<div class="centered">
+<img src="image/sem.png" height = 450 />
+</div>
+
+## Wrap up
+
+<div style="float: left; width: 50%;">
+
+### Understand Large-N Analysis
+
+<div class="centered">
+<img src="image/table.png" height = 450 />
+</div>
 
 </div>
 
 
-## Poster
+<div style="float: right; width: 50%;">
 
-<div class="centered">
-<img src="image/poster.jpg" height = 550 />
-</div>
+### Do large-N analyses
 
-## Presenting
+* Elaborate the puzzle
+* Set up the theory
+* Imply hypotheses
+* Design empirical examination
+* Data analysis
+* Result discussion
 
-* Professionally dressed
-* Being a teacher
-* Rehearsal
-* Prepare for Q&A
-
-## Example
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/I_LYh4Tb9Q0?list=PLGoANLi6OAlBBxrkbDZ1stH5Al98r8MOc?ecver=1" frameborder="0" gesture="media" allowfullscreen></iframe>
-
-# You're done!
-
-<div class="centered">
-<img src="image/done.gif" height = 250 />
 </div>
