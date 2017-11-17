@@ -251,7 +251,20 @@ $H_4$: Language proficiency plays a favorable role in improving the socioeconomi
 
 ## Wrap up
 
-How to do large-N analysis?
+<div style="float: left; width: 50%;">
+
+### Understand Large-N Analysis
+
+<div class="centered">
+<img src="image/table.png" height = 450 />
+</div>
+
+</div>
+
+
+<div style="float: right; width: 50%;">
+
+### Do large-N analyses
 
 * Elaborate the puzzle
 * Set up the theory
@@ -260,3 +273,4 @@ How to do large-N analysis?
 * Data analysis
 * Result discussion
 
+</div>
