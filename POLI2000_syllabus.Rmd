@@ -279,7 +279,7 @@ Moreover, I would like to see
 The paper should be 500-1000 words.
 It will be graded on a 10 scale and evaluated based on the above points (see more details in [Rubric for Critical Response Paper]).
 The paper is due at the BEGINNING of the Monday class (i.e., 15:30) of the week the materials are going to discussed (submit to ICON). 
-Late paper will be penalized 1/10 for each day it is late.
+Late paper will be penalized 1/10 of the total grade for each day it is late.
 
 
 ## Examination (20%)
