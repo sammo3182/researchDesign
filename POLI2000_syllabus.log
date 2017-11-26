@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.7.18)  24 NOV 2017 16:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.7.18)  26 NOV 2017 11:24
 entering extended mode
 **./POLI2000_syllabus.tex
 (POLI2000_syllabus.tex
@@ -757,26 +757,26 @@ Overfull \hbox (10.60037pt too wide) in alignment at lines 125--133
 [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 321.
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 323.
 
 ("D:\Program Files\MiKTeX 2.9\tex\latex\lm\omslmr.fd"
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 321.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 323.
 [3] [4]
-Overfull \hbox (6.00009pt too wide) in paragraph at lines 463--468
+Overfull \hbox (6.00009pt too wide) in paragraph at lines 465--470
 \T1/lmr/m/n/10.95 com / view / 10 . 1093 / oxfordhb / 9780199604456 . 001 . 000
 1 / oxfordhb-[]9780199604456-[]e-[]050 ? mediaType =
  []
 
 [5] [6] [7]
-Overfull \hbox (10.51913pt too wide) in paragraph at lines 536--538
+Overfull \hbox (10.51913pt too wide) in paragraph at lines 538--540
 []|\T1/lmr/m/n/10.95 Grade|  
  []
 
 
-Overfull \hbox (5.81699pt too wide) in paragraph at lines 583--585
+Overfull \hbox (5.81699pt too wide) in paragraph at lines 585--587
 []|\T1/lmr/m/n/10.95 Grade|  
  []
 
@@ -787,19 +787,19 @@ pdfTeX warning (ext4): destination with the same identifier (name{id}) has been
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.631 \clearpage
+l.633 \clearpage
                 ]pdfTeX warning (ext4): destination with the same identifier (n
 ame{id}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.633 ...{Rubric for Research Proposal}\label{id}}
+l.635 ...{Rubric for Research Proposal}\label{id}}
                                                   
-Overfull \hbox (15.2141pt too wide) in paragraph at lines 641--643
+Overfull \hbox (15.2141pt too wide) in paragraph at lines 643--645
 []|\T1/lmr/m/n/10.95 Grade|  
  []
 
 
-Overfull \hbox (3.58272pt too wide) in paragraph at lines 667--669
+Overfull \hbox (3.58272pt too wide) in paragraph at lines 669--671
 []|\T1/lmr/m/n/10.95 Introduction 
  []
 
@@ -811,17 +811,17 @@ Overfull \hbox (3.58272pt too wide) in paragraph at lines 667--669
 
 ] 
 AED: lastpage setting LastPage
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 867.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 867.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 869.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 869.
 (POLI2000_syllabus.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 867.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 867.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 869.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 869.
 Package rerunfilecheck Info: File `POLI2000_syllabus.out' has not changed.
 (rerunfilecheck)             Checksum: 8861D470601F5D4258AD1D188B105A27;11018.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 867.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 869.
  ) 
 Here is how much of TeX's memory you used:
  10207 strings out of 493318
@@ -830,7 +830,7 @@ Here is how much of TeX's memory you used:
  13576 multiletter control sequences out of 15000+200000
  50902 words of font info for 40 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,12n,43p,522b,378s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 28i,12n,43p,522b,380s stack positions out of 5000i,500n,10000p,200000b,50000s
 {D:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{D:/Program Files/M
 iKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}<D:/Program Files/MiKTeX 2.9/fonts/t
 ype1/public/lm/lmbx10.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lm
@@ -840,7 +840,7 @@ am Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><D:/Program Files/MiKTeX 2.
 ic/lm/lmr9.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><D
 :/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><D:/Program Files/M
 iKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb>
-Output written on POLI2000_syllabus.pdf (12 pages, 280398 bytes).
+Output written on POLI2000_syllabus.pdf (12 pages, 280470 bytes).
 PDF statistics:
  326 PDF objects out of 1000 (max. 8388607)
  72 named destinations out of 1000 (max. 500000)
