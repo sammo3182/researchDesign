@@ -269,7 +269,7 @@ However, you cannot share your answers to the reading questions with your classm
 You are expected to submit one response paper over the course of the semester. 
 In the paper, You need to review at least two reading materials of a given week.
 (You are free to write one response paper for your presentation week. The only prohibited week for response is `r weekList[16]`.)
-Moreover, I would like to see
+Moreover, I would like to see:
 
 1. One and ONLY one paragraph to summarize each material (article or assigned chapter).
 1. Some discussion about what you learn from these materials relating to the weekly topic.
