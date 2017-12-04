@@ -1,5 +1,5 @@
 ---
-title: "Understanding Large-N Analyses"
+title: "Professionalism"
 subtitle: "Design Political Research: Week 16"
 author: "Yue Hu"
 output:
@@ -201,6 +201,11 @@ set.seed(313)
 
 </div>
 
+# You're done!
+
+<div class="centered">
+<img src="image/done.gif" height = 250 />
+</div>
 
 # How to do academic presentation?
 
@@ -260,9 +265,3 @@ set.seed(313)
 ## Example
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/I_LYh4Tb9Q0?list=PLGoANLi6OAlBBxrkbDZ1stH5Al98r8MOc?ecver=1" frameborder="0" gesture="media" allowfullscreen></iframe>
-
-# You're done!
-
-<div class="centered">
-<img src="image/done.gif" height = 250 />
-</div>

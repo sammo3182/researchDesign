@@ -44,7 +44,7 @@ Tossing 1 million times? How many heads?
 <img src="image/largeNum.png" height = 400 />
 </div>
 
-## Law of Large numbers
+## Law of large numbers
 
 As the number of experiments (sample) increases, the ratio of outcomes will converge to the theoretical (population) average.
 
@@ -64,7 +64,7 @@ How can we describe a variable?
     + Given a list: $(1, 1, 1, 2, 3, 3, 4)$
     + Mean: $\frac{1 + 1 + 1 + 2 + 3 + 3 + 4}{7} = \frac{15}{7} \approx 2.143.$
     + Median: 1, 1, 1, <span style="color:red">**2**</span>, 3, 3, 4
-    + Mode: </span>three 1s</span>, one 2, two 3s, and one 4.
+    + Mode: three <span style="color:red">1</span>s, one 2, two 3s, and one 4.
 
 ## Example in large-N data
 
