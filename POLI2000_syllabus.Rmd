@@ -482,7 +482,7 @@ bib[c("Tang2016")]
 | Data (10%)                      | Is there a complete plan of data collection? How do the data fit the research design? Validations?                                                                                                                   | X     |
 | Feasibility (5%)                | Is the research design a feasible one for a college student? What are the potential difficulties the researcher may encounter?                                                                                         | X     |
 | Citation (10%)                   | Are the citations well presented? Is there a full bibliography attached? Are the citation and bibliography styles consistent with the APSR requirement?                                                             | X     |
-| Overall writing (10%)           | Was the proposal proofread and edited? Are the paragraphs well framed and organized? Do the word count and layout match the requirement?                                                                                                  | X     |
+| Overall writing (5%)           | Was the proposal proofread and edited? Are the paragraphs well framed and organized? Do the word count and layout match the requirement?                                                                                                  | X     |
 
 
 \clearpage
